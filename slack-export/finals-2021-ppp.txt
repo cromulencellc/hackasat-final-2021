@@ -1,0 +1,413 @@
+finals-2021-ppp
+You created this private channel on August 30th. This is the very beginning of the finals-2021-ppp channel.
+ Add description Add people
+
+vito  12:46
+joined finals-2021-ppp.
+
+vito  12:50
+renamed the channel from “finals-ppp” to “finals-2021-ppp”
+
+vito  20:28
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:28
+was added to finals-2021-ppp by vito, along with 5 others.
+
+vito  14:41
+@tylerni7
+
+tylerni7  14:41
+was added to finals-2021-ppp by vito.
+
+tylerni7  14:42
+o/
+
+OB1  13:14
+was added to finals-2021-ppp by vito.
+
+OB1  14:50
+PPP - here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+PPP.mp4 
+
+tylerni7  16:23
+looks good from our end :slightly_smiling_face:
+
+OB1  10:10
+@tylerni7 Please check your email.  We are looking for confirmation that your team is going to play in finals so we can release our alternates.  thanks.
+
+tylerni7  12:45
+sorry about that--multiple people check that email and sometimes folks mark something read without replying.... Anyway I just responded. We will be participating and look forward to it!
+
+tylerni7  12:46
+just checking, are we supposed to have access to a flatsat or something?
+
+OB1  13:05
+the digital twin will be released to all teams later today
+
+tylerni7  13:09
+gotcha, thanks. Just making sure!
+I was reading through the document sent out today which states "3. All teams had sufficient and equivalent access to data and flatsat digital twins in order to prepare for the final event."
+which I read to mean the access had already been granted.
+
+Jordan Wiens:has2:  11:41
+was added to finals-2021-ppp by OB1.
+
+Jordan Wiens:has2:  15:33
+Hi PPP :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+tylerni7  22:33
+hey we're just having our team meeting and were checking out the website... there was some weird stuff that looks probably not intended? I don't think there is anything sensitive but:
+https://www.robottech.org/HaS2/HaS2-scoreboard/.git/
+22:34
+(we were just trying to load stuff to pull up rules and everything, idk)
+
+Jordan Wiens:has2:  23:15
+sigh some test data was left around when the site was pushed live but shouldn't have been. Thanks much for the heads up.  (edited) 
+
+Deadwood  12:45
+Zip 
+ppp.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+tylerni7  12:54
+hey, what were the rules about having other team members in this/the finals channels? I'd like to have 1-2 more folks I think
+12:56
+can I just invite people myself?
+:+1::skin-tone-2:
+1
+
+
+b2xiao  12:56
+was added to finals-2021-ppp by tylerni7.
+
+tylerni7  12:57
+what about the other finals-2021 channel?
+
+bluepichu  12:59
+was added to finals-2021-ppp by tylerni7.
+
+tylerni7  13:24
+just uh making sure we're not supposed to understand anything that is going on :stuck_out_tongue:
+we connected to the team box but have no idea what we're supposed to do from there
+
+f0xtr0t  13:30
+was added to finals-2021-ppp by tylerni7.
+
+bluepichu  13:41
+We’re still pretty lost.  We’re not sure what to do since there’s nothing running on the box and there don’t seem to be any services we can reach from it.  Is this how everything is supposed to be?
+
+1 reply
+9 days agoView thread
+
+bluepichu  14:21
+There is no tarball in our home directory on the cosmos machine
+
+tylerni7  14:23
+@taintedcheese
+https://spacesecuritychall.slack.com/archives/C02CNCRQU74/p1639250382023700
+can you or someone double check or clarify this please?
+
+bluepichu  15:52
+What’s the health check for ADCS?  Our ADCS state looks fine to us but we show as down on the scoreboard
+
+taintedcheese  15:53
+check the finals-2021 slack channel
+:question:
+1
+
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+bluepichu  15:54
+What message in that channel?
+15:55
+We can see the channel just fine, but there doesn’t seem to be anything in there related to ADCS health checks
+
+taintedcheese  15:55
+"HINT: Gave solvers for challenges 1 and 2 into your home directories. When we have to task the space tug to reset your satellite, it will put you back into your initial state!"
+
+bluepichu  15:55
+…were we tugged?
+15:56
+I’m pretty sure we ran both scripts when that was first posted so we should have been in a good state
+:eyes:
+1
+
+
+tylerni7  15:57
+just to further clarify: we did not request a tug and our system seemed fine. If our system was tugged and reset, can you tell us why that would have happened?
+
+taintedcheese  15:58
+requisitioned a space tug to reset your satellite
+
+tylerni7  15:59
+why was a space tug requisitioned? we did not ask for that
+
+taintedcheese  16:00
+One of your subsystems went down
+
+bluepichu  16:05
+Can we know which one?
+16:06
+Also our ADCS looks up to us right now but still shows as down on the scoreboard… is there something specific that’s being checked to know if it’s up or not?
+16:07
+Hmm, ADCS just came back online on the scoreboard even though we didn’t change anything
+
+taintedcheese  16:18
+The space tug reset your comm payload subsystem around 20 minutes ago.
+
+tylerni7  16:28
+just to clarify: we were asking about 30 minutes ago about why our ADCS was down when we did not change anything and it seemed up to us. You are saying that what happened is the comm payload system went down ~20 minutes ago and so a reset tug was done, and this reset our ADCS system?
+
+taintedcheese  16:29
+the space tug only reset your comm payload subsystem
+
+Deadwood  17:08
+How are you feeling about the user segment challenge? What is your current approach?
+
+tylerni7  17:10
+so we see that there is some weird multi-prime RSA stuff for the pubkeys. We see where they are generated in the binary and it looks... sketchy. We are trying to figure out how to do it without needing to brute force generate 3billion primes or RSA keys because that's slow. We've gotten the public keys from the server for everyone else
+17:10
+I guess that's about where we are at?
+17:12
+we think we can use the fast_exp_mod thing to restrict stuff a bit further from 3 billion. We aren't really clear on what the entropy of TEAM_RANDOM_NUM is I guess
+
+tylerni7  17:18
+oh we're also not sure where the payload goes when we send stuff--we assume it goes to our satellite, but we've not been able to make that work (sending things to our satellite with our keys, and seeing the results)
+
+bluepichu  18:19
+Did we get tugged?  Our ADCS seems fine but it’s been showing as down for a couple of rounds
+
+taintedcheese  18:29
+You did not get tugged.
+:+1:
+1
+
+
+tylerni7  21:37
+can anyone clarify what the payload_comm is? is that something that is required to be on? it's taking a lot of power, but we don't really understand the rules on what we're allowed to turn on/off
+
+taintedcheese  21:39
+see the finals-2021 chat
+
+tylerni7  21:40
+does that apply to TT&C too then? (it wasn't mentioned)
+
+taintedcheese  21:52
+can you clarify the question?
+
+tylerni7  21:53
+we are basically wondering which subsystems we are allowed to turn off, or if they must all be powered on.
+We're asking because we're trying to conserve power and aren't really using a lot of other things
+
+b2xiao  22:17
+Hey, so we're having some trouble getting files off of our satellite's ADCS. We can download files from C&DH just fine, but transfers from ADCS hang.
+22:18
+we've been unable to pull any files from ADCS ever since the start, so we haven't been able to run the fix for challenge 2 (which requires pulling an EPS file from the ADCS)
+
+SirGoon  22:18
+image.png 
+image.png
+
+
+:question:
+3
+
+
+taintedcheese  22:39
+Your satelite has no more charge!
+
+bluepichu  22:39
+We request a tug
+22:39
+for recharging
+
+taintedcheese  22:40
+tug is in route
+22:41
+ESTIMATED time of satellite recovery: 8:00 PST
+
+taintedcheese  23:01
+Satellite has been recharged.
+23:02
+Satellite should be back into SEPARATION mode
+
+spaceymcspaceface  23:42
+Are you still having trouble pulling files from the ADCS?
+
+1 reply
+9 days agoView thread
+
+b2xiao  23:42
+No, not any more.
+:+1:
+1
+
+23:42
+After rebooting it was perfectly fine
+23:43
+Now we're having a problem running the challenge 2 solve script to get the payload online: it's complaining that Invalid number of attributes 3. Should be 6. , and it does that even on the original file (edited) 
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+1 reply
+9 days agoView thread
+
+b2xiao  23:44
+we're not sure what we're doing wrong. this is our JSON (we've tried a few permutations of this):
+
+
+{
+"name": "EPS Configuration Table",
+"description": "Configuration for EPS MGR dumped at 1980-012-14:22:40.15448",
+"mode-table": {
+      "startup-mode": 0,
+      "mode-array": [
+      {"mode": {
+         "mode-index": 0,
+         "enabled": 1,
+         "name": "SEPERATION",
+         "mode-switch-mask": 91
+      }},
+      {"mode": {
+         "mode-index": 1,
+         "enabled": 1,
+         "name": "SAFE",
+         "mode-switch-mask": 95
+      }},
+      {"mode": {
+         "mode-index": 2,
+         "enabled": 1,
+         "name": "STANDBY",
+         "mode-switch-mask": 95
+      }},
+      {"mode": {
+         "mode-index": 3,
+         "enabled": 1,
+         "name": "NOMINAL_OPS_PAYLOAD_ON",
+         "mode-switch-mask": 351
+      }},
+      {"mode": {
+         "mode-index": 4,
+         "enabled": 1,
+         "name": "ADCS_MOMENTUM_DUMP",
+         "mode-switch-mask": 127
+      }},
+      {"mode": {
+         "mode-index": 5,
+         "enabled": 1,
+         "name": "ADCS_FSS_EXPERIMENTAL",
+         "mode-switch-mask": 159
+      }}
+      ]
+   }
+}
+23:45
+right now half the enabled switches are 0 so we can't get our satellite into PAYLOAD_ON mode; previously it seems like the satellite was already configured correctly as we never had to run the challenge 2 solve script
+
+tylerni7  23:45
+replied to a thread:
+How are you feeling about the comms payload challenge? What is your approach?
+well we have an exploit that works against the provided comm binary (can run shellcode).
+We have 0 idea what to do with it: no idea how to upload/run/whatever it
+:+1:
+1
+
+
+tylerni7  00:14
+just checking, it looks like another team has hit battery level 0.008 and hasn't been towed or shut down or anything? is the trigger for the tug different than hitting 0.1?
+
+tylerni7  00:29
+so again, just checking: it would seem that DiceGang got their battery recharged (presumably via a towing) but didn't suffer any downtime?
+can you clarify if the scoreboard is wrong or if there was something else that happened?
+
+taintedcheese  00:29
+there was a simulation error
+
+tylerni7  00:30
+can you clarify that statement? are you saying a simulation error resulted in no downtime?
+00:31
+or are you saying their battery loss was a simulation error, so they got a free tow?
+
+tylerni7  01:19
+so, not sure if we're doing something wrong or if something is messed up or what but I guess just to put it here:
+we're sending data to other teams with the client command, using -s to make sure it's directed at the danx with a 2 second sleep between things so we don't hit the limit.
+We are then talking to 10.0.{team}1.100 port 1337 and requesting SLA_TLM LATEST COMM_TELEM_5 . And we're noticing that the data we sent with client seems "stale" (the data left over from a previous invocation of client)
+When it does update, it seems like it takes ~20 seconds or so. Other times it seems like it doesn't update at all.
+Anyway just mentioning it, since I can't tell if it's on our end/expected or not...
+
+b2xiao  03:46
+we're trying to hit all teams for challenge 4, but two teams seem to be down - teams 2 and 8 return 0x0 for all telemetry requests (SLA_TLM LATEST COMM_TELEM_5), as if they aren't processing any of the packets we're sending them
+
+b2xiao  05:19
+we also don't seem to be getting anything from team 7
+
+meenmachine  05:25
+Seen.
+
+b2xiao  11:58
+so, for the record, we actually reversed eps_mgr.so so we could recover the correct JSON format
+:point_up:
+2
+
+11:58
+and then y'all went and gave out the fixed JSON file
+
+b2xiao  12:18
+from what I'm hearing, SolarWine had the fixed config already due to a leak on the VM - did they tell you in advance? we lost an hour of SLA due to not having the right config and having to reverse stuff instead, so if SolarWine had the right config and didn't have to do that work...
+:eyes:
+1
+
+
+SirGoon  12:32
+How is your team doing on 5? Close?
+
+tylerni7  12:36
+I'll be honest, I think after you reset our satellite while we were sleeping for some reason we lost a lot of our motivation to keep playing
+
+b2xiao  13:18
+fwiw: we set our simulation rate to be faster (100ms) in order to get nicer graphs, I'm told this may have triggered a simulation bug that caused our sun and battery to run way faster
+
+taintedcheese  13:22
+on which computer did you set the simulation rate?
+13:22
+im interested how you did that
+13:22
+on the digital twin or on the game network?
+
+b2xiao  13:23
+sorry, not the simulation rate (misspoke), the adcs output rate
+
+taintedcheese  13:37
+were you seeing a 100x speedup on the sim rate?
+13:38
+10x?
+13:38
+that is very interesting actually
+
+meenmachine  13:43
+The sim's time step should be limited based on an outside timer that steps the sim every 0.2 seconds. The adcs does control the sim steps but the commands would be put on hold until the next time step 0.2 seconds later. I don't think increasing the adcs output telemetry rate would cause that.
+13:43
+I'm assuming you meant telemetry rate?
+
+b2xiao  15:08
+So, for what it's worth, this is based on a report from another team, who apparently slowed down their telemetry and consequently slowed down the rate of their simulation
+15:08
+so their battery charged/discharged very slowly relative to other teams
+
+meenmachine  16:12
+Which team was this so we can take a look at their telemetry?
+
+tylerni7  16:16
+I don't think it really matters. With the several hours of downtime from the random overnight reset, nothing would really bring us out of last
+
+Stayotta Mispace  18:07
+was added to finals-2021-ppp by OB1, along with 2 others.

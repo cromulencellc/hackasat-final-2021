@@ -1,0 +1,218 @@
+
+finals-2021-pfs
+You created this private channel on August 30th. This is the very beginning of the finals-2021-pfs channel.
+ Add description Add people
+
+vito  12:51
+joined finals-2021-pfs.
+
+vito  20:28
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:28
+was added to finals-2021-pfs by vito, along with 5 others.
+
+vito  14:40
+@nafod (PFS)
+
+nafod (PFS)  14:40
+was added to finals-2021-pfs by vito, along with OB1.
+
+OB1  14:49
+PFS - here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+PFS.mp4 
+
+nafod (PFS)  15:21
+Looks good to us! Pretty sweet
+15:21
+very cool logo effects
+
+Jordan Wiens:has2:  11:41
+was added to finals-2021-pfs by OB1.
+
+Jordan Wiens:has2:  15:32
+Hi Pwn First Search :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+:100:
+2
+
+
+3 replies
+Last reply 10 days agoView thread
+
+fatalbit  18:09
+was added to finals-2021-pfs by nafod (PFS).
+
+Deadwood  12:45
+Zip 
+pfs.zip
+126 kB — Zip126 kB — Click to download
+
+
+:+1:
+1
+
+
+Joshua Christman  12:57
+was added to finals-2021-pfs by nafod (PFS).
+
+Joshua Christman  12:58
+howdy
+
+nafod (PFS)  12:58
+o/
+
+taintedcheese  15:10
+We are tasking a space tug to press the power button on your satellite
+:+1:
+1
+
+15:10
+it should be back soon
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+nafod (PFS)  15:55
+we are all in finals
+
+Joshua Christman  16:25
+@vito -- can you confirm whether we need to keep COSMOS running on our challenger box in order to keep scoring points for functional cosmos? We've got functional chaining now where we could stop doing X forwarding if we don't need that anymore
+
+vito  16:25
+seen
+:+1:
+1
+
+
+Deadwood  17:07
+How are you feeling about the user segment challenge? What is your current approach?
+
+fatalbit  17:08
+we're currently going through all the apps to figure out what the client is sending to
+17:09
+we suspect its talking to the comm payload app
+
+meenmachine  17:22
+Houston found that there is an unresponsive subsystem. Requisitioned space tug to press the reset button
+17:23
+It finished recovering 30 seconds ago
+
+nafod (PFS)  17:23
+ty
+:rocket:
+1
+
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+nafod (PFS)  23:44
+we're writing an exploit for the oob write
+23:45
+our approach was just reversing it and we have someone working on expl now
+
+SirGoon  23:45
+:thumbsup:
+
+nafod (PFS)  23:46
+from the Rules of Engagement - "Connection spamming, intentionally exhausting resources (intentionally causing excessive memory consumption, excessive CPU processing, fork bombing, file bombing, etc.), or crashing a service on a system are off limits and will be aggressively policed by the organizers."
+23:46
+"crashing a service on a system" does this include intentionally throwing a payload that will cause comms payloads to crash?
+23:46
+i.e. an unfinished exploit or something like that?
+
+Joshua Christman  00:42
+so question for the organizers: have all the teams that have solved challenge three done it with our team number? In our attempts to brute force the TEAM_RANDOM_NUM, our was a very low number (in the 30k range), but none of the other teams have been in a quick range so far. We may just not be fully understanding it, but if everyone is scoring against us because our random number is low but it's not possible for us to score against ourselves, we have missed out on 2 and a half hours of scoring on challenge 3 (central time in the screenshot)
+image.png 
+image.png
+
+
+
+Joshua Christman  01:05
+now that scoring has closed on challenge 3, can you please answer the above question @vito?
+
+taintedcheese  01:06
+@meenmachine
+01:07
+"have all the teams that have solved challenge three done it with our team number?" - Yours was not the only private key that was used by other teams
+:+1:
+1
+
+
+fatalbit  04:38
+are the flags unique for each team?
+04:39
+like will each team be submitting the same flag if they exploit our comms
+
+Joshua Christman  06:36
+is there any way to get details on why our ADCS is "down"? I'm able to fully control the orientation of the satellite....
+
+taintedcheese  06:38
+by "down" you mean?
+06:38
+as in it shows that on the visualizer, or something else?
+
+Joshua Christman  06:38
+visualizer shows red
+06:38
+and we are scoring below the baseline
+06:40
+unknown.png 
+unknown.png
+
+
+06:40
+or at least I'm assuming ALLES is just scoring SLA points since somehow their stuff didn't go down with the update
+06:40
+like 5 other teams' stuff
+
+Joshua Christman  11:21
+Our satellite telemetry seems to be dead
+11:21
+@taintedcheese
+
+taintedcheese  11:24
+restarting CDH...
+
+Joshua Christman  11:51
+@taintedcheese -- looks like our telemetry is dead again... :confused:
+11:53
+we are pretty frustrated that we can't intentionally crash other people but we can lose points because other teams are being careless
+
+spaceymcspaceface  11:55
+telemetry should be back
+
+Joshua Christman  11:56
+excellent thanks -- can you confirm whether there are supposed to be services listening on the user segment ports? We interpreted that as the API server since it's the only thing shared. The ports assigned to us give a connection refused and the other ports give a connection timeout
+
+taintedcheese  11:56
+checking, give me one second
+11:59
+can you give me the ip and port you are connecting to
+
+Joshua Christman  12:00
+10.0.0.101 1344 is one example
+12:00
+we are trying all the ports you gave
+12:00
+also trying 10.0.31.100
+12:00
+because that is the "API" server
+
+taintedcheese  12:01
+see finals slack
+:+1:
+1
+
+
+SirGoon  12:31
+How is your team doing on 5? Close?
+
+nafod (PFS)  12:32
+playing w/ it trying to avoid DoS
+
+Stayotta Mispace  18:07
+was added to finals-2021-pfs by OB1, along with 2 others.

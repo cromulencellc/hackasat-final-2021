@@ -1,0 +1,361 @@
+
+finals-2021-dicegang
+
+
+
+
+14
+finals-2021-dicegang
+You created this private channel on August 30th. This is the very beginning of the finals-2021-dicegang channel.
+ Add description Add people
+
+vito  12:51
+joined finals-2021-dicegang.
+
+vito  20:28
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:28
+was added to finals-2021-dicegang by vito, along with 5 others.
+
+vito  14:39
+@hgarrereyn
+
+hgarrereyn  14:39
+was added to finals-2021-dicegang by vito, along with OB1.
+
+OB1  14:47
+Dicegang - here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+DiceGang.mp4 
+
+hgarrereyn  21:13
+looks awesome! Although I think the PFS logo was used in the background from 00:18 to 00:25 though instead of the dicegang logo
+
+OB1  14:55
+Excellent catch!  That is exactly why we do these reviews.  How does this version look?
+DiceGang (1).mp4 
+
+hgarrereyn  18:31
+looks great! Thumbs up from us
+
+hgarrereyn  12:27
+My teammates account with email defund.alt@gmail.com was deactivated, could you reactivate that account and add him to this channel?
+
+vito  12:41
+Let me see…
+
+vito  12:46
+Caught me afk and I can't figure out how to do it from my phone, I'll try in a half hour or so
+
+hgarrereyn  12:47
+no worries, anytime before finals start is fine :stuck_out_tongue_winking_eye:
+
+vito  13:07
+ok so looking now
+13:08
+there's a deactivated defund.alt and a defund.alt+ctf at gmail; those both go to the same inbox, alright if i invite the +ctf version?
+
+vito  14:13
+@hgarrereyn ^^
+
+hgarrereyn  14:14
+lemme double check…
+14:16
+yep that should work
+
+vito  14:38
+@defund invited!
+:tada:
+1
+
+
+defund  14:38
+was added to finals-2021-dicegang by vito.
+:game_die:
+1
+
+
+hgarrereyn  14:49
+thanks and can you add him to the 
+finals-2021 channel as well?
+14:50
+oh nevermind I think I was able to add him
+:+1::skin-tone-2:
+1
+
+
+Jordan Wiens:has2:  11:40
+was added to finals-2021-dicegang by OB1.
+
+hgarrereyn  14:46
+hey, we’ve been playing around with the digitaltwin and we have a few questions regarding the format of the competition:
+what are the differences between the digital twin and the final competition format? i.e. we assume the main difference is that satellite systems will be running on physical hardware instead of hog, are there other differences with cosmos/42?
+What is the format of the “vulnerable systems”? Will these be additional, vulnerable satellite subsystems we have to protect?
+Are there rules about patching and/or physical constraints on patching?
+Do you have information on cross-team networking? Do we have free reign to target other teams services? Will our traffic be anonymized?
+
+vito  15:07
+seen
+
+Jordan Wiens:has2:  15:32
+Hi Dicegang :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+
+2 replies
+Last reply 10 days agoView thread
+
+hgarrereyn  10:27
+bump on the questions above. Or are you waiting to release this info until game start?
+
+vito  10:48
+we've seen the questions; there'll be more information released closer to game start
+
+Deadwood  12:45
+Zip 
+dicegang.zip
+126 kB — Zip126 kB — Click to download
+
+
+:+1:
+1
+
+
+hgarrereyn  13:01
+?
+13:01
+is anything supposed to be happening
+
+hgarrereyn  13:42
+are we in an isolated network? or do some of the other boxes we see correspond to other teams?
+
+defund  14:59
+We still haven't found the cosmos VM...
+15:00
+is the landing machine "Team X Game Infrastructure" on the diagram?
+
+Deadwood  15:25
+How are you trying to find the VM?
+
+defund  15:26
+portscanning I guess
+15:26
+but we scanned the entire 10.50.50.X range and only one host was up, our own
+
+Deadwood  15:27
+try looking for breadcrumbs on your landing machine.
+
+defund  15:28
+is the process running on port 111 relevant?
+
+Deadwood  15:29
+no
+
+defund  15:31
+oh, found it
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+Deadwood  17:07
+How are you feeling about the user segment challenge?  What is your current approach?
+
+hgarrereyn  17:08
+uh we’ve just been poking around in cosmos trying to download files
+17:08
+we’re not really sure what we’re supposed to be trying to do
+17:09
+we ran the solve scripts and accidentally nerfed our satellite and then figured out and fixed the operating mode
+
+hgarrereyn  17:18
+@Deadwood do you have our email for quals, we’re trying to log in to regatta
+17:20
+nevermind
+
+Deadwood  19:53
+How are you doing with use segment challenge?
+
+hgarrereyn  20:25
+we have reversed the rsa signature and packet encoding and we found the sus askForPubKey function
+20:26
+we’re playing around with wireshark and gdb rn
+
+hgarrereyn  20:37
+for challenge 3 do we get more points if we send a packet to more than one team per round?
+
+defund  21:21
+we seem to be getting locked out
+21:21
+of our boxes
+21:21
+as in they ask for password when we ssh\
+
+taintedcheese  21:24
+password is "team1"
+21:24
+let me know if that works
+
+defund  21:24
+ok yes we're in
+21:24
+thanks!
+
+taintedcheese  21:24
+np
+
+defund  22:00
+Should be worried about the battery of our flatsat?
+22:01
+it seems to be declining overall
+22:01
+each orbit
+
+hgarrereyn  22:06
+we’ve solved challenge 3 but we’re hitting “RATE LIMIT” for some teams even after a 6 minute round window
+22:06
+are we getting points for those still?
+
+hgarrereyn  22:16
+@taintedcheese re this? We’ve only been able to hit team 6 once and we’ve received RATE_LIMIT since then (in the past 20 minutes)
+:eyes:
+1
+
+
+hgarrereyn  22:23
+@taintedcheese we’re sending 6 messages every 2 minutes and still getting ratelimited
+22:23
+??
+
+hgarrereyn  22:29
+oh I am dumb
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+defund  23:45
+we're not 100% sure about how to communicate w/ the comms payload / if it's meant to be completely blackbox
+
+taintedcheese  00:10
+did you do something to your battery state?
+
+defund  00:10
+we switched to adcs_momentum_dump mode (edited) 
+00:10
+our current dropped to -infinity
+00:11
+after switching, our battery was at 0
+
+taintedcheese  00:11
+rgr
+
+defund  00:11
+our space engineer says this is impossible
+00:11
+simulation glitch
+
+taintedcheese  00:11
+we saw
+00:12
+if you charge your battery state above 40%, we will stop tracking
+00:13
+you will not be penalized if you charge it back to a reasonable level
+
+defund  00:13
+how exactly do we charge it back?
+
+hgarrereyn  00:13
+can we get a temporary +infinity current as remedy for the glitch
+
+taintedcheese  00:15
+your batteries are slowly charging right now, we will not order a space tug if you get it back to a reasonable level
+
+defund  00:17
+inevitably our batteries will decrease, right?
+00:17
+once we move back to the dark side
+
+taintedcheese  00:18
+we can do a quick restart of the flatsat instead if you request it
+:+1:
+1
+
+00:18
+hold for a sec
+
+taintedcheese  00:24
+If we charge your batteries instantly, can you drain your batteries back to 40%? (edited) 
+00:25
+to make it back to where it was before?
+
+defund  00:25
+what would be the easiest way to drain it?
+
+hgarrereyn  00:25
+~~momentum dump~~
+
+taintedcheese  00:25
+it will be down for 1-5 min, figure out how to draw more power to drain the batteries
+00:27
+time has reset, restart your telemetry graphs
+00:27
+you dont have to resolve challenge 1 and 2
+00:27
+satellite should be back
+00:28
+if you dont see nominal ops, ping me
+
+hgarrereyn  00:29
+things seem to be running well now
+
+taintedcheese  00:29
+thanks!
+
+defund  00:46
+we've rotated ourselves
+00:46
+so the solar panels aren't getting energy
+:eyes:
+1
+
+
+defund  06:55
+for challenge 2 were using the same commands as before and it keeps saying "invalid number of attributes 3 should be 6"
+06:55
+even though we provide all 6 just as before
+
+taintedcheese  06:57
+wrong chat, see the main chat
+
+defund  07:00
+the error we're having is on the load_tbl command
+07:00
+we cant load our table nor the one you gave us
+
+taintedcheese  07:01
+do you request a space tug reset button on the adcs, or the entire satellite?
+
+defund  11:53
+we may have killed one of our boxes for challenge6
+
+spaceymcspaceface  11:55
+should be back up
+:+1:
+1
+
+
+defund  12:17
+We're not supposed to upload patches for this challenge, right? Since each team has their own box
+
+spaceymcspaceface  12:30
+look at finals chat
+
+SirGoon  12:31
+How is your team doing on 5? Close?
+
+hgarrereyn  12:32
+not sure how to exploit but we’re trying a patch
+
+Stayotta Mispace  18:05
+was added to finals-2021-dicegang by OB1, along with 2 others.

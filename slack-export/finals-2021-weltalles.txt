@@ -1,0 +1,148 @@
+finals-2021-weltalles
+You created this private channel on August 30th. This is the very beginning of the finals-2021-weltalles channel.
+ Add description Add people
+
+vito  12:51
+joined finals-2021-weltalles.
+
+vito  20:29
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:29
+was added to finals-2021-weltalles by vito, along with 5 others.
+
+vito  14:41
+@Nico Gründel
+
+Nico Gründel  14:41
+was added to finals-2021-weltalles by vito, along with OB1.
+
+OB1  14:51
+WeltAlles!  - here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+WeltALLES.mp4 
+
+1 reply
+2 months agoView thread
+
+ALLES CTF  04:53
+was added to finals-2021-weltalles by Nico Gründel, along with Benno Fünfstück (ALLES).
+
+OB1  10:11
+@ALLES CTF @Nico Gründel Please check your email.  We are looking for confirmation that your team is going to play in finals so we can release our alternates.  thanks.
+
+Nico Gründel  12:28
+Hey, the competition integrity document states that each team got equal access to data and flatsat digital twins in order to prepare. We didn't get access to anything like that, is this the same with the other teams?
+
+OB1  12:37
+The digital twin will be released to all teams later today
+:+1:
+1
+
+
+Th0mas  14:19
+was added to finals-2021-weltalles by ALLES CTF, along with localo. Also, Jordan Wiens joined.
+
+Jordan Wiens:has2:  15:38
+Hi WeltAlles :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+Deadwood  12:45
+Zip 
+weltalles.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+ALLES CTF  12:49
+You mistyped the ssh domain. You wrote sygnus.2021.hackasat.com instead of cygnus.2021.hackasat.com
+
+Deadwood  12:49
+doh.
+12:49
+well at least the keyfile had the right name.
+:white_check_mark:
+1
+
+
+Nico Gründel  12:52
+Is it intended that we don't have root access? We're not quite sure what to do with the vm
+
+vito  12:54
+seen
+
+Nico Gründel  13:05
+We're not quite sure what exactly the scope is. Are we supposed to find the tasks ourselves?
+
+Nico Gründel  13:20
+Are we supposed to find the TT&C endpoints ourselves?
+
+Nico Gründel  13:47
+We're honestly not even sure whether we are connected to the game network. We can't find any routes we didn't see before the start of the game (edited) 
+
+Nico Gründel  14:01
+Would be great to get some confirmation on whether everything's working as intended on our machine. We are completely lost on what to do
+14:04
+@vito we didn't get access to a cosmos vm
+
+Nico Gründel  14:22
+[team8@challenger8 home]$ ls
+hasadmin  team8
+[team8@challenger8 home]$ ls team8
+[team8@challenger8 home]$
+There's also no tarball on our challenger machine (edited) 
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+Deadwood  17:08
+How are you feeling about the user segment challenge? What is your current approach?
+
+localo  17:09
+"luigi wins by doing absolutely nothing"
+
+Nico Gründel  17:10
+We're still trying to figure out why we don't see any object-file corresponding to the comm-application
+
+ALLES CTF  21:04
+Ist it intended that we can't connect to our own rest api?
+
+taintedcheese  21:04
+check the finals-2021 slack channel
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+ALLES CTF  00:07
+We're working on the exploit for comms, but have not found a way to the keys for other teams on challenge 3 yet (that doesn't involve brute-forcing).
+We'll probably be asleep for the next ~5 hours though fwiw (edited) 
+
+ALLES CTF  01:55
+Hi, is there some way to tell if our communication with the comm binary is working correctly? (Is this challenge even open still? We're not sure how to map challenge numbers to the tasks..) (edited) 
+
+taintedcheese  02:37
+Your satelite has no more charge!
+
+ALLES CTF  02:38
+:cry:
+02:39
+I guess we'll need a RPO with a space tug then
+
+taintedcheese  02:39
+Roger, requesting
+02:41
+scheduled space tug for 11:58 ish
+
+taintedcheese  03:05
+Satellite has been recharged.
+Satellite should be back into SEPARATION mode
+
+ALLES CTF  07:14
+Why is the attribute in the table cfg suddenly mode-mask  instead of mode-switch-mask  we spend the last 5 hours trying to solve challenge2 and now you are telling us that the format is different? (edited) 
+
+SirGoon  12:32
+How is your team doing on 5? Close?
+
+Stayotta Mispace  18:07
+was added to finals-2021-weltalles by OB1, along with 2 others.

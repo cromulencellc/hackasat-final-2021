@@ -1,0 +1,368 @@
+
+finals-2021-fluxrepeatrocket
+
+
+
+
+19
+finals-2021-fluxrepeatrocket
+You created this private channel on August 30th. This is the very beginning of the finals-2021-fluxrepeatrocket channel.
+ Add description Add people
+
+vito  12:47
+joined finals-2021-fluxrepeatrocket.
+
+vito  12:50
+renamed the channel from “finals-fluxrepeatrocket” to “finals-2021-fluxrepeatrocket”
+
+vito  20:28
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:28
+was added to finals-2021-fluxrepeatrocket by vito, along with 5 others.
+
+vito  14:40
+@dezk
+
+dezk  14:40
+was added to finals-2021-fluxrepeatrocket by vito.
+
+vito  16:53
+@dezk (sorry for friday evening question) do you have the markdown or tex source for your tech paper? i'm working on getting all of them centralized and i don't want them to suffer too much getting copied out of a pdf :slightly_smiling_face:
+16:53
+(can 100% wait until monday too)
+
+dezk  11:13
+Hi! Sorry for the late reply, I will check with Ruben to see if he has the source.
+
+vito  13:54
+haha no worries! yesterday was a holiday and i've had computer problems up until just now today
+:white_check_mark:
+1
+
+
+rugo  15:37
+was added to finals-2021-fluxrepeatrocket by dezk, along with RuGo. Also, OB1 joined.
+
+dezk  12:45
+I think we can remove @rugo which is @RuGos old account.
+
+rugo  12:52
+left finals-2021-fluxrepeatrocket.
+
+OB1  14:48
+FluxRepeatRocket- here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+Flux Repeat Rocket.mp4 
+
+OB1  15:05
+@RuGo @dezk is this video approved for release?
+
+dezk  15:43
+Yeah, it's good! :)
+
+RuGo  15:17
+:thumbsup:
+
+Jordan Wiens:has2:  11:41
+was added to finals-2021-fluxrepeatrocket by OB1.
+
+Jordan Wiens:has2:  15:32
+Hi Fluxrepeatrocket :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+Manf  12:39
+was added to finals-2021-fluxrepeatrocket by RuGo, along with 2 others.
+
+
+
+
+
+Deadwood  12:45
+Zip 
+fluxrepeat.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+RuGo  13:02
+Did it start?
+
+RuGo  13:50
+We have COSMOS running, but not sure how to get the COMSOS_HAPPY trigger firing. Could you give us a clue?
+
+Manf  14:49
+the rules talked about "missions" - are we supposed to have some information about these right now? will we be given any at some point in the future or are we supposed to fully figure them out on our own?
+
+vito  14:51
+seen
+
+taintedcheese  15:15
+we are retasking a spacetug to reset your ADCS, standby
+
+1 reply
+9 days agoView thread
+
+Manf  15:16
+was this caused by us or is this some kind of scoring glitch?
+
+RuGo  15:16
+Is this our fault?
+image.png 
+image.png
+
+
+
+Manf  15:17
+(in our telemetry it didn't look any less stable than before)
+
+Manf  15:22
+and in the scoreboard it also says that COSMOS is bad - we are getting telemetry just fine though. what exactly is it that the scoreboard is scoring there?
+
+RuGo  15:25
+Now we're back up, without changing anything. Was this a mistake on your or on our side? @taintedcheese
+
+taintedcheese  15:29
+spacetug completed its operation at around 3:20 and recovered operation of your satellite
+:question:
+1
+
+
+1 reply
+9 days agoView thread
+
+RuGo  15:36
+replied to a thread:
+spacetug completed its operation at around 3:20 and recovered operation of your satellite
+Are we gonna get points refunded?
+
+taintedcheese  15:37
+Question: have you received a successful file replay?
+
+lukas  15:38
+We think so
+15:38
+We have downloaded files and they are looking fine
+
+taintedcheese  15:38
+Thanks!
+
+Manf  15:39
+might trying to do this relate to ADCS and COSMOS showing as down in the scoreboard again?
+
+lukas  15:50
+Did you just put files on challenger2?
+
+taintedcheese  15:51
+see the finals-2021 slack channel
+
+lukas  15:51
+I don't think anyone of us is in that channel
+
+Deadwood  15:52
+added you.  Whom else?
+
+lukas  15:52
+I can add people myself now
+15:52
+Thx (edited) 
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+RuGo  15:56
+We werent in the finals channel? >.<
+
+Manf  16:01
+@vito @Deadwood what is the login for the "regatta" scoreboard?
+
+vito  16:01
+it's the same as the login you used for quals (email / password)
+
+Manf  16:11
+as we lost so much time already: could you tell us how we should run the challenge_{1,2}_solver.rb scripts on the server directly without running a COSMOS GUI there, if there is any easy way to do that?
+16:13
+nevermind, we are running them on our separate cosmos box now
+
+INCO  16:47
+was added to finals-2021-fluxrepeatrocket by Manf.
+
+Deadwood  17:07
+How are you feeling about the user segment challenge? What is your current approach?
+
+Manf  17:17
+we are working on getting the module up on our satellite and found something that seems promising for that... but aren't quite sure how to get the actual firmware to hunt for real bugs, or even how to talk to other teams at all
+
+Manf  19:07
+we can't ssh into challenger2 anymore... it doesn't accept pubkey authentification and asks for a password. we still have some sessions connected and can't see anything relevant that changed; did the challenge deployment break anything?
+
+taintedcheese  19:08
+Challenger 2 is still up, and I just sshed into it
+19:08
+To the best of my knowledge, the only thing done to challenger 2 was copying the challenge 4 tarball to it.
+19:09
+Let me know if you continue to have problems
+
+Manf  19:10
+it continues to ask for password
+
+taintedcheese  19:10
+authorized key file is still in there
+
+Manf  19:10
+as a workaround, could you change our password to some known value?
+
+taintedcheese  19:11
+i just ran "su team2", and typed in the password
+19:11
+and that worked
+
+Manf  19:12
+ah we never realized that the password was "team2" for this server, we'll use that now
+
+SirGoon  19:14
+image.png 
+image.png
+
+
+
+1 reply
+9 days agoView thread
+
+Manf  19:16
+replied to a thread:
+image.png
+i mean, authorized_keys (with the key from the jumphost) worked fine until just now... weird that it's suddenly broken. not like we didn't have any access at all (edited) 
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+Manf  23:44
+we feel we are very close
+
+SirGoon  23:44
+:thumbsup:
+
+spaceymcspaceface  04:09
+Your satellite has no more charge!
+:space_invader:
+1
+
+
+lukas  04:12
+Can we have a recharge please?
+
+spaceymcspaceface  04:12
+Roger, requesting
+04:13
+ESTIMATED time of satellite recovery: 4:30 PST
+
+spaceymcspaceface  04:36
+Satellite has been recharged.
+Satellite should be back into SEPARATION mode
+
+lukas  06:18
+We just lost the connection to our satellite. Is there any issue on your side?
+06:18
+Nvm it's fixed now
+:brain:
+1
+
+
+meenmachine  06:22
+Sus
+
+lukas  06:22
+I think it was just you deploying the challenge
+
+lukas  06:47
+Did you intend to patch challenge 4 for us?
+
+taintedcheese  06:47
+challenge 4 should be enabled for all satellites
+
+lukas  06:49
+On our satellite I'm pretty sure that you uploaded a new version that's patched, but different from out patch. So if this is what you intended by enabling then everything is fine
+06:52
+Because we suspect that you accidentally patched it for everyone instead of redeploying it
+
+taintedcheese  06:53
+for which component?
+
+lukas  06:53
+sla_tlm.obj
+
+Manf  07:47
+is it intended that rate limiting is shared between challenge 4 and 5?
+
+lukas  07:52
+We no longer get any telemetry (since about 5 minutes ago). Our ssh tunnel also got broken but no more errors since we restarted that (edited) 
+07:52
+Any issues on your end?
+
+taintedcheese  07:54
+checking now
+
+lukas  07:54
+It seems to be back now
+
+spq  12:07
+was added to finals-2021-fluxrepeatrocket by RuGo.
+
+SirGoon  12:31
+How is your team doing on 5? Close?
+
+spq  12:38
+we're close, we think :slightly_smiling_face:
+12:38
+is challenge 4 retired? we get "no tokens matched" for each flag
+12:39
+@channel ^
+12:39
+@SirGoon ^
+
+vito  12:40
+i don't think it's retired?
+
+spq  12:41
+for us, flags are being updated and seem valid but are not accepted
+
+vito  12:41
+can you dm me one?
+12:42
+looks expired
+12:43
+(in retrospect i should return a more useful error message instead of doing a round_id > ? query)
+
+
+
+RuGo  17:34
+We're pretty unhappy about the small distance to #3 considering we were not receiving any announcements for the first nearly 3h of the game. Also we lost about 1.5h of time on the client binary as we were not informed that a new file was dropped. We also were not informed about the availability of the solution scripts for challenge 1 and 2. Was that a mistake on the organizers side? If so, will it be compensated for? @vito @SirGoon @taintedcheese (edited) 
+17:39
+Also, the rules say nothing about a private finals channel:
+In addition, HAS2 organizers and teams will be able to communicate informally through the
+spacesecuritychall.slack.com workspace. HAS2 organizers will set up separate private channels
+for communications between HAS2 organizers and each team, as well as public channels for
+communications between HAS2 organizers and all teams, specific to both the HAS2
+Qualification Event and Final Event.
+(edited)
+17:39
+So there was really no way for us to find out that there is information missing. (edited) 
+
+Stayotta Mispace  18:07
+was added to finals-2021-fluxrepeatrocket by OB1, along with 2 others.
+
+
+Message finals-2021-fluxrepeatrocket
+
+
+
+
+
+
+
+
+
+
+

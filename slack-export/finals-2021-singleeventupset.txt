@@ -1,0 +1,105 @@
+1-singleeventupset
+
+
+
+
+17
+finals-2021-singleeventupset
+You created this private channel on August 30th. This is the very beginning of the finals-2021-singleeventupset channel.
+ Add description Add people
+
+vito  12:51
+joined finals-2021-singleeventupset.
+
+vito  20:29
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:29
+was added to finals-2021-singleeventupset by vito, along with 5 others.
+
+vito  14:41
+@Sean Olding
+
+Sean Olding  14:41
+was added to finals-2021-singleeventupset by vito, along with OB1.
+
+OB1  14:51
+SingleEventUpset - here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+Single Event Upset.mp4 
+
+OB1  20:01
+@sean.olding@crypticvector.com
+
+Sean Olding  20:22
+I’m in! The video looks great! Thank you!
+
+j0nam1el  17:09
+was added to finals-2021-singleeventupset by OB1, along with Jordan Wiens.
+
+Jordan Wiens:has2:  15:37
+Hi Singleeventupset :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Specifically, if I'm not missing my guess, ya'll have team members who've been playing for a CTF for a long time right? Like way back when I was active playing in defcon (so you know it was a while ago)? Pretty sure I finally realized the connection when I saw the bio stated Cincinatti OH but want to make sure I'm not mixing teams. Not that I plan to call out specifics on stream but just making sure my mental association is right.
+Good luck tomorrow.
+
+
+2 replies
+Last reply 10 days agoView thread
+
+Deadwood  12:45
+Zip 
+singleevent.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+Irsyad Hanif  13:05
+was added to finals-2021-singleeventupset by j0nam1el, along with Carolyn Drerup.
+
+j0nam1el  14:01
+Hi folks, where should we be able to reach https://regatta.mc.satellitesabove.us/ from?  It resolves to a private IP, but we haven't found access yet, even from the landing zone.  Perhaps that's by design?  Thanks!
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+meenmachine  16:51
+Houston found that there is an unresponsive subsystem. Requisitioned space tug to press the reset button
+:white_check_mark:
+1
+
+
+Deadwood  17:08
+How are you feeling about the user segment challenge? What is your current approach?
+
+2 replies
+Last reply 9 days agoView thread
+
+j0nam1el  21:00
+Hi folks, is it intentional that we're able to hit the API server curl 10.0.X1.100:1337  for all of the other teams (X=1,2,3,4,5,7,8), but not our own (X=6)?  Thanks!
+
+Deadwood  21:04
+The system is operating as intended
+:white_check_mark:
+2
+
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+Carolyn Drerup  23:49
+We are working on RE on the provided binary. We believe we have to craft a packet to send to another satellite, using the solution to the user segment (which we have not figured out). If we properly send that command, then we could potentially leak data into the SLA_TLM data that comes back from the comms payload, and then we can pull it out through the APIs. (We've been pulling telemetry data from all other satellites using those APIs)
+23:50
+In general, we do not feel like we're close to a solution.
+
+SirGoon  23:53
+:thumbsup:
+
+SirGoon  12:32
+How is your team doing on 5? Close?
+
+j0nam1el  12:35
+We think we've blocked the other teams from scoring, but haven't figured out how to score ourselves.  I think it's unlikely that we'll solve in next 25 mins
+
+Stayotta Mispace  18:07
+was added to finals-2021-singleeventupset by OB1, along with 2 others.

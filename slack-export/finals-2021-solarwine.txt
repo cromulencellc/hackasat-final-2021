@@ -1,0 +1,530 @@
+finals-2021-solarwine
+You created this private channel on August 30th. This is the very beginning of the finals-2021-solarwine channel.
+ Add description Add people
+
+vito  12:51
+joined finals-2021-solarwine.
+
+vito  20:29
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:29
+was added to finals-2021-solarwine by vito, along with 5 others.
+
+vito  14:41
+@sysk
+
+sysk  14:41
+was added to finals-2021-solarwine by vito, along with OB1. Also, xm joined.
+
+OB1  10:11
+@sysk Please check your email.  We are looking for confirmation that your team is going to play in finals so we can release our alternates.  thanks.
+
+xm  17:18
+Hello! we have seen the FAQ, and are definitely going to play finals!
+17:19
+answer sent
+
+Jordan Wiens:has2:  11:42
+was added to finals-2021-solarwine by OB1.
+
+xm  12:47
+Hello! we noticed that this tweet mentions @solarpunkgirl (someone unrelated to the solarwine team) instead of the team's handle, @solarwine_ctf
+:space_invader:
+1
+
+
+2 replies
+Last reply 10 days agoView thread
+
+Jordan Wiens:has2:  15:38
+Hi Solar Wine :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+xm  16:37
+Hi Jordan! We are a team made up of friends of friends, built for Hack A Sat last year, with a few new members this year. Not a big CTF team, even though some of us have participated in CTFs in other contexts. We are in it for the fun, and because we're curious about the space environments. We have 22 members this year, most of us are infosec professionals, a few of us working for an aerospace company on computer security topics (but have very little satellite experience). We all speak french, are physically located in France (mostly), Belgium, Switzerland, MadagascarMauritius. Last year, we were the top scorer team in the finals, but were not ranked #1 because we did not manage to solve the On-Orbit challenge in time -- the other teams were much better. Because we were top scorers, we were automatically qualified for the finals this year. But we still participated in the qualifications, ranked 5th, and most importantly, had a lot of fun. And used more bruteforce than clever tricks, as our write-ups will show :wink:
+If you want more, let me know, I'll try to do that :slightly_smiling_face: Good luck with the commentary, and I hope you have as much fun as us! (edited) 
+
+1 reply
+10 days agoView thread
+
+xm  16:54
+Would it be possible to add one more person from the team to this chan? We currently have the Official Entrant (Roderick) and the Team Leader (me); but the Official Entrant won't be available much during the finals (family reasons), so I'd appreciate having a backup here in case I'm not here/sleeping/... if you agree, could you please invite aris.ada@gmail.com ? thanks! (edited) 
+
+vito  17:43
+sent an invite
+
+xm  18:04
+thanks!
+
+Aris  18:07
+Hi, thanks for the invite
+
+xm  07:02
+Do you know when we can expect to receive a VPN config to connect to the competition infrastructure? will it be OpenVPN? Can you communicate any information about the addressing scheme? (I have my nervous sysadmin hat on :))
+
+Deadwood  09:03
+see the main finals channel for the answer.
+
+xm  09:04
+thanks!
+
+xm  10:35
+Could you please invite @Aris to the finals-2021 channel as well? thanks!
+
+xm  12:15
+Thx!
+:+1:
+1
+
+
+Aris  12:21
+thanks too
+:+1:
+1
+
+
+Deadwood  12:45
+Zip 
+solarwine.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+xm  12:48
+Thanks, the SSH connection is working!
+
+xm  13:47
+hey, /cosmos/procedures/hack-a-sat/ seems to contain the solutions
+13:50
+that's /tmp/cosmos_20211211123140/procedures/hack-a-sat/
+
+vito  13:54
+seen
+
+xm  14:25
+ User segment client tarball is in your challenger cosmos machines in your home directory
+it it not yet present
+14:27
+got it now!
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+:ok_hand:
+2
+
+
+xm  16:33
+we can access https://regatta.mc.satellitesabove.us/ just fine from the VM. I see that another team seems to have issues with that, but it works fine on our side
+
+Deadwood  17:08
+How are you feeling about the user segment challenge? What is your current approach?
+
+Aris  17:09
+We found that the PRNG for the 3 factors RSA is flawed. we're currently cracking other teams' keys
+
+xm  18:06
+we see that our battery is discharging ~20%, then recharging ~10% in one night/day cycle, which is about 1.5hour. At that rate, we have about 7.5 hours of battery remaning. Should we disable something to conserve energy? If we disable the SDR (~1.5 Amp), we'll probably get penalized...
+-> can we expect to ask for a battery change at some point in the future?
+18:09
+2021-12-12-000843_457x250_scrot.png 
+2021-12-12-000843_457x250_scrot.png
+
+
+
+xm  18:27
+keys are now factorized. We are working on two things: 1/ putting them in a format that can be used 2/ figuring out what to do once we have that. Still progressing.
+
+xm  18:53
+we were blocked, did not understand anything... happy to see that the 1st blood is us :smile:
+18:57
+did we gain offensive points for this?
+
+xm  19:26
+[team7@challenger7 .ssh]$ nc -v 10.0.71.100 1337
+--> no connection
+This is supposed to be reachable from the cosmos VM, right?
+
+xm  19:31
+We can't access the "Report API", could you please check that it is working correctly?
+19:33
+we have access to 10.0.11.100 but not to 10.0.71.100 (edited) 
+
+SirGoon  19:34
+It is working as intended
+
+xm  19:34
+ok, we have access to the Report API for the other teams :wink:
+19:35
+let's get those flags!
+
+SirGoon  19:35
+:bulb:
+
+xm  19:45
+just to let you know where we are: we have successfully used another team's attribution key. Wondering whether that will gain them more points... (edited) 
+19:46
+is that part of the challenge, or is it only used for scoring? should we use it to score points? (edited) 
+
+Deadwood  19:48
+Which team attribution key did you use?
+
+xm  19:49
+all of them
+19:50
+we ran this for 1 round:
+while :; do
+        ./client -k 9185017893863647965 -f ./keys/1.pem -m 00 -p 31337 -a 10.0.0.101 -i 1
+        sleep 10
+        ./client -k 15835769949159267158 -f ./keys/2.pem -m 00 -p 31337 -a 10.0.0.101 -i 2
+        sleep 10
+        ./client -k 12885653708155335121 -f ./keys/3.pem -m 00 -p 31337 -a 10.0.0.101 -i 3
+        sleep 10
+        ./client -k 5347798483082156817 -f ./keys/4.pem -m 00 -p 31337 -a 10.0.0.101 -i 4
+        sleep 10
+        ./client -k 11125951540098571282 -f ./keys/5.pem -m 00 -p 31337 -a 10.0.0.101 -i 5
+        sleep 10
+        ./client -k 16896876220756098091 -f ./keys/6.pem -m 00 -p 31337 -a 10.0.0.101 -i 6
+        sleep 10
+        ./client -k 5647008472405673096 -f ./keys/7.pem -m 00 -p 31337 -a 10.0.0.101 -i 7
+        sleep 10
+        ./client -k 2184328980040114823 -f ./keys/8.pem -m 00 -p 31337 -a 10.0.0.101 -i 8
+        sleep 10
+done
+
+xm  20:00
+thanks for the answer on 
+finals-2021!
+20:00
+we won't use these keys then ;))
+:brain:
+1
+
+
+xm  20:35
+we are getting worried about the battery, seeing that other teams are managing it well, so we'll try to stop following the sun during the "night"
+
+xm  21:25
+is there a defined format for flags that are to be submitted to regatta
+
+taintedcheese  21:26
+do you have a flag to submit?
+
+xm  21:30
+not yet!
+21:31
+we were wondering if it was something that was an obvious flag, like FLAG{.......}, or something else
+21:33
+we are looking for vulns in challenge4, combining reverse engineering & fuzzing
+21:37
+we have tried disabling startracker & reaction wheels at night; this cost us points for one round, so we'll keep looking for other ideas to conserve both battery & points
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+xm  23:52
+found a vulnerability, wrote a shellcode, testing & debugging it.
+
+SirGoon  23:54
+:thumbsup:
+
+xm  01:16
+flag :slightly_smiling_face:
+
+xm  01:29
+we're submitting flags, they're accepted ("ok"), but our scoring rate does not increase
+01:31
+can we request a battery change, starting about 50 minutes from now?
+01:33
+example submitted flag:
+flag-ok.png 
+flag-ok.png
+
+
+
+xm  01:54
+it seems we are flagging
+
+taintedcheese  02:13
+"can we request a battery change, starting about 50 minutes from now?" Is this what you want?
+
+xm  02:14
+changed our minds, let's wait until it reaches 10%
+:+1:
+1
+
+
+xm  02:36
+We are below 10%, but the sun is coming back....
+
+taintedcheese  02:37
+Your satelite has no more charge!
+
+xm  02:37
+ok, could you please change/charge it?
+02:38
+we almost made it to the next day!
+
+taintedcheese  02:39
+Roger, requesting
+
+xm  02:40
+thanks!
+
+taintedcheese  02:40
+scheduled for 11:57 ish
+
+xm  02:40
+we are trying to understand what the other teams are doing to preserve battery so well, have not cracked it yet
+
+xm  03:02
+aaaand it's back! 87%, great! thank you!
+
+taintedcheese  03:05
+Satellite has been recharged.
+Satellite should be back into SEPARATION mode
+
+xm  03:23
+it's back in the right mode, we are happy to see we are still first, even though the margin is much lower
+
+xm  03:30
+we have noticed that our exploit for chall4 does not work for teams 2 & 8 anymore, it used to work for all of them. We suspect they patched it (or broke it?)
+
+xm  03:49
+are we supposed to be able to defend ourselves ?
+
+meenmachine  05:44
+We restarted your containers thinking your challenge was broken until we caught what you guys were doing.
+05:44
+:space_invader:
+
+xm  05:49
+Yeah, patching telemetry to prevent others from attacking us! I thing teams 2&8 did that to us too
+:brain:
+1
+
+05:51
+is challenge 5 open, are we expected to look for something?
+
+xm  06:52
+have there been changes on challenge 4? we cannot flag anymore
+
+taintedcheese  06:53
+on which satellite
+
+xm  06:53
+we cannot flag on any of them
+06:53
+we had an exploit that worked well
+
+xm  07:12
+we have flagged on team 1, team 6
+
+xm  07:18
+team 3 & team 8 as well :slightly_smiling_face:
+
+xm  07:37
+dear organizers, I feel you don't deserve the harsh criticism from the 
+finals-2021 channel, so I'd like to send you some positive vibes your way. We know that in a CTF, a lot of unplanned things typically happen, and that you are managing as best you can :heart:
+:+1:
+1
+:heart:
+2
+
+07:39
+we're having fun, that's what we wanted. But we'll fight to remain 1st :slightly_smiling_face:
+
+xm  07:59
+@taintedcheese ping - we have lost satellite telemetry
+
+taintedcheese  08:00
+rgr
+
+xm  09:04
+if the COMM app is unavailable, do we score fewer points? we're wondering especially what happens if we stop handling the UpdatePingStatus message, even though the COMM module and its telemetry work (edited) 
+
+xm  09:12
+thanks for the answer!
+
+taintedcheese  11:23
+did you do something?
+11:23
+if you can respond quickly it would be nice to know
+
+xm  11:24
+yes, we tried to change the key for team 3
+
+taintedcheese  11:24
+only team 3?
+
+xm  11:24
+yes
+11:25
+it was around the time this message was posted:
+ Pause in API server for a second, standby
+
+xm  12:01
+flagged challenge 6!
+
+taintedcheese  12:01
+thanks for the update!
+
+xm  12:04
+debugging our exploit for challenge 5 on a VM
+
+SirGoon  12:04
+56 minutes left
+
+xm  12:04
+will there be a challenge 7?
+12:05
+automating exploitation of chall 6 for every round, gotta get these points
+
+xm  12:11
+can you confirm that we draw first blood on challenge 6? just for bragging rights :slightly_smiling_face:
+
+Aris  12:21
+Also you mentionned port 1367 which is always closed. Are we right to assume there's nothing there ?
+
+SirGoon  12:32
+How is your team doing on 5? Close?
+
+xm  12:32
+testing a packet, we might be able to do it before the deadline.
+12:33
+if the CTF gods are with us, that is :slightly_smiling_face:
+
+Aris  12:33
+:wink::wink:
+
+xm  12:34
+team members are focused on exploit writing & packet generation with scapy
+
+xm  12:44
+we'll run it on a sat!
+
+taintedcheese  12:45
+let me know which one
+
+xm  12:45
+sent to team4
+12:45
+they are still up, still have their old key
+12:45
+=> possibly did not work
+12:45
+sent to team1
+12:47
+sent to team 6
+12:49
+does not seem to work at all, we'll stop sending it
+
+Aris  12:55
+did you see successful attempts at chall5? We have no idea if they worked
+
+taintedcheese  13:01
+i dont think it worked when you threw it
+
+SirGoon  13:01
+We saw attempts
+
+taintedcheese  13:01
+did you lock down your comm app?
+
+xm  13:02
+we tried to exploit our own sat, and crashed it :wink:
+:heart:
+1
+
+
+taintedcheese  13:02
+lol, nice
+13:03
+i was not watching, but most likely a mem unaligned or something
+13:03
+were you taking memory alignment on sparc into account? (its a pita, i made the solver)
+
+xm  13:04
+my teammate tells me we did
+13:04
+we had "fun" with sparc last year too
+13:05
+stack was not aligned -> esp was invalid
+
+taintedcheese  13:05
+you HAVE to make your esp overwrite aligned
+13:05
+it will die terribly if you dont
+
+xm  13:07
+now the wait is unbearable, we have to wait 2.5hours to see the scoreboard!
+
+meenmachine  13:07
+mem poke command was genius btw. Can't wait to see y'alls writeups and scripts
+
+xm  13:09
+we tried something like this:
+COMM_OBJ_UpdateSLAKey_addr = 0x414b3a00
+my_new_sp = 0x406d5138 - 0x10
+payload = struct.pack(">18I",
+    0, 0x41414141,
+    0x00000000,  0x00000000,  0x00000000,  0x00000000,
+    0x00000000,  0x00000000,  0x00000000,  0x00000000,
+    0x4E5E3449,  0x595C8488,  0x00000000,  0x00000000,
+    0x00000000,  0x00000000,  my_new_sp,  COMM_OBJ_UpdateSLAKey_addr - 8)
+bytes(payload).hex()
+:brain:
+1
+
+13:09
+mempoke is our signature, maybe we'll change the team name next year
+:heart:
+1
+
+
+meenmachine  13:10
+Love itt.
+
+xm  13:13
+we had scapy tooling like last year (3 days to prepare means we had short nights :D), and a grafana dashboard with lots of metrics extracted from the telemetry
+:heart:
+1
+
+
+Aris  16:37
+Hi,
+We would like to notify of a few things
+First thanks again for this competition, we enjoyed it a lot and obviously are happy with the results (of course!).
+Feel free to forward us press and newspaper requests if they're asking, we'll be happy to talk with them if it's not about drama
+We have seen the ctftime comments. We think some of them are valid criticism, some are partially valid and many others are just plain wrong. This person is known in the community for acting that way. We refused to comment on this openly because we think it would just fuel a drama and wouldn't lead us anywhere. This is not the kind of attention we want for our team and your organization team.
+If you wish to, we can exchange constructive feedback at your convenience and in a respectful manner.
+(edited)
+
+OB1  17:59
+Aris - Thanks for this note.  It is well received on a day when we are wrestling with how to respond to the criticism you mention.
+18:00
+One question - Did the reporter, Shaun Waterman, reach out to you directly for comment?
+18:01
+FYI, we plan to have a debrief session with each team in the coming weeks just like we did last year, so you'll have your chance to talk with us directly.  Feedback (good or bad) is always appreciated.
+
+Stayotta Mispace  18:07
+was added to finals-2021-solarwine by OB1, along with 2 others.
+
+Aris  03:50
+Yes, Shaun contacted us, first to ask us about the victory, our strategy etc. but when I reached to him he asked us to comment over the ctftime thing. I told him we would discuss it privately with you and no further comment. He then asked real questions :slightly_smiling_face:
+
+xm  07:56
+Hello! We would like to order some swag/merch for team members who did not get it for the quals, or who want more. Could you confirm that as per the rules, we will not receive swag/merch following the final event unless we order it ourselves?
+
+Deadwood  10:35
+Hey, as far as merch goes, you will be receiving your team's flatsat as a trophy, plus some number of the official Hack-a-Sat coins.  Beyond that, you can order merch from the link on the hackasat.com site.
+10:36
+(I'm sorry but I don't have the number of coins in front of me at the moment, but they will be shipped with your flatsat in late January or early February).
+
+xm  10:42
+Yay, coins!!! Thanks for the answer, we'll order additional merch. Thanks for having set up that shop :)
+
+Deadwood  15:57
+I have the numbers in front of me now.  Your team will receive 22 coins with your flatsat.

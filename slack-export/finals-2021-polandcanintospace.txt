@@ -1,0 +1,414 @@
+
+
+finals-2021-polandcanintospace
+
+
+
+
+14
+Tip: Try Ctrl F to search this channel
+
+finals-2021-polandcanintospace
+You created this private channel on August 30th. This is the very beginning of the finals-2021-polandcanintospace channel.
+ Add description Add people
+
+vito  12:38
+joined finals-2021-polandcanintospace.
+
+vito  12:46
+renamed the channel from “finals-2021-polandcanintospace” to “finals-polandcanintospace”
+
+vito  12:51
+renamed the channel from “finals-polandcanintospace” to “finals-2021-polandcanintospace”
+
+vito  20:28
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+Deadwood  20:28
+was added to finals-2021-polandcanintospace by vito, along with 5 others.
+
+vito  14:40
+@redford
+
+redford  14:40
+was added to finals-2021-polandcanintospace by vito, along with OB1.
+
+OB1  14:49
+PolandCanIntoSpace- here's a sneak peek of the team video we've created for you guys.  We plan to promote this on social over the next few weeks and during our final event broadcast.  Please review and let us know if this is cleared for release.    Thanks!
+Poland Can Into Space.mp4 
+
+redford  19:07
+nice! I forwarded it to the team and I'll let you know if others are ok with it
+
+redford  06:10
+ok, you have green light from our team :)
+
+redford  12:46
+Hi, in one of the recent emails you wrote: "Note that a version of the HAS2 flatsat digital twin will be released to finalist teams one week prior to the competition." - just want to double check we didn't miss this
+12:46
+this wasn't released yet, right?
+
+OB1  10:18
+@redford you didn't miss anything.  We are doing some last minute checks and anticipate releasing the digital twin later today.
+
+redford  10:23
+ack, just wanted to be sure :)
+
+Jordan Wiens:has2:  11:41
+was added to finals-2021-polandcanintospace by OB1.
+
+Jordan Wiens:has2:  15:33
+Hi Poland Can :wave:
+I'm doing game commentary again this year (though we have fewer updates compared to last year). I'm hoping to have some extra tidbits to talk about each team as it's appropriate throughout the broadcasts. If you have any interesting facts you think would be fun to share, please add them in a thread here, thanks! Ideas include: how your team was formed, favorite stories during quals or previous HaS experiences, how many people in your team are professionals in the security field or professionals in the aerospace field or hobbyists or students. Anything is helpful!
+Good luck tomorrow.
+
+
+4 replies
+Last reply 10 days agoView thread
+
+redford  16:43
+replied to a thread:
+Hi Poland Can :wave:…
+hmm, a bit late for this, we're already in the preparations :stuck_out_tongue_winking_eye: but I'll try to write something down if I find time, if not then please bug me until I do
+View newer replies
+
+redford  16:44
+replied to a thread:
+Hi Poland Can :wave:…
+also, no hurricane and gas-fueled satellite this year, sorry
+:cry:
+1
+
+View newer replies
+
+Deadwood  12:45
+Zip 
+polandcan.zip
+126 kB — Zip126 kB — Click to download
+
+
+
+redford  12:45
+thx
+
+redford  12:57
+do I understand correctly, that even application logic DoS is forbidden?
+12:57
+(i.e. DoS without any high network spamming)
+
+redford  13:04
+the old rules suggested that this is ok, but the ones in the .zip you just shared imply that this is not ok
+
+redford  13:30
+@vito @taintedcheese @Deadwood ping :wink:
+
+Deadwood  13:31
+what up?
+
+redford  13:31
+I mean the question I asked above
+
+Deadwood  13:32
+The latest rules take precedence.  See the last rule in that doc.
+
+redford  13:32
+but can you confirm that our understanding of them is correct?
+13:32
+we saw the document, just want to be sure we understood it correctly
+
+Deadwood  13:33
+We don't want intentional DOS attacks of any sort.
+
+redford  13:34
+ack
+
+redford  14:23
+we don't have the tarball on the cosmos VM
+14:24
+are we doing something wrong?
+14:24
+@vito @taintedcheese @Deadwood ^
+
+vito  14:25
+investigating
+
+redford  14:43
+we've tried to download a non-existing file from COSMOS and the whole satellite seems to be bricked :confused: (edited) 
+
+taintedcheese  14:45
+We tasked the space tug to ZPO with your satellite
+
+redford  14:46
+ok, works now
+14:46
+thanks
+:white_check_mark:
+1
+
+
+vito  15:54
+If you can read this message but aren't in 
+finals-2021 please let me know
+
+Deadwood  17:07
+How are you feeling about the user segment challenge? What is your current approach?
+
+redford  17:15
+we are almost there
+17:15
+already iterating throught the priv keys
+17:16
+but it's pretty computation-heavy, we have ~5000000 seed candidates
+17:17
+@Deadwood ^
+
+redford  17:30
+I guess we need to rewrite it to C++, not just hook with LD_PRELOAD as we do now, or rent a huge server for bruteforcing :slightly_smiling_face:
+17:32
+ok, it's actually only ~300k seeds
+17:32
+looks better
+
+redford  19:18
+our api doesn't work, but we can successfully connect to other teams apis
+
+redford  19:26
+isn't that a bug in the setup for our sat?
+19:30
+@Deadwood ^
+
+Deadwood  19:35
+Everything is working as intended.
+
+redford  19:54
+@Deadwood FYI: seems we accidentally solved the crypto chall with attribution_id set to team 1, so I guess they got points but without solving it
+19:54
+(I'm writing this because we're a bit afraid that you'll release solvers for challenges after n teams solved them, like last year)
+
+Deadwood  19:56
+See the main channel
+
+redford  20:22
+how are the points on the scoreboard calculated?
+20:22
+and how do we know if we scored the challenge correctly, with correct attribution key?
+20:26
+this round we scored lower number of points than other teams, despite solving chall 3
+
+redford  20:33
+@Deadwood also: we noticed problems with negative power budget for all teams, so to not completely discharge we're turning off unused ADCS sensors and actuators in eclipse (wheels, CSS, FSS). After turning them off on scorboard our ground station turns red
+20:33
+why is this happening?
+20:37
+during this all telemetry and commands work just fine in COSMOS, but we're not seeing SLA_TLM ping packets
+
+redford  20:44
+@taintedcheese @vito ^ ping
+
+Rev  22:22
+was added to finals-2021-polandcanintospace by redford.
+
+Rev  22:22
+redford's going to sleep, so I'll replace him for now
+:+1:
+2
+
+
+SirGoon  22:23
+:thumbsup:
+
+SirGoon  23:43
+How are you feeling about the comms payload challenge? What is your approach?
+
+Rev  23:57
+we're still tweaking our exploit code for the arm binary. we've got the vulnerability and we're feeling we're going to score
+
+taintedcheese  23:57
+let me know when you are about to throw, please
+
+Rev  00:18
+I think we've submitted a valid flag
+00:19
+just need to automate the exploit now
+
+taintedcheese  00:19
+what team did you exploit
+
+Rev  00:19
+id 2
+
+taintedcheese  00:22
+ty for the info
+
+taintedcheese  00:49
+Can you give me a quick update on your approach?
+
+redford  00:57
+we have a heap BOF, it works but rate limit is too low
+00:57
+so we can hack only 2 teams per round
+00:58
+alternatively, you could increase the max packet size on the proxy (right now it's around 256 bytes)
+00:58
+the challenge works on bigger packets
+00:58
+we could exploit it in a single packet
+00:59
+but the proxy limits the size
+00:59
+@taintedcheese ^
+01:02
+also, you have a stability bug there, you don't check the return value of read()
+01:02
+i.e. it doesn't loop on short reads
+01:03
+so, if we're unlucky because of the network delays the read will trim the packets
+
+redford  01:10
+@SirGoon @Deadwood @vito ping :wink: we can't exploit more than 2 teams per round because of this ^
+
+redford  01:39
+also, how does the scoring work? we get a very low number of points for chall 4 each round, and it seems independent of the number of teams we exploited
+01:39
+e.g. sometimes we exploit 2 teams and sometimes 4-5
+01:40
+but point we get vs top1 (which don't have an exploit for this chall AFAIK) are 32, 32, 28 in the last 3 rounds
+01:40
+this seems to have no correlation with the number of submitted flags :confused:
+
+meenmachine  01:42
+Your assumptions are incorrect.
+
+redford  01:44
+about packet limits?
+
+redford  01:53
+@meenmachine ^
+
+taintedcheese  01:58
+see the finals-2021 slack channel
+
+redford  01:59
+@taintedcheese which of our questions are you answering right now?
+01:59
+sorry, we are really confused
+
+taintedcheese  02:02
+"also, how does the scoring work? we get a very low number of points for chall 4 each round, and it seems independent of the number of teams we exploited" - see vitos recent post in the main channel
+02:03
+I have seen the other questions, and thanks for the information on your approach
+
+redford  02:04
+hmm, I don't understand how vitos answer could explain this (you mean this one? ""internal scoreboard" is https://regatta.mc.satellitesabove.us/scoreboard as opposed to https://finals.2021.hackasat.com/ or http://10.3.133.7:5000/queries/1")
+02:04
+we looked at this scoreboard
+02:04
+the only additional information we see is the time until the round end (edited) 
+
+taintedcheese  02:04
+Oh, I'm sorry, i thought he put the post out
+02:05
+working on it!
+
+redford  02:07
+I have seen the other questions, and thanks for the information on your approach
+so, will you be changing anything, or should we somehow try to grind our exploit to be faster? e.g. renting a server in US or something like this
+
+redford  03:29
+could you say why are we gaining less points than other teams? we have the solver for chall 4 and the satellite is green
+03:30
+does the green satellite imply 100% possible points of SLA?
+03:30
+I mean, it seems that everything works, but somehow we're getting less points than others
+03:30
+and we have no idea if that's because of SLA or challenges
+
+redford  06:32
+could you share that /cosmos/procedures/hack-a-sat/eps_mgr_cfg_tbl_working.json file with us? previously you applied this change manually and now we don't have it and can't restore ADCS
+06:33
+@taintedcheese ^
+
+taintedcheese  06:34
+we didnt share that file with any other teams, did you have a version of that table pulled from the filesystem?
+
+redford  06:35
+no, we couldn't get it because the satellite said that it can't dump this table
+06:35
+so we never got it
+
+meenmachine  06:35
+Send the same command
+
+redford  06:37
+same as what? to dump this file?
+06:37
+we don't have that script because it failed to dump
+
+meenmachine  06:38
+Yes. Please try dumping the file one more time. We're watching your sat
+
+redford  06:39
+we can dump the script now, but it's not the working one
+06:40
+and after you deployed that working one before the reset we weren't able to dump
+
+meenmachine  06:40
+Just to confirm. You're able to download the table file?
+
+redford  06:41
+yes, but that's not the working one which you applied previously
+
+meenmachine  06:42
+All the teams received the exact same challenge solvers for challenges 1 and 2 (edited) 
+
+redford  06:44
+After you uploaded the valid tables for us we were not able to dump this valid table via cosmos due to some errors.
+This means we can't use the "solver" due to lack of those table files
+
+redford  06:51
+@meenmachine so, will you share these tables? we got literally a 2-minute notice, after more than 17h of playing the CTF that our sat will suddenly get restarted
+06:52
+we're losing tons of points per round because of this
+:eyes:
+1
+
+06:52
+Solar Wine got ~700 pts more ahead only because of this
+06:53
+and Solar Wine has the solver, because contrary to other teams they've found these scripts you left somewhere in the beginning of the competition :/
+06:57
+also, Solar Wine would get run out of their battery, but you just arbitrarily refilled them for everyone :/
+
+redford  07:52
+@meenmachine @taintedcheese could you check what happened to our satellite?
+07:52
+everything suddenly went down without any interaction from us
+
+taintedcheese  07:52
+checking
+
+redford  07:53
+no telemetry data, neither from sat nor from 42 emu
+
+taintedcheese  07:54
+Is it better now?
+
+redford  07:54
+yes
+07:54
+what was it?
+
+SirGoon  12:31
+How is your team doing on 5? Close?
+
+redford  12:33
+nothing works for us tbh. we enabled events from comm module and we see some packets on event stream when transmitting some bytes on the network, but we are not able to send proper commands
+12:33
+no idea why the commands doesn't work ¯\_(ツ)_/¯ (edited) 
+12:37
+we guess that the proxy (for which we don't have binaries nor sources) somehow mangles the messages
+12:37
+e.g. adding/stripping some headers
+
+Stayotta Mispace  18:07
+was added to finals-2021-polandcanintospace by OB1, along with 2 others.

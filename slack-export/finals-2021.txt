@@ -1,0 +1,1548 @@
+
+
+finals-2021
+
+
+
+
+69
+Tip: Try Ctrl F to search this channel
+
+finals-2021
+You created this private channel on August 27th. This is the very beginning of the finals-2021 channel.
+ Add description Add people
+
+vito  17:49
+joined finals-2021 along with 7 others.
+
+vito  20:27
+@Deadwood @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @SafeMode
+
+SafeMode  20:27
+was added to finals-2021 by vito.
+
+vito  14:38
+@redford
+@tylerni7
+@dezk
+@hgarrereyn
+@sysk
+@Sean Olding
+@Nico Gründel
+@nafod (PFS)
+@trupples
+@hackerman123
+@Lukas Seidel
+
+redford  14:39
+was added to finals-2021 by vito, along with 10 others.
+
+vito  14:39
+Welcome to Hack-A-Sat 2 finals chat!
+14:39
+These guidelines do not supersede the official rules; they’re here to make chatting in Slack useful and productive for all of us.
+The goals of these channels are to address hardware, infrastructure, and other gameplay issues.
+All 
+finals-2021 and #finals-2021-TEAMNAME conversations will be made public after the game ends. Don’t chat anything you wish to keep private. Don’t chat personally identifiable information.
+Each team can have two people in the finals chats. We don’t want to spend a bunch of time getting confused or de-conflicting what more people want, so try to remember you’re representing the voice of your team, not just yourself.
+Sending private or direct messages to a game operator will make it more difficult for operators and other members of your team to know what’s going on. Please don’t.
+Both 
+finals-2021 and #finals-2021-TEAMNAME can be used for official communication through the end of Hack-A-Sat finals. shout@hackasat.com is also still available for official communication.
+Please review the contest rules and keep an eye out for updates at https://www.hackasat.com/rules-here
+14:41
+@OB1
+
+OB1  14:41
+was added to finals-2021 by vito.
+
+OB1  17:02
+@Camy Geide @Kim Delaney @Robert Kaminski
+
+Camy Geide  17:02
+was added to finals-2021 by OB1, along with 2 others.
+
+OB1  17:09
+@Frank
+
+Frank  17:12
+was added to finals-2021 by OB1.
+
+OB1  18:10
+@EJ
+
+EJ  18:10
+was added to finals-2021 by OB1.
+
+OB1  18:11
+@GiveMeMySpace
+
+GiveMeMySpace  18:11
+was added to finals-2021 by OB1.
+
+OB1  20:07
+@Stayotta Mispace
+
+Stayotta Mispace  20:07
+was added to finals-2021 by OB1.
+
+OB1  11:51
+@mando
+
+mando  11:51
+was added to finals-2021 by OB1. Also, xm joined.
+
+vito  11:23
+@channel ATTENTION TEAMS
+We've published but not publicized your tech papers at https://github.com/cromulencellc/hackasat-qualifier-2021-techpapers
+Please read over what's up there, and reply in this thread or privately to me if you need things changed.
+Thanks!
+
+GitHubGitHub
+GitHub - cromulencellc/hackasat-qualifier-2021-techpapers
+Contribute to cromulencellc/hackasat-qualifier-2021-techpapers development by creating an account on GitHub. (115 kB)
+https://github.com/cromulencellc/hackasat-qualifier-2021-techpapers
+
+
+j0nam1el  17:08
+was added to finals-2021 by OB1.
+
+vito  13:23
+@channel the flatsat digital twin release is undergoing final checks and tests before we launch it your way (edited) 
+:heart:
+1
+
+
+ALLES CTF  14:02
+was added to finals-2021 by Nico Gründel, along with Benno Fünfstück (ALLES). Also, Th0mas and 2 others joined.
+
+OB1  10:28
+@channel check your email, the digital twin was released earlier this morning (edited) 
+:+1:
+4
+:satellite:
+2
+
+
+Jordan Wiens:has2:  11:40
+was added to finals-2021 by OB1. Also, fatalbit joined.
+
+
+Deadwood  09:03
+Four hours until it's game on.  Credentials to access the competition network will be sent out approximately 15 minutes prior to the start and will be an ssh key for those of you wondering what the access method is.
+
+
+
+
+
+
+Aris  11:46
+was added to finals-2021 by Deadwood.
+
+vito  12:45
+Welcome to Hack-A-Sat 2 finals chat!
+These guidelines do not supersede the official rules; they’re here to make chatting in Slack useful and productive for all of us.
+The goals of these channels are to address hardware, infrastructure, and other gameplay issues.
+All 
+finals-2021 and #finals-2021-TEAMNAME conversations will be made public after the game ends. Don’t chat anything you wish to keep private. Don’t chat personally identifiable information.
+Each team can have two people in the finals chats. We don’t want to spend a bunch of time getting confused or de-conflicting what more people want, so try to remember you’re representing the voice of your team, not just yourself. If you have different people than you have previously, please let mission control know so we can invite them!
+Sending private or direct messages to a game operator will make it more difficult for operators and other members of your team to know what’s going on. Please don’t.
+We may indicate that we've seen a message without an immediate resolution. If there's a significant issue it may take significant time for us to find a fair and equitable resolution.
+Both 
+finals-2021 and #finals-2021-TEAMNAME can be used for official communication through the end of Hack-A-Sat finals. shout@hackasat.com is also still available for official communication.
+Please review the contest rules and keep an eye out for updates at https://www.hackasat.com/rules-here
+The mission control team: @Deadwood @vito @meenmachine @SirGoon @spaceymcspaceface @taintedcheese @Batman
+
+Batman  12:45
+was added to finals-2021 by vito.
+
+Deadwood  12:53
+Your ssh keys just get you to landing zone. The game network is disconnected until the game starts.
+
+vito  12:56
+If you want one or two more team members in this and your teamname chat go ahead and invite them
+
+nafod (PFS)  12:57
+meaning up to 3 or 4?
+
+SirGoon  12:57
+Yes
+
+tylerni7  12:58
+can we invite people into here as well?
+
+Joshua Christman  12:58
+was added to finals-2021 by nafod (PFS).
+
+tylerni7  12:58
+oh it says "this" and I can't read -_-
+
+b2xiao  12:58
+was added to finals-2021 by tylerni7, along with bluepichu.
+
+vito  13:02
+GO TIME!
+:rocket:
+3
+
+
+SirGoon  13:02
+All, the game is now live. Good luck!
+
+taintedcheese  13:03
+Recover your satellite!
+
+vito  13:04
+When you get to flag challenges, the scoreboard is at https://regatta.mc.satellitesabove.us ; log in with the email and password you used for quals
+
+Irsyad Hanif  13:06
+was added to finals-2021 by j0nam1el, along with Carolyn Drerup.
+
+taintedcheese  13:07
+Challenge 1
+Challenge_1_Diagram.PNG 
+Challenge_1_Diagram.PNG
+
+
+
+f0xtr0t  13:30
+was added to finals-2021 by tylerni7.
+
+taintedcheese  13:41
+Team numbers were assigned in alphabetical order.
+:jack_o_lantern:
+1
+
+
+vito  13:54
+Right now the goal is to recover your satellite and manage your satellite components.
+
+taintedcheese  14:02
+We are solving challenge 1 and 2 for all teams. Check your telemetry! (edited) 
+:white_check_mark:
+1
+
+
+
+
+4 replies
+Last reply 9 days agoView thread
+
+vito  14:04
+The scoreboard for flag submission is at https://regatta.mc.satellitesabove.us , which should be reachable from the COSMOS VM; log in with the email and password you used for quals
+
+1 reply
+9 days agoView thread
+
+redford  14:08
+replied to a thread:
+We are solving challenge 1 and 2 for all teams. Check your telemetry!
+this ^
+:point_up:
+2
+
+View newer replies
+
+taintedcheese  14:09
+User segment binaries have been given out!
+:eyes:
+1
+:thinking_face:
+1
+:question:
+2
+
+
+1 reply
+9 days agoView thread
+
+Deadwood  14:09
+You can access your team's COSMOS VM from the landing machine, but you have to find it.
+
+taintedcheese  14:09
+Challenge_3_Diagram.PNG 
+Challenge_3_Diagram.PNG
+
+
+
+taintedcheese  14:19
+User segment client tarball is in your challenger cosmos machines in your home directory
+:eyes:
+1
+
+
+vito  14:25
+investigating the client tarball issue
+14:27
+it should be world-readable for you
+
+taintedcheese  14:28
+"team_<team>.tar.gz" was moved into individual home directories.
+:white_check_mark:
+1
+
+
+taintedcheese  14:57
+HINT: SHARED user segment server resides at 10.0.0.101
+
+1 reply
+9 days agoView thread
+
+redford  15:02
+replied to a thread:
+HINT: SHARED user segment server resides at 10.0.0.101
+maybe you could include all the IPs in the diagrams you share? this way we wouldn't need to spam with nmap :)
+
+taintedcheese  15:14
+Don't run the cosmos CF PLAYBACK_DIR command. It doesn't work, and isn't intended for the game.
+
+taintedcheese  15:34
+HINT: Gave solvers for challenges 1 and 2 into your home directories. When we have to task the space tug to reset your satellite, it will put you back into your initial state!
+
+lukas  15:51
+was added to finals-2021 by Deadwood. Also, Manf joined.
+
+vito  15:53
+@dezk @RuGo
+
+RuGo  15:53
+was added to finals-2021 by vito.
+
+vito  15:53
+@bluepichu
+15:53
+@f0xtr0t
+
+Gina  15:53
+was added to finals-2021 by lukas, along with 3 others. Also, Sceptic and 8 others joined.
+
+defund  16:15
+we're unable to connect to https://regatta.mc.satellitesabove.us/ from the cosmos vm
+
+vito  16:23
+regatta.mc.satellitesabove.us. 144 IN	A	10.0.0.50
+
+taintedcheese  16:29
+HINT: Challenge 1 and 2 are scored based on your satellite state. Cosmos is a telemetry viewer and command sender for your satellite, and your challenger cosmos machine is not used for scoring.
+
+pspaul  16:33
+was added to finals-2021 by sevenbytes. Also, INCO joined.
+
+Deadwood  17:23
+https://youtu.be/M5XXhjtYetQ?t=4384
+
+YouTubeYouTube | AFResearchLab
+Hack-A-Sat 2 - Final Event Kickoff Show 
+
+17:23
+This is worth a look
+
+taintedcheese  18:49
+First blood on challenge 3!
+18:52
+Challenge 4 RELEASE: DANX pager service is in the process of being deployed on the comm payload subsystems. Monitor here for the full release of challenge 4 and any updates over the next 15 minutes...
+
+SirGoon  18:52
+Congrats SolarWine on first to solve challenge 3!
+
+taintedcheese  18:59
+Binaries for DANX pager service have been deployed to your cosmos machine home directories!
+19:02
+DANX pager server on the comm payload subsystem has been started!
+19:03
+Management has ordained deployment of a backwards-compatibility raw "Report API" server on each team's systems. Not quite sure what it does yet, but might be worth looking into as well! (IP 10.0.{TEAM}1.100, port 1337 tcp)
+19:06
+Challenge_6_Diagram.PNG 
+Challenge_6_Diagram.PNG
+
+
+
+SirGoon  19:08
+Challenge 3 is scored by successfully sending a packet to another team over the user segment (radio interface). It is scored each round. So don't forget to send those packets!
+
+
+2 replies
+Last reply 9 days agoView thread
+
+Aris  19:11
+Thanks ! Is there a polling interval we should be aware of?
+
+vito  19:11
+rounds tick every six minutes
+
+Aris  19:11
+thanks
+
+vito  19:11
+you can see a timer for the current round on https://regatta.mc.satellitesabove.us/scoreboard
+
+taintedcheese  19:30
+HINT: Telemetry for challenge 4 come out of the satellite via SLA_TLM telemetry
+
+taintedcheese  19:55
+By using the attribution key from other teams on challenge 3, you grant points to other teams. We use the attribution keys to award points to the source team. Unless you are feeling charitable, only use your own attribution key!
+
+taintedcheese  20:43
+Challenge 3 Clarification: You get more points for challenge 3 by sending packets to every other team every round.
+
+taintedcheese  20:48
+Clarification: Satellite visualization does not directly map into points for scoring. If your groundstation turns red, that does not necessarily mean that you are losing points for it, it is simply a basic visualization of the system.
+:interrobang:
+4
+
+
+redford  20:53
+but we were losing points for this, at least it looked like when we diffed the scores between rounds
+
+taintedcheese  21:02
+Some teams are reporting problems connecting to their own report API server. This is expected behavior. (edited) 
+
+redford  21:03
+what about the visualization? how do we know when and why are we losing/gaining points?
+
+taintedcheese  21:06
+Challenge 1 and 2 are scored based on uptime and status of components on your satellite.
+21:06
+taintedcheese
+HINT: Gave solvers for challenges 1 and 2 into your home directories. When we have to task the space tug to reset your satellite, it will put you back into your initial state!
+Posted in finals-2021 | Dec 11th | View message
+
+redford  21:08
+but how does this work? you say that the color of ground station doesn't matter, but we were actually losing points for this (despite everything worked for us)
+
+bluepichu  21:09
+This mirrors our observations as well; our ADCS “went down” on the scoreboard several times despite it seeming fine from our side, and we lost points for it
+:+1:
+1
+
+
+
+
+
+
+
+taintedcheese  21:10
+Challenge 1 is scored based on being in the right mode, and challenge 2 is based on keeping components "ON" (edited) 
+
+
+
+
+
+
+redford  21:10
+bottom line is: we are losing and gaining points for random things and we have literally no idea why
+21:12
+actually, after we started scoring chall 3 our points delta seemed to go down (?)
+
+taintedcheese  21:12
+Intensive processing on the CDH or ADCS could cause problems with scheduling, such as downloading large amounts of data
+
+taintedcheese  21:14
+Scoring for challenges is distributed to the teams that scored that challenge during that round. If there are more teams scoring, you will be scoring less than you were before.
+
+1 reply
+9 days agoView thread
+
+redford  21:14
+but we didn't do any intensive processing in the last ~2h
+
+redford  21:15
+replied to a thread:
+Scoring for challenges is distributed to the teams that scored that challenge during that round. If there are more teams scoring, you will be scoring less than you were before.
+could you just publish the exact formula for this? it would make everything much clearer, right now we are trying to reverse engineer it...
+:point_up:
+2
+
+
+ZetaTwo  21:26
+Is the service at 10.0.0.101 working correctly?
+
+taintedcheese  21:29
+User Segment Server (10.0.0.101) seems to be working correctly.
+21:33
+Correction: Challenge 3 does not do this, challenge 3 scales linearly based on how many teams you send against for that round only, not based on other teams. Challenge 1, 2, and 4 distribute based on the teams that scored that round.
+taintedcheese
+Scoring for challenges is distributed to the teams that scored that challenge during that round. If there are more teams scoring, you will be scoring less than you were before.
+Thread in finals-2021 | Dec 11th | View message
+:lying_face:
+1
+
+
+defund  21:37
+how long is one tick?
+21:37
+for challenge 3
+
+SirGoon  21:37
+Rounds are 6 minutes
+
+taintedcheese  21:39
+It is in each team's best interests, scoring-wise, to keep their comm payload, CDH, and ADCS in the ON state.
+
+taintedcheese  22:09
+For safety of flight, satellites will go into an unusable spacecraft protection mode if the battery state gets below 10%. To recover from this state, a RPO with the space tug has to be requested to recharge batteries in orbit. This takes no less than 20 minutes, you will have no access to your spacecraft, and you will not score points for uptime.
+:eyes:
+2
+
+
+fatalbit  22:15
+would you have full charge after the recovery?
+
+taintedcheese  22:20
+Battery is charged back to 75 watt hours after a space tug battery charge RPO.
+
+Rev  22:21
+was added to finals-2021 by redford.
+
+taintedcheese  22:23
+For the user segment server, the rate limit is 1 msg per second. You should be using your attribution key in your communication with the user segment server, and will only be able to send one message per second.
+
+vito  22:44
+Starting in round 101 (about 15 minutes from now, or 10h after game start), we will be monitoring your comm board more closely. You have the opportunity to score more SLA points by keeping it up, and so do your opponents…
+
+
+
+4 replies
+Last reply 9 days agoView thread
+
+taintedcheese  23:08
+User segment server radio is down for 10 minutes.
+
+Joshua Christman  23:13
+replied to a thread:
+Starting in round 101 (about 15 minutes from now, or 10h after game start), we will be monitoring your comm board more closely. You have the opportunity to score more SLA points by keeping it up, and so do your opponents…
+the 10.0.0.50 scoreboard seems to be still indicating 6 minute rounds. How does the SLA relate to the round length to increase frequency of scoring for SLAs?
+View newer replies
+
+Rev  23:24
+replied to a thread:
+Starting in round 101 (about 15 minutes from now, or 10h after game start), we will be monitoring your comm board more closely. You have the opportunity to score more SLA points by keeping it up, and so do your opponents…
+does the newest bonus in points comes only from the upgraded comm module SLA checks?
+we don't seem to get these points, but we also don't see anything wrong with our comm module
+View newer replies
+
+Rev  23:24
+replied to a thread:
+Starting in round 101 (about 15 minutes from now, or 10h after game start), we will be monitoring your comm board more closely. You have the opportunity to score more SLA points by keeping it up, and so do your opponents…
+how does exactly the bonus work? (edited) 
+View newer replies
+
+vito  23:28
+replied to a thread:
+Starting in round 101 (about 15 minutes from now, or 10h after game start), we will be monitoring your comm board more closely. You have the opportunity to score more SLA points by keeping it up, and so do your opponents…
+Your comm payload will need to be in a configuration that allows
+receiving; it'll still be checked at six minute intervals, but we're
+more closely checking that it's receiving, and what it's receiving.
+
+taintedcheese  23:35
+Comm payloads have been updated with omnidirectional antennas. They are no longer determinate on the payload pointing angle.
+23:37
+Make sure your payload comm is turned on at all times.
+
+SirGoon  23:52
+As a clarification on the rules for "Connection spamming, intentionally exhausting resources (intentionally causing excessive memory consumption, ...". -- Continuously using a failed exploit that causes a crash or method to intentionally degrade a system is against the rules. However, throwing an attempted exploit (e.g. testing it) against a system that causes it to crash is not considered a violation of this rule.
+
+taintedcheese  23:54
+Challenge 4 is still live, and if you send using the DANX flag via your user segment client binary, you can send packets to challenge 4. Crashing this service for exploit testing is allowed, and will automatically restart. Each team has individual containers they can throw at on every satellite.
+
+taintedcheese  00:04
+HINT: You need to solve challenge 3 to access challenge 4.
+
+taintedcheese  00:20
+First blood on challenge 4!
+00:21
+Don't run the adcs_momentum_dump command, it will kill your batteries.
+:game_die:
+5
+:hankey:
+1
+
+
+taintedcheese  00:36
+At 10PM PST, we will release every other team's private keys for the user segment. Scoring for Challenge 3 will be ended at that time.
+
+taintedcheese  00:46
+On the internal scoreboard, you can view the round timing. Challenge 4 containers restart between each round, and takes about 15 seconds to turn off and back on.
+
+taintedcheese  01:01
+Challenge 3 scoring is getting sunsetted. Collecting private keys to distribute...
+
+1 reply
+8 days agoView thread
+
+meenmachine  01:03
+Houston found these sitting on a server...
+GZip 
+team_private_keys.tar.gz
+8 kB — GZip8 kB — Click to download
+
+
+
+vito  01:04
+"internal scoreboard" is https://regatta.mc.satellitesabove.us/scoreboard as opposed to https://finals.2021.hackasat.com/ or http://10.3.133.7:5000/queries/1
+
+defund  01:08
+any estimates on when the next two challenges will be released?
+:eyes:
+3
+
+
+Joshua Christman  01:11
+would be nice to schedule the nap around when challenges might be released....
+:raised_hands:
+1
+:+1:
+1
+
+
+redford  01:56
+replied to a thread:
+Challenge 3 scoring is getting sunsetted. Collecting private keys to distribute...
+Did this already happen? Can we shut down our chall 3 exploit without losing points?
+
+taintedcheese  01:57
+Challenge 3 is not scored anymore.
+
+hgarrereyn  02:02
+challenge 3 ended at 10PM pst right?
+
+taintedcheese  02:04
+Around that time, yes
+02:07
+Scoring Clarification: Flags for round X are scored ~18 minutes after round X ends, so there is a delay between submitting a flag and getting points for it.
+
+redford  02:08
+oh, that explains a lot...
+02:09
+@taintedcheese how many points is each flag for chall 4 worth? (yup, I remember we have to divide it by the number of scoring teams)
+
+vito  02:11
+challenge 3 shouldn't be scored anymore, but i goofed, so i'm going to retroactively delete those scorings
+
+SWW13  06:09
+are there any missions or challenges expected before the end of the ctf?
+:+1:
+9
+
+
+taintedcheese  06:18
+Announcement: Challenge 5 is getting deployed to your CDH! Keep the SLA_TLM app up and reporting telemetry, and use your access on other satellites to exploit other team's CDH!
+If you send data without the DANX flag, it will get routed to the new app!
+06:18
+Flatsats have been reset, so make sure you solve challenges 1 and 2!
+06:20
+Challenge 4 services are getting restarted as well, they will continue to be in play
+
+redford  06:20
+will the batteries get back to the state before the reset?
+
+Rev  06:20
+and why would they?
+
+ALLES CTF  06:21
+We had a full battery :cry:
+
+redford  06:22
+and some teams had pretty bad battery status and were going to need a reset...
+
+Manf  06:24
+should we expect any files for challenge 5 or is the deployment happening purely on the satellite?
+
+redford  06:27
+@taintedcheese will you restore the battery levels to the state before the chall 5 deployment?
+:+1:
+3
+
+
+taintedcheese  06:28
+Deployment is happening purely on the satellite
+06:28
+deployment is in progress
+06:29
+Challenge 4 is getting redeployed as well
+
+redford  06:29
+sorry, I don't understand how this relates to my question
+
+Rev  06:29
+what will change in regards to chall 4?
+
+redford  06:30
+right now battery states of all the teams got reset
+
+1 reply
+8 days agoView thread
+
+taintedcheese  06:33
+Challenge 4 is redeployed, and cleaned up the full /tmp/ directories on comm payloads
+
+Joshua Christman  06:34
+replied to a thread:
+right now battery states of all the teams got reset
+obviously, when the space tugs deployed the new software, they gave all the batteries a boost.... :face_with_raised_eyebrow:
+
+Nico Gründel  06:34
+And took the charge from our battery? :face_with_one_eyebrow_raised:
+:joy:
+2
+
+
+Joshua Christman  06:35
+i.e. free topoff for teams that couldn't control their solar array orientation well
+
+Nico Gründel  06:35
+But we we are competely clueless :disappointed:
+
+HoneyScammer  06:35
+energy communism :man-shrugging:
+
+1 reply
+8 days agoView thread
+
+Aris  06:35
+Gift for santa's sleight who moved full electric
+:grinning:
+1
+:santa:
+2
+
+
+Manf  06:35
+replied to a thread:
+energy communism :man-shrugging:
+... in space!
+
+taintedcheese  06:37
+Clarification: Challenge 1 is scored based on the EPS mode being in the "SAFE" mode.
+
+Joshua Christman  06:38
+unknown.png 
+unknown.png
+
+
+:angry:
+7
+
+06:38
+lul
+
+taintedcheese  06:40
+Challenge 2 is based on turning on the comm payload via the EPS. Restating from before, make sure you re-solve challenge 1 and 2
+
+SWW13  06:41
+info delay is over 9000
+
+taintedcheese  06:50
+Clarification: Make sure you resolve Challenge 2. Challenge 4 and 5 is turned on on all satellites.
+
+taintedcheese  06:57
+eps_mgr_cfg_tbl_working.json 
+{
+   "name": "EPS Configuration Table",
+   "description": "Configuration for EPS MGR",
+   "mode-table": {
+      "startup-mode": 1,
+Click to expand inline (54 lines)
+
+
+:+1:
+2
+:eyes:
+2
+:clap:
+1
+:moyai:
+5
+:bulb:
+2
+
+06:57
+Here is the working config table to solve Challenge 2.
+
+lukas  06:58
+We spend an hour figuring that out earlier...
+:white_check_mark:
+3
+:face_with_cowboy_hat:
+2
+:accordion:
+3
+
+
+redford  07:00
+@lukas Solar Wine found the solver (or something like this) left in some cache at the beginning, so I think this should have been shared with everyone many hours ago :confused:
+07:03
+now we got a surprise reset with a 2-minute notice and couldn't bring ADCS back
+:satellite:
+2
+
+
+Joshua Christman  07:03
+them is some fast space tugs
+
+redford  07:04
+we lost 1k points to top1 because of this...
+
+lukas  07:07
+We probably lost more than that because only our point of contact from last year got invited to the finals-channel (but the correct one was in our team-only-channel) ^^ (edited) 
+:slack:
+7
+:face_vomiting:
+1
+
+
+redford  07:07
+uh
+
+redford  07:19
+@taintedcheese so, what will happen to the battery states?
+:interrobang:
+6
+:battery:
+6
+:part_alternation_mark:
+2
+:chart_with_downwards_trend:
+2
+:chart_with_upwards_trend:
+2
+
+
+taintedcheese  07:22
+Battery states were reset back to the initial values when challenge 5 was deployed. No action at this time. Same rules apply as before, where your flatsat turns off if the battery state gets too low, and you have to request a tug to recharge the batteries, with a downtime of 20 minutes.
+:popcorn:
+4
+
+
+redford  07:23
+but this is very unfair
+07:23
+we didn't know that our battery state won't matter
+07:23
+and you'll just recharge them for free
+07:24
+and some teams were low on power and would need to get a tow
+:electric_plug:
+3
+
+07:25
+it's like adding points to teams at random
+
+Joshua Christman  07:25
+I'm not actually sure the reset would have mattered
+unknown.png 
+unknown.png
+
+
+07:25
+SingleEventUpset was the only one at risk
+07:26
+and it looks like the figured out their solar array orientation
+
+redford  07:27
+we calculated the pace for Solar Wind (with whom we were competing before the reset) and they'd need to either tow or improve their batter comsumption/charging before the end
+07:27
+now they just got a free recharge
+:+1:
+2
+
+
+Aris  07:28
+Our estimate was that we would not have needed a tow.
+
+ALLES CTF  07:28
+It doen't matter if it would matter or not. It is just bad practice to change such states. Also to release the full table for challenge2 after some teams were struggling for over 5 hours is not cool (edited) 
+:+1:
+3
+
+
+Joshua Christman  07:29
+Feedback for future years: when there is a $50k prize for first, there needs to be a lot more transparency and consistency with how things happen. When it's a "for glory" CTF, a certain amount of wiggle room is acceptable, but for a govt run program, this isn't really acceptable
+:clap:
+1
+:point_up_2:
+4
+
+
+redford  07:29
+this ^
+07:30
+sorry for being harsh, but we are really upset right now
+07:30
+it feels like everything happens at random here
+:+1:
+1
+
+
+Nico Gründel  07:30
+Communication has to improve in general. We had no clue what to do in general for the first 5 hours. We weren't even thinking about the third challenge having nothing to do with the satellite we had to get running beforehand
+
+redford  07:30
+the scoring is completely opaque, we have no idea why we are gaining and losing points
+:white_check_mark:
+1
+
+
+HoneyScammer  07:31
+We had no clue that this channel exist until 9pm CET yesterday..
+
+redford  07:31
+the organizers answers only 1/3 questions on our priv channel, and the answers are very weird confusing and basically "no answer answers"
+07:33
+now we are after 18h of the CTF really trying to do our best and at random the orgas decide to reset the sats without a notice + recharge batteries
+07:33
+all the points we got from challenges basically vanished in the SLA loss we just got hit by
+
+taintedcheese  07:52
+Clarification: Rate limiting is shared when solving Challenge 4 and 5.
+07:56
+If you suddenly lose telemetry, make sure you ping me in your team slack channel.
+
+redford  07:58
+we just lost SLA due to this, but we didn't sent anything to our sat to cause this. does this mean that another team crashed our sat? or the soft is just unstable?
+
+taintedcheese  07:59
+Clarification: Another team crashed your CDH if your sat suddenly loses telemetry and commanding, and you lose your cosmos connection.
+
+redford  07:59
+but isn't this forbidden in the rules?
+
+Nico Gründel  08:00
+I think crashing the satellite is allowed, as long as it's not a volumetric dos
+
+redford  08:00
+we didn't do this to other teams because you explicitely forbade it, despite we could
+08:00
+no, I asked about this previously
+08:00
+at the beginning of the CTF
+08:00
+and they said that logic DoS is also forbidden
+08:01
+so we didn't do it ourselves despite we could in other challs
+
+taintedcheese  08:02
+Clarification: Do not crash the CDH repeatedly on other satellites. Use the digital twin to test exploits before deployment.
+08:04
+"Repeatedly" is more than once every half hour.
+:clown_face:
+3
+:cheese_wedge:
+1
+
+
+redford  08:05
+so we can do logic DoSes, just not too often?
+:dart:
+2
+
+
+taintedcheese  08:06
+There is a fix coming out soon that will remedy the situation, standby
+
+redford  08:06
+but we already lost points because of this
+08:07
+which was forbidden in the rules
+
+Joshua Christman  08:10
+whoever's doing that, if you wouldn't mind hitting dicegang every 31 minutes or so for the rest of the competition, I'd be ok with
+
+redford  08:11
+but @taintedcheese said that they'll fix this soon
+08:11
+so it will only be us losing points
+
+taintedcheese  08:12
+Fix is deployed. Change to rules: You are allowed to test exploits against other team's cdh every minute. (This can cause it to crash, but you should be making an honest attempt at exploitation). Each team's CDH will restart and continue nominal ops if it crashes.
+
+kauzu  08:12
+"""Denial of Service (DoS) attacks to cause these mission failures are
+allowed, provided they are bonafide cyber effects of an attack. For example, crafting a
+command packet that crashes a flight software component on the target satellite IS a cyber
+effect; saturating a satellite’s uplink so it can’t receive commands is NOT a cyber effect."""
+Hack-A-Sat 2 Rules PDF (updated 11/29/21)
+https://www.hackasat.com/rules-here
+
+taintedcheese  08:13
+Rules document we sent out at the beginning of the competition says we reserve the right to change rules during the competition.
+
+lukas  08:13
+"""Connection spamming, intentionally exhausting resources (intentionally causing
+excessive memory consumption, excessive CPU processing, fork bombing, file bombing,
+etc.), or crashing a service on a system are off limits and will be aggressively policed by
+the organizers.""""
+Rules of engagement
+
+taintedcheese  08:13
+If you have specific questions, please send it in your respective team slack channels.
+
+Joshua Christman  08:13
+that's from before
+08:13
+the rules sent out yesterday specified the opposite
+
+redford  08:14
+@lukas these are outdated rules, see the PDF from the ZIP shared at the beginning: "crashing a service on a system are off limits and will be aggressively policed by the organizers."
+
+lukas  08:14
+Yeah we were just complaining about two different kind of rules stating the opposite. Even if that's technically fine it's really confusing
+
+redford  08:15
+@taintedcheese but you're rarely replying to us on our priv channel, skipping most of the questions
+08:15
+@lukas yes, definitely agree
+
+Joshua Christman  08:15
+"it's ok to test exploits (and cause a DOS), but don't be an asshole" <-- that's the rule they want
+:peach:
+1
+
+
+
+
+6 replies
+Last reply 8 days agoView thread
+
+redford  08:15
+ok, but will they restore the lost SLA for this?
+08:16
+SLA is all in this CTF, challenge points barely matter
+
+taintedcheese  08:16
+taintedcheese
+That is how we want you to interpret it, yes.
+From a thread in finals-2021 | Dec 12th | View reply
+
+redford  08:17
+replied to a thread:
+"it's ok to test exploits (and cause a DOS), but don't be an asshole" <-- that's the rule they want
+what if someone is very sloppy at this and is constantly crashing our sat? (and we can never know if this is deliberate) (edited) 
+View newer replies
+
+redford  08:18
+replied to a thread:
+"it's ok to test exploits (and cause a DOS), but don't be an asshole" <-- that's the rule they want
+this would make sense if you restored SLA for such crashes
+:point_up:
+1
+
+View newer replies
+
+taintedcheese  08:18
+Scoring for Challenge 5 is based on the SLA_TLM HK_TLM_PKT ATTRIBUTION_KEY. Overwrite this key with your own, and you will get points for other team's satellites
+:+1:
+1
+
+08:22
+taintedcheese
+This should not effect SLA, as the fix is in place for when the CDH crashes. If any team sees weird behavior, let me know.
+From a thread in finals-2021 | Dec 12th | View reply
+
+redford  08:23
+replied to a thread:
+"it's ok to test exploits (and cause a DOS), but don't be an asshole" <-- that's the rule they want
+what about the points we lost in that crash before the fix?
+:point_up_2:
+1
+
+
+RuGo  08:30
+image.png 
+image.png
+
+
+:grinning:
+1
+:raised_hands:
+1
+:joy:
+3
+:point_up_2:
+1
+
+
+taintedcheese  08:47
+You will not see points for scoring Challenge 5 immediately. Scoring will be done retroactively, time TBD.
+
+Joshua Christman  08:49
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+
+
+
+
+8 replies
+Last reply 8 days agoView thread
+
+redford  08:49
+also, how do we know that our exploit worked?
+
+taintedcheese  08:51
+taintedcheese
+Credit will be calculated each round.
+From a thread in finals-2021 | Dec 12th | View reply
+
+Joshua Christman  08:51
+but won't necessarily reflect in the scoreboard?
+
+1 reply
+8 days agoView thread
+
+HoneyScammer  08:52
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+So only the last exploit in each round get points for that satellite?
+View newer replies
+
+taintedcheese  08:52
+replied to a thread:
+but won't necessarily reflect in the scoreboard?
+Correct
+
+Nico Gründel  08:52
+5xl4ve.jpg 
+5xl4ve.jpg
+
+
+:joy:
+11
+:smile:
+4
+
+
+redford  08:55
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+what about this question? ^ this basically changes everything if only the last solve counts
+View newer replies
+
+taintedcheese  08:57
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+It should be awarded based on the majority for each round. It is up to teams to create exploits that can keep control of the attribution key, but without spamming...
+:exploding_head:
+3
+:frowning:
+1
+
+View newer replies
+
+mo  08:58
+was added to finals-2021 by pspaul.
+
+taintedcheese  09:00
+Additional Clarification: You are allowed to turn off or otherwise modify the CDH COMM app in the process of exploitation of other teams for Challenge 5.
+
+Joshua Christman  09:00
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+so to be clear, is operating at the packet limit (1 per second) considered spamming or not?
+View newer replies
+09:01
+I'm just trying to get a feel for the intent here...
+
+taintedcheese  09:04
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+Posted earlier: "You are allowed to test exploits against other team's cdh every minute."
+View newer replies
+
+Nico Gründel  09:05
+Damn, front running in a ctf. We arbitrageurs now?
+:joy:
+1
+
+
+taintedcheese  09:11
+Clarification: SLA scoring for team X's CDH is scored from the output of the SLA_TLM app.
+:thinking_face:
+1
+
+
+Joshua Christman  09:31
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+that's not really my question. It seems that you are going to assign points "based on the majority for each round". If we write our attribution key once per second with a successful exploit (no crash), is that considered spamming?
+:+1:
+1
+
+View newer replies
+
+taintedcheese  09:37
+replied to a thread:
+can you clarify this? It feels very KotH to be overwriting a value that every team is trying to overwrite. Will we be getting credit each round or is it only when whatever checker you guys have checks?
+To fix this, we will change the algorithm to score if your key was recorded in telemetry at least once that round. Thank you for the discussion and questions!
+:clap:
+1
+
+
+Joshua Christman  09:38
+Thanks! That's much less confusing
+09:42
+Scoreboard dark for last 3 hours?
+09:42
+everybody's score is 31337
+
+taintedcheese  09:45
+Scoreboards should be dark from this point onwards.
+:+1:
+1
+:-1:
+3
+
+
+redford  09:46
+pleeeease, include such things in the rules in the future
+
+Joshua Christman  09:47
+RIP my pretty graphs...
+
+Aris  09:47
+Was to be expected, but tbh we've been in the dark on the impact of chall5 on team's progress anyway.
+
+redford  09:47
+yeah
+09:47
+but at least we saw SLA there
+09:48
+now we don't even know if we aren't losing points for SLA, as the orgas said that these green/red images on the dashboard aren't 1-1 correlated with SLA
+
+taintedcheese  09:53
+We understand the problem. The data points we use for scoring for challenges have been discussed in this chat.
+
+redford  09:56
+Was to be expected
+how can you expect this if this wasn't announced anywhere before the fact? :confused:
+
+pspaul  09:57
+scoreboard json had a field for masking :shrug:
+
+Aris  09:59
+They hid the scoreboard last year too and that's the usual practice for defcon CTF too.
+
+redford  09:59
+but last year's finals had a very different formula
+10:01
+and players shouldn't need to guess the rules from past organizers' CTF history
+
+taintedcheese  10:54
+Announcement: Releasing Challenge 6 at 8:20 AM PST (edited) 
+10:55
+It previously read 7:20, I meant 8:20, so we will be releasing the challenge around 25 minutes from now.
+
+Joshua Christman  10:56
+image.png 
+image.png
+
+
+:spider_web:
+1
+:seven:
+2
+
+
+SirGoon  11:11
+image.png 
+image.png
+
+
+:100:
+1
+
+
+taintedcheese  11:15
+Pause in API server for a second, standby
+11:15
+Should be back up now
+
+kauzu  11:25
+image.png 
+image.png
+
+
+:monkey_face:
+2
+:monkey:
+2
+
+
+taintedcheese  11:25
+Challenge 6 is up! Additional ports are enabled on the API server, 1341-1348 and 1361-1368, corresponding to your team
+11:27
+Many team's cdh are not reporting telemetry, attempting restarts with space tug reset button (for just the cdh) on those teams who no longer have telemetry
+
+taintedcheese  11:47
+Challenge 6 is scored based on flag submission every round.
+
+b2xiao  11:56
+wow
+11:57
+y'know, it would've been absolutely wonderful to get some sense of scheduling
+
+redford  11:58
+@b2xiao seems 2 minutes notice wasn't enough for you also? :slightly_smiling_face:
+
+taintedcheese  11:58
+Seeing an awful number of what seems to be DOSes for challenge 5...
+12:00
+Challenge 6 was enabled on the API server, also called the raw telemetry server. It was not enabled on the User segment server.
+12:01
+Challengers do not have access to their own API server...
+
+SirGoon  12:02
+First blood on Challenge 6!
+:tada:
+4
+
+
+taintedcheese  12:06
+At this point, there is no plan for releasing challenge 7. All the challenges that have been released and are live right now are how it's going to stay for the rest of the game.
+12:06
+Good luck in power hour!
+
+defund  12:06
+every tick is six minutes, yes?
+
+SirGoon  12:06
+Each round is 6 minutes
+
+defund  12:08
+pog
+:parking:
+1
+:o:
+1
+:ng:
+1
+
+
+taintedcheese  12:18
+Challenge 6 is not patchable. It is only an attack-type challenge.
+
+taintedcheese  12:25
+Port 136X on your respective challenge 6 containers is accessible from your cosmos machines, but is not opened by the default software running in the container.
+:mag_right:
+1
+
+
+SirGoon  12:54
+https://www.youtube.com/watch?v=gR21pW66klY&list=RDgR21pW66klY&start_radio=1
+
+Aris  12:55
+Just to confirm: challenges stop in ~5 min, closing ceremony with results in 1 hour ?
+
+taintedcheese  12:55
+You will lose access in ~5 min.
+
+SirGoon  12:58
+Get those flags in!
+
+
+defund  13:00
+gg
+
+pspaul  13:00
+gg
+
+RuGo  13:00
+Just came online. When does the CTF start?
+:rolling_on_the_floor_laughing:
+4
+
+
+taintedcheese  13:00
+Thanks for participating teams
+
+Irsyad Hanif  13:00
+gg
+
+SirGoon  13:00
+GG Teams!
+
+Peace-Maker  13:01
+gg
+
+nafod (PFS)  13:01
+gg
+
+xm  13:01
+thanks for the organization! we did have fun again this year, thanks a lot!
+
+Aris  13:01
+gg everyone
+
+Joshua Christman  13:02
+gg teams
+
+hgarrereyn  13:04
+gg
+
+spq  13:09
+gg
+
+Gina  13:13
+Can you tell us again when the closing ceremony will start? Including the timezone? We are discussing what to eat :joy:
+
+taintedcheese  13:18
+The broadcast should start at 11:00 PST, and around 12:30 PST is the awards announcements, to the best of my knowledge
+
+Gina  13:20
+thx
+
+xm  14:10
+we thought we'd get points by solving with other team's keys :smile: did not turn out well
+
+Aris  14:15
+image.png 
+image.png
+
+
+:brain:
+1
+
+
+Stayotta Mispace  14:24
+If you watch the live show now the organizers are discussing the challenges
+14:24
+Hackasat.com
+
+RuGo  14:29
+Fake news in the stream... We weren't added to the Slack 
+finals-2021 channel until after that....
+:rolled_up_newspaper:
+1
+
+
+vito  14:29
+and i think there's an AMA planned, if you want to post questions on twitter https://twitter.com/search?q=HAS2FinalsAMA&f=live
+
+twitter.comtwitter.com
+HAS2FinalsAMA - Twitter Search
+The latest Tweets on HAS2FinalsAMA. Read what people are saying and join the conversation.
+
+vito  15:04
+Ok I no longer think there's an AMA planned
+
+redford  15:15
+what was the intended exploit for the stack BOF in chall5?
+
+
+
+
+17 replies
+Last reply 6 days agoView thread
+
+RuGo  15:34
+Tell Jeff to please go inside or stop flexing his nostrils
+:dash:
+1
+:joy:
+1
+
+
+Aris  15:41
+:clap:
+
+ALLES CTF  15:42
+So whats the final scoreboard?
+
+defund  15:42
+:tada:
+
+RuGo  15:42
+Could we get the final scores?
+image.png 
+image.png
+
+
+15:42
+gz to the winners (edited) 
+
+defund  15:48
+if it's possible for us to get the scoreboard on here: http://www.robottech.org/HaS2/HaS2-scoreboard/version3/ as well
+15:48
+that would be super cool
+
+vito  15:52
+https://finals.2021.hackasat.com/
+
+RuGo  15:56
+With access to the Slack we might have 200 points more next year :stuck_out_tongue:
+image.png 
+image.png
+
+
+
+f0xtr0t  16:03
+I'm genuinely curious about why the #announcements channel was not used to announce things to the teams; would've prevented the "some teams didn't get announcements" problem that happened and also wouldn't have required folks to manually relay messages over to the rest of the team. Maybe something I'm missing? (edited) 
+:point_up_2:
+2
+
+
+redford  16:25
+replied to a thread:
+what was the intended exploit for the stack BOF in chall5?
+anyone? ^
+View newer replies
+
+redford  21:15
+replied to a thread:
+what was the intended exploit for the stack BOF in chall5?
+Hmm, but we tried this vector with a lot of "a" letters and it didn't even crash the app. Any idea what we could do different than you?
+View newer replies
+
+redford  21:21
+replied to a thread:
+what was the intended exploit for the stack BOF in chall5?
+also, didn't it allow to overwrite only one stack frame? so, I guess you needed a pivot gadget to do more?
+View newer replies
+
+spq  02:00
+to organizers: we wrote some messages in our team chat and highlighted some of you, would be great if you could have a look, we would appreciate feedback...
+
+Jordan Wiens:has2:  06:49
+I think folks are traveling and taking a few days to recover but I'm sure folks will follow up.
+
+
+2 replies
+Last reply 3 days agoView thread
+
+redford  08:26
+replied to a thread:
+what was the intended exploit for the stack BOF in chall5?
+@Manuel Vögele How did you manage to run this app on the twin? We got some obscure errors when trying to do so
+View newer replies
+
+redford  08:32
+replied to a thread:
+what was the intended exploit for the stack BOF in chall5?
+We'd be very glad if you could ask him how he did this, because we surrendered at this ;)
+View newer replies
+
+Diff-fusion  08:59
+was added to finals-2021 by Manuel Vögele.
+
+RuGo  06:34
+replied to a thread:
+I think folks are traveling and taking a few days to recover but I'm sure folks will follow up.
+Gotta say, that's really unprofessional to ghost us now.
+View newer replies
+06:38
+I'll post it here, since there might be Orga members who don't have access to our team channel.
+--
+We're pretty unhappy about the small distance to #3 (~200 points, 70753 to 70512) considering we were not receiving any announcements for the first nearly 3h of the game. Also we lost about 1.5h of time on the client binary as we were not informed that a new file was dropped. We also were not informed about the availability of the solution scripts for challenge 1 and 2. Was that a mistake on the organizers side? If so, will it be compensated for?
+Also, the rules say nothing about a private finals channel:
+In addition, HAS2 organizers and teams will be able to communicate informally through the
+spacesecuritychall.slack.com workspace. HAS2 organizers will set up separate private channels
+for communications between HAS2 organizers and each team, as well as public channels for
+communications between HAS2 organizers and all teams, specific to both the HAS2
+Qualification Event and Final Event.
+So there was really no way for us to find out that there is information missing.
+This is a pickle and we understand that there is probably no perfect solution to solve it. However, one of the main critiques seems to be that the organizers simply do not respond to questions/critisism/requests. This also happend to us when we tried to reach orga in the first 3h of the competition. So we'd appreciate it if somebody would at least reply to us... (edited) 
+:+1:
+2
+
+06:41
+Feel free to reply in a PM or our teams channel
+
+sc  18:14
+was added to finals-2021 by OB1.
