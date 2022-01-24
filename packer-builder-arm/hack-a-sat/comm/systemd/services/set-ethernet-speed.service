@@ -1,0 +1,8 @@
+[Unit]
+Description=Set Ethernet Speed to 100BaseTX on Boot
+
+[Service]
+ExecStart=/usr/local/sbin/set-ethernet-speed.sh
+
+[Install]
+WantedBy=network-online.target

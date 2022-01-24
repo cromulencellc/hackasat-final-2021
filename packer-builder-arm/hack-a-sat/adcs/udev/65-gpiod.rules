@@ -1,0 +1,1 @@
+KERNEL=="gpiochip[0-5]", SUBSYSTEM=="gpio", MODE="0660" GROUP="gpiod"

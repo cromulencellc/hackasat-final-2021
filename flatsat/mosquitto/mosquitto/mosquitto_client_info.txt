@@ -1,0 +1,15 @@
+# Connection URLs
+
+From Streamsheets and Management Center:
+- mqtt://mosquitto:1883
+From external:
+- mqtt://localhost:1883
+- mqtt://<host-ip>:1883
+- mqtt://<host-hostname>:1883
+
+# Default Clients
+
+## Admin Client
+Client with full access rights for use with Management Center.
+username: cedalo
+password: S37Lbxcyvo

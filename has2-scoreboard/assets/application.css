@@ -1,0 +1,4735 @@
+/* line 3, appstylesheets/_color_configuration.sass */
+
+html,
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* line 7, appstylesheets/_color_configuration.sass */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #3faaaf;
+}
+
+
+/* line 10, appstylesheets/_color_configuration.sass */
+
+a:hover {
+    color: #84bb41;
+}
+
+
+/* line 13, appstylesheets/_color_configuration.sass */
+
+header {
+    background-color: #fb00ff;
+    color: black;
+}
+
+
+/* line 18, appstylesheets/_color_configuration.sass */
+
+section #content div.content,
+section #flashes div.content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* line 21, appstylesheets/_color_configuration.sass */
+
+footer {
+    background-color: #fff30a;
+    color: black;
+}
+
+
+/* line 25, appstylesheets/_color_configuration.sass */
+
+strong {
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 6, appstylesheets/_font_configuration.sass */
+
+tt,
+fixed,
+pre,
+code {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 9, appstylesheets/_font_configuration.sass */
+
+html,
+body,
+input[type='submit'],
+button {
+    font-family: Montserrat, Helvetica, Arial;
+}
+
+
+/* line 12, appstylesheets/_font_configuration.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, Helvetica, Arial;
+    font-weight: normal;
+}
+
+
+/* line 16, appstylesheets/_font_configuration.sass */
+
+.advisory,
+.advisory th {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 16, appstylesheets/_font_configuration.sass */
+    .advisory,
+    .advisory th {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 6, appstylesheets/_font_configuration.sass */
+
+tt,
+fixed,
+pre,
+code {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 9, appstylesheets/_font_configuration.sass */
+
+html,
+body,
+input[type='submit'],
+button {
+    font-family: Montserrat, Helvetica, Arial;
+}
+
+
+/* line 12, appstylesheets/_font_configuration.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, Helvetica, Arial;
+    font-weight: normal;
+}
+
+
+/* line 16, appstylesheets/_font_configuration.sass */
+
+.advisory,
+.advisory th {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 16, appstylesheets/_font_configuration.sass */
+    .advisory,
+    .advisory th {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+}
+
+
+/* line 5, appstylesheets/_content.sass */
+
+#content h1 {
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem 0.25rem;
+}
+
+
+/* line 10, appstylesheets/_content.sass */
+
+#content h2 {
+    background-color: #205558;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* line 15, appstylesheets/_content.sass */
+
+#content h2.confirm {
+    background-color: #425e21;
+}
+
+
+/* line 19, appstylesheets/_content.sass */
+
+#content .question h1 {
+    background-color: #827ab9;
+}
+
+
+/* line 21, appstylesheets/_content.sass */
+
+#content .question h2 {
+    background-color: #3b3565;
+}
+
+
+/* line 24, appstylesheets/_content.sass */
+
+#content .question p code {
+    border-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_content.sass */
+
+#content .question a:link,
+#content .question a:visited,
+#content .question a:hover {
+    color: #827ab9;
+}
+
+
+/* line 32, appstylesheets/_content.sass */
+
+#content .question a:link,
+#content .question a:visited,
+#content .question a:hover {
+    color: #b3abee;
+}
+
+
+/* line 35, appstylesheets/_content.sass */
+
+#content .question strong a:link,
+#content .question strong a:visited,
+#content .question strong a:hover {
+    color: #fff30a;
+}
+
+
+/* line 19, appstylesheets/_content.sass */
+
+#content .danger h1 {
+    background-color: #fb00ff;
+}
+
+
+/* line 21, appstylesheets/_content.sass */
+
+#content .danger h2 {
+    background-color: #7e0080;
+}
+
+
+/* line 24, appstylesheets/_content.sass */
+
+#content .danger p code {
+    border-color: #fb00ff;
+}
+
+
+/* line 26, appstylesheets/_content.sass */
+
+#content .danger a:link,
+#content .danger a:visited,
+#content .danger a:hover {
+    color: #fb00ff;
+}
+
+
+/* line 19, appstylesheets/_content.sass */
+
+#content .confirm h1 {
+    background-color: #84bb41;
+}
+
+
+/* line 21, appstylesheets/_content.sass */
+
+#content .confirm h2 {
+    background-color: #425e21;
+}
+
+
+/* line 24, appstylesheets/_content.sass */
+
+#content .confirm p code {
+    border-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_content.sass */
+
+#content .confirm a:link,
+#content .confirm a:visited,
+#content .confirm a:hover {
+    color: #84bb41;
+}
+
+
+/* line 45, appstylesheets/_content.sass */
+
+#content table#timetable .epoch {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+    text-align: right;
+}
+
+
+/* line 1, appstylesheets/_layout.sass */
+
+html {
+    height: 100%;
+}
+
+
+/* line 4, appstylesheets/_layout.sass */
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+
+/* line 10, appstylesheets/_layout.sass */
+
+header {
+    font-size: 1.5rem;
+    padding: 0;
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+}
+
+
+/* line 16, appstylesheets/_layout.sass */
+
+header h1,
+header h2 {
+    margin: 0.25rem 0;
+}
+
+
+/* line 19, appstylesheets/_layout.sass */
+
+section {
+    z-index: 0;
+    padding: 0;
+    padding: 0 env(safe-area-inset-left) 0 env(safe-area-inset-right);
+}
+
+
+/* line 23, appstylesheets/_layout.sass */
+
+section #content,
+section #flashes {
+    z-index: 1;
+    padding: 1rem;
+}
+
+
+/* line 26, appstylesheets/_layout.sass */
+
+section #hacker {
+    z-index: -1;
+}
+
+
+/* line 29, appstylesheets/_layout.sass */
+
+footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0;
+    padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+}
+
+
+/* line 37, appstylesheets/_layout.sass */
+
+footer ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* line 42, appstylesheets/_layout.sass */
+
+footer ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+/* line 45, appstylesheets/_layout.sass */
+
+footer ul li img {
+    max-height: 3rem;
+    height: 100%;
+    width: auto;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+a.btn[type='submit'],
+a.btn:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+a.btn:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+a.btn:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.confirm:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.confirm:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.confirm:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.cancel:link {
+    border-color: #fff30a;
+    background-color: #fff30a;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.cancel:visited {
+    border-color: #fff30a;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.cancel:hover {
+    background-color: #fff985;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.question:link {
+    border-color: #827ab9;
+    background-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.question:visited {
+    border-color: #827ab9;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.question:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+input[type='submit'][type='submit'],
+input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+input[type='submit']:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+input[type='submit']:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 45, appstylesheets/_button.sass */
+
+input.confirm[type='submit'] {
+    background-color: #84bb41;
+    border-color: #84bb41;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 50, appstylesheets/_button.sass */
+
+button {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+button[type='submit'],
+button:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+button:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+button:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 53, appstylesheets/_button.sass */
+
+button.question {
+    border: 1px solid #827ab9;
+    border-radius: 0.25rem;
+    background-color: #827ab9;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 56, appstylesheets/_button.sass */
+
+input.confirm {
+    background-color: #212f10;
+    border-color: #84bb41;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 4, appstylesheets/_form.sass */
+
+form:not(.button_to) {
+    display: grid;
+    grid-template-columns: 16rem 16rem auto;
+    grid-gap: 0.25rem 0.25rem;
+    grid-auto-rows: auto-fill;
+}
+
+
+/* line 10, appstylesheets/_form.sass */
+
+form.search:not(.button_to) {
+    grid-template-columns: auto auto auto;
+}
+
+
+/* line 12, appstylesheets/_form.sass */
+
+form.search:not(.button_to) input {
+    grid-column: auto;
+}
+
+
+/* line 15, appstylesheets/_form.sass */
+
+form.search:not(.button_to) explanation {
+    grid-column: 3;
+}
+
+
+/* line 19, appstylesheets/_form.sass */
+
+form.mostly_radio:not(.button_to) label {
+    grid-column: 1 / span 2;
+}
+
+
+/* line 22, appstylesheets/_form.sass */
+
+form:not(.button_to) .errors {
+    grid-column: 1 / span 3;
+}
+
+
+/* line 25, appstylesheets/_form.sass */
+
+form:not(.button_to) label,
+form:not(.button_to) .fake-label {
+    grid-column: 1;
+    align-self: center;
+}
+
+
+/* line 29, appstylesheets/_form.sass */
+
+form:not(.button_to) input,
+form:not(.button_to) select,
+form:not(.button_to) textarea {
+    grid-column: 2;
+    align-self: center;
+    height: 1.5rem;
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+    font-family: Montserrat, Helvetica, Arial;
+    padding: 0.25rem;
+}
+
+
+/* line 42, appstylesheets/_form.sass */
+
+form:not(.button_to) input[type='submit'],
+form:not(.button_to) select[type='submit'],
+form:not(.button_to) textarea[type='submit'] {
+    height: 2.5rem;
+}
+
+
+/* line 45, appstylesheets/_form.sass */
+
+form:not(.button_to) input[type='file'],
+form:not(.button_to) select[type='file'],
+form:not(.button_to) textarea[type='file'] {
+    font-size: 0.8rem;
+}
+
+
+/* line 48, appstylesheets/_form.sass */
+
+form:not(.button_to) input.big,
+form:not(.button_to) select.big,
+form:not(.button_to) textarea.big {
+    grid-column: 2 / span 2;
+}
+
+
+/* line 51, appstylesheets/_form.sass */
+
+form:not(.button_to) .multi {
+    grid-column: 2;
+}
+
+
+/* line 53, appstylesheets/_form.sass */
+
+form:not(.button_to) .multi input,
+form:not(.button_to) .multi select,
+form:not(.button_to) .multi textarea {
+    display: inline-block;
+}
+
+
+/* line 57, appstylesheets/_form.sass */
+
+form:not(.button_to) select {
+    height: 2rem;
+}
+
+
+/* line 59, appstylesheets/_form.sass */
+
+form:not(.button_to) textarea {
+    height: 4rem;
+}
+
+
+/* line 62, appstylesheets/_form.sass */
+
+form:not(.button_to) .checkbox {
+    grid-column: 1 / span 2;
+}
+
+
+/* line 65, appstylesheets/_form.sass */
+
+form:not(.button_to) .explanation {
+    grid-column: 3;
+    align-self: center;
+    padding-left: 0.25rem;
+}
+
+
+/* line 70, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset {
+    grid-column: 1 / span 3;
+    display: grid;
+    border: none;
+    padding: 0;
+    margin: 0;
+    grid-template-areas: "legend field-first explain" "legend field-rest explain";
+    grid-template-columns: 16rem 16rem auto;
+    grid-gap: 0.25rem 0.25rem;
+    grid-auto-rows: 1fr;
+}
+
+
+/* line 80, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset.no-legend {
+    grid-template-areas: "field-first explain" "field-rest explain";
+    grid-template-columns: 16rem auto;
+}
+
+
+/* line 84, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset .legend {
+    grid-area: legend;
+    align-self: center;
+}
+
+
+/* line 88, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset label:first-of-type {
+    grid-area: field-first;
+}
+
+
+/* line 91, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset label {
+    grid-area: field-rest;
+}
+
+
+/* line 94, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset .explanation {
+    grid-area: explain;
+}
+
+
+/* line 97, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset input {
+    display: inline;
+}
+
+
+/* line 99, appstylesheets/_form.sass */
+
+form:not(.button_to) .fieldset input[type='radio'] {
+    vertical-align: text-bottom;
+}
+
+
+/* line 3, appstylesheets/_color_configuration.sass */
+
+html,
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* line 7, appstylesheets/_color_configuration.sass */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #3faaaf;
+}
+
+
+/* line 10, appstylesheets/_color_configuration.sass */
+
+a:hover {
+    color: #84bb41;
+}
+
+
+/* line 13, appstylesheets/_color_configuration.sass */
+
+header {
+    background-color: #fb00ff;
+    color: black;
+}
+
+
+/* line 18, appstylesheets/_color_configuration.sass */
+
+section #content div.content,
+section #flashes div.content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* line 21, appstylesheets/_color_configuration.sass */
+
+footer {
+    background-color: #fff30a;
+    color: black;
+}
+
+
+/* line 25, appstylesheets/_color_configuration.sass */
+
+strong {
+    font-weight: bold;
+}
+
+
+/* line 3, appstylesheets/_prose.sass */
+
+p {
+    line-height: 1.5em;
+}
+
+
+/* line 6, appstylesheets/_prose.sass */
+
+code {
+    border: 1px dotted #9bd8db;
+    padding: 0.2rem;
+}
+
+
+/* line 3, appstylesheets/_revelation.sass */
+
+.unrevelation,
+.revelation {
+    display: inline-block;
+    width: 20rem;
+    border: 4px dashed #827ab9;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* line 2, appstylesheets/_table.sass */
+
+#content table th,
+#content table td {
+    padding: 0.5rem;
+}
+
+
+/* line 5, appstylesheets/_table.sass */
+
+#content table thead th {
+    text-align: left;
+}
+
+
+/* line 1, appstylesheets/_qr.sass */
+
+svg#qr {
+    background-color: white;
+    border: 1rem solid white;
+    max-width: 16rem;
+    max-height: 16rem;
+}
+
+
+/* line 4, appstylesheets/_flash.sass */
+
+#flashes .flash {
+    border: 0.25rem solid #3faaaf;
+}
+
+
+/* line 8, appstylesheets/_flash.sass */
+
+#flashes .flash.error {
+    border-color: #fb00ff;
+    padding: 0.3rem;
+}
+
+
+/* line 11, appstylesheets/_flash.sass */
+
+#flashes .flash.error:before {
+    content: "Error: ";
+    color: black;
+    background-color: #fb00ff;
+    margin: -0.5rem 1rem -0.5rem -0.5rem;
+    padding: 0.5rem;
+    font-weight: 800;
+}
+
+
+/* line 8, appstylesheets/_flash.sass */
+
+#flashes .flash.alert {
+    border-color: #fff30a;
+    padding: 0.3rem;
+}
+
+
+/* line 11, appstylesheets/_flash.sass */
+
+#flashes .flash.alert:before {
+    content: "Alert: ";
+    color: black;
+    background-color: #fff30a;
+    margin: -0.5rem 1rem -0.5rem -0.5rem;
+    padding: 0.5rem;
+    font-weight: 800;
+}
+
+
+/* line 8, appstylesheets/_flash.sass */
+
+#flashes .flash.success {
+    border-color: #84bb41;
+    padding: 0.3rem;
+}
+
+
+/* line 11, appstylesheets/_flash.sass */
+
+#flashes .flash.success:before {
+    content: "Success: ";
+    color: black;
+    background-color: #84bb41;
+    margin: -0.5rem 1rem -0.5rem -0.5rem;
+    padding: 0.5rem;
+    font-weight: 800;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+a.btn[type='submit'],
+a.btn:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+a.btn:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+a.btn:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.confirm:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.confirm:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.confirm:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.cancel:link {
+    border-color: #fff30a;
+    background-color: #fff30a;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.cancel:visited {
+    border-color: #fff30a;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.cancel:hover {
+    background-color: #fff985;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.question:link {
+    border-color: #827ab9;
+    background-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.question:visited {
+    border-color: #827ab9;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.question:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+input[type='submit'][type='submit'],
+input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+input[type='submit']:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+input[type='submit']:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 45, appstylesheets/_button.sass */
+
+input.confirm[type='submit'] {
+    background-color: #84bb41;
+    border-color: #84bb41;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 50, appstylesheets/_button.sass */
+
+button {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+button[type='submit'],
+button:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+button:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+button:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 53, appstylesheets/_button.sass */
+
+button.question {
+    border: 1px solid #827ab9;
+    border-radius: 0.25rem;
+    background-color: #827ab9;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 56, appstylesheets/_button.sass */
+
+input.confirm {
+    background-color: #212f10;
+    border-color: #84bb41;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 6, appstylesheets/_font_configuration.sass */
+
+tt,
+fixed,
+pre,
+code {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 9, appstylesheets/_font_configuration.sass */
+
+html,
+body,
+input[type='submit'],
+button {
+    font-family: Montserrat, Helvetica, Arial;
+}
+
+
+/* line 12, appstylesheets/_font_configuration.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, Helvetica, Arial;
+    font-weight: normal;
+}
+
+
+/* line 16, appstylesheets/_font_configuration.sass */
+
+.advisory,
+.advisory th {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 16, appstylesheets/_font_configuration.sass */
+    .advisory,
+    .advisory th {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+}
+
+
+/* line 7, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index header {
+    font-size: 2rem;
+}
+
+
+/* line 9, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index header h1,
+.con-homepage.act-index header h2 {
+    margin: 0.25rem 0;
+}
+
+
+/* line 12, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index .invitation {
+    padding-right: 1rem;
+}
+
+
+/* line 16, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index .invitation strong a:link,
+.con-homepage.act-index .invitation strong a:visited,
+.con-homepage.act-index .invitation strong a:hover {
+    color: #fff30a;
+}
+
+
+/* line 20, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index .invitation table#timetable .epoch {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+    text-align: right;
+}
+
+
+/* line 24, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div {
+    padding-bottom: 1rem;
+}
+
+
+/* line 26, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div h1 {
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem 0.25rem;
+}
+
+
+/* line 30, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div div {
+    padding: 0 0.25rem;
+}
+
+
+/* line 34, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div.new h1 {
+    background-color: #84bb41;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.new a.btn:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.new a.btn:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.new a.btn:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 40, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div.forgot h1 {
+    background-color: #827ab9;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.forgot a.btn:link {
+    border-color: #827ab9;
+    background-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.forgot a.btn:visited {
+    border-color: #827ab9;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.forgot a.btn:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 46, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div.login h1 {
+    background-color: #3faaaf;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.login a.btn:link {
+    border-color: #3faaaf;
+    background-color: #3faaaf;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.login a.btn:visited {
+    border-color: #3faaaf;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.login a.btn:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 52, appstylesheets/_homepage.sass */
+
+.con-homepage.act-index #content .actions>div.public-stuff h1 {
+    background-color: #fb00ff;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.public-stuff a.btn:link {
+    border-color: #fb00ff;
+    background-color: #fb00ff;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.public-stuff a.btn:visited {
+    border-color: #fb00ff;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.con-homepage.act-index #content .actions>div.public-stuff a.btn:hover {
+    background-color: #fd80ff;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 58, appstylesheets/_homepage.sass */
+    .con-homepage.act-index #content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+a.btn[type='submit'],
+a.btn:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+a.btn:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+a.btn:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.confirm:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.confirm:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.confirm:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.cancel:link {
+    border-color: #fff30a;
+    background-color: #fff30a;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.cancel:visited {
+    border-color: #fff30a;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.cancel:hover {
+    background-color: #fff985;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.question:link {
+    border-color: #827ab9;
+    background-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.question:visited {
+    border-color: #827ab9;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.question:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+input[type='submit'][type='submit'],
+input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+input[type='submit']:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+input[type='submit']:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 45, appstylesheets/_button.sass */
+
+input.confirm[type='submit'] {
+    background-color: #84bb41;
+    border-color: #84bb41;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 50, appstylesheets/_button.sass */
+
+button {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+button[type='submit'],
+button:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+button:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+button:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 53, appstylesheets/_button.sass */
+
+button.question {
+    border: 1px solid #827ab9;
+    border-radius: 0.25rem;
+    background-color: #827ab9;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 56, appstylesheets/_button.sass */
+
+input.confirm {
+    background-color: #212f10;
+    border-color: #84bb41;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 6, appstylesheets/_font_configuration.sass */
+
+tt,
+fixed,
+pre,
+code {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 9, appstylesheets/_font_configuration.sass */
+
+html,
+body,
+input[type='submit'],
+button {
+    font-family: Montserrat, Helvetica, Arial;
+}
+
+
+/* line 12, appstylesheets/_font_configuration.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, Helvetica, Arial;
+    font-weight: normal;
+}
+
+
+/* line 16, appstylesheets/_font_configuration.sass */
+
+.advisory,
+.advisory th {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 16, appstylesheets/_font_configuration.sass */
+    .advisory,
+    .advisory th {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+}
+
+
+/* line 7, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content,
+.con-users.act-show #content {
+    padding: 0 0.5rem 0.5rem;
+}
+
+
+/* line 11, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .join_team h1,
+.con-users.act-show #content .join_team h1 {
+    background-color: #827ab9;
+}
+
+
+/* line 13, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .join_team input,
+.con-users.act-show #content .join_team input {
+    border-color: #827ab9;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .join_team input[type='submit'][type='submit'],
+.con-dashboard.act-index #content .join_team input[type='submit']:link,
+.con-users.act-show #content .join_team input[type='submit'][type='submit'],
+.con-users.act-show #content .join_team input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .join_team input[type='submit']:visited,
+.con-users.act-show #content .join_team input[type='submit']:visited {
+    color: black;
+    border-color: #827ab9;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .join_team input[type='submit']:hover,
+.con-users.act-show #content .join_team input[type='submit']:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 19, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .create_team h1,
+.con-users.act-show #content .create_team h1 {
+    background-color: #84bb41;
+}
+
+
+/* line 22, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .create_team input,
+.con-users.act-show #content .create_team input {
+    border-color: #84bb41;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .create_team input[type='submit'][type='submit'],
+.con-dashboard.act-index #content .create_team input[type='submit']:link,
+.con-users.act-show #content .create_team input[type='submit'][type='submit'],
+.con-users.act-show #content .create_team input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .create_team input[type='submit']:visited,
+.con-users.act-show #content .create_team input[type='submit']:visited {
+    color: black;
+    border-color: #84bb41;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .create_team input[type='submit']:hover,
+.con-users.act-show #content .create_team input[type='submit']:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 27, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .account_options,
+.con-users.act-show #content .account_options {
+    margin: 1rem 0 2rem;
+}
+
+
+/* line 29, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .account_options a,
+.con-users.act-show #content .account_options a {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .account_options a[type='submit'],
+.con-dashboard.act-index #content .account_options a:link,
+.con-users.act-show #content .account_options a[type='submit'],
+.con-users.act-show #content .account_options a:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .account_options a:visited,
+.con-users.act-show #content .account_options a:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+.con-dashboard.act-index #content .account_options a:hover,
+.con-users.act-show #content .account_options a:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 34, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content .countdown h1,
+.con-users.act-show #content .countdown h1 {
+    background-color: #fff30a;
+}
+
+
+/* line 37, appstylesheets/_dashboard.sass */
+
+.con-dashboard.act-index #content h1#rules,
+.con-users.act-show #content h1#rules {
+    background-color: #fb00ff;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+a.btn[type='submit'],
+a.btn:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+a.btn:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+a.btn:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.confirm:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.confirm:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.confirm:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.cancel:link {
+    border-color: #fff30a;
+    background-color: #fff30a;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.cancel:visited {
+    border-color: #fff30a;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.cancel:hover {
+    background-color: #fff985;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+.btn.question:link {
+    border-color: #827ab9;
+    background-color: #827ab9;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+.btn.question:visited {
+    border-color: #827ab9;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+.btn.question:hover {
+    background-color: #c1bddc;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+input[type='submit'][type='submit'],
+input[type='submit']:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+input[type='submit']:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+input[type='submit']:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 45, appstylesheets/_button.sass */
+
+input.confirm[type='submit'] {
+    background-color: #84bb41;
+    border-color: #84bb41;
+}
+
+
+/* line 23, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:link {
+    border-color: #84bb41;
+    background-color: #84bb41;
+}
+
+
+/* line 26, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:visited {
+    border-color: #84bb41;
+}
+
+
+/* line 28, appstylesheets/_button.sass */
+
+input.confirm[type='submit']:hover {
+    background-color: #c2de9f;
+}
+
+
+/* line 50, appstylesheets/_button.sass */
+
+button {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+button[type='submit'],
+button:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+button:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+button:hover {
+    background-color: #9bd8db;
+}
+
+
+/* line 53, appstylesheets/_button.sass */
+
+button.question {
+    border: 1px solid #827ab9;
+    border-radius: 0.25rem;
+    background-color: #827ab9;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 56, appstylesheets/_button.sass */
+
+input.confirm {
+    background-color: #212f10;
+    border-color: #84bb41;
+}
+
+
+/* line 4, appstylesheets/_jarmandy.sass */
+
+body.admin {
+    padding: 1rem;
+    grid-template-rows: auto auto 1fr;
+    background-color: #091a1a;
+}
+
+
+/* line 8, appstylesheets/_jarmandy.sass */
+
+body.admin>nav {
+    background-color: #3faaaf;
+    color: black;
+    font-weight: 600;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 1rem;
+}
+
+
+/* line 14, appstylesheets/_jarmandy.sass */
+
+body.admin>nav h1,
+body.admin>nav h2 {
+    margin: 0;
+}
+
+
+/* line 17, appstylesheets/_jarmandy.sass */
+
+body.admin>nav ul.main li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* line 20, appstylesheets/_jarmandy.sass */
+
+body.admin>nav ul.main li a:link,
+body.admin>nav ul.main li a:visited,
+body.admin>nav ul.main li a:hover {
+    color: black;
+    border: none;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+/* line 25, appstylesheets/_jarmandy.sass */
+
+body.admin #admin_content {
+    padding-bottom: 2rem;
+}
+
+
+/* line 28, appstylesheets/_jarmandy.sass */
+
+body.admin nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* line 31, appstylesheets/_jarmandy.sass */
+
+body.admin nav ul li {
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+}
+
+
+/* line 34, appstylesheets/_jarmandy.sass */
+
+body.admin nav ul li a:link {
+    border: 1px solid #3faaaf;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 4px;
+}
+
+
+/* line 40, appstylesheets/_jarmandy.sass */
+
+body.admin ul.pagination {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+/* line 43, appstylesheets/_jarmandy.sass */
+
+body.admin ul.pagination li {
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+}
+
+
+/* line 14, appstylesheets/_button.sass */
+
+body.admin ul.pagination li a[type='submit'],
+body.admin ul.pagination li a:link {
+    border: 1px solid #3faaaf;
+    border-radius: 0.25rem;
+    background-color: #3faaaf;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/* line 16, appstylesheets/_button.sass */
+
+body.admin ul.pagination li a:visited {
+    color: black;
+    border-color: #3faaaf;
+}
+
+
+/* line 19, appstylesheets/_button.sass */
+
+body.admin ul.pagination li a:hover {
+    background-color: #9bd8db;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 50, appstylesheets/_jarmandy.sass */
+    body.admin {
+        grid-template-areas: "nav content .";
+        grid-template-columns: 1fr 4fr 1fr;
+        height: 100%;
+    }
+    /* line 55, appstylesheets/_jarmandy.sass */
+    body.admin>nav {
+        grid-area: nav;
+        margin-right: auto;
+        margin-bottom: -2rem;
+    }
+    /* line 60, appstylesheets/_jarmandy.sass */
+    body.admin>nav ul li {
+        display: block;
+    }
+    /* line 63, appstylesheets/_jarmandy.sass */
+    body.admin #admin_content {
+        grid-area: content;
+    }
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono"), url("FantasqueSansMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold"), url("FantasqueSansMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Italic"), url("FantasqueSansMono-Italic.woff2") format("woff2");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: local("Fantasque Sans Mono Bold Italic"), url("FantasqueSansMono-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black"), url("Montserrat-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Black Italic"), url("Montserrat-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold"), url("Montserrat-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Bold Italic"), url("Montserrat-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold"), url("Montserrat-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraBold Italic"), url("Montserrat-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight"), url("Montserrat-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat ExtraLight Italic"), url("Montserrat-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"), url("Montserrat-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Light"), url("Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat LightItalic"), url("Montserrat-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium"), url("Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Medium Italic"), url("Montserrat-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold"), url("Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat SemiBold Italic"), url("Montserrat-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin"), url("Montserrat-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Thin Italic"), url("Montserrat-ThinItalic-.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), url("Oswald-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald BoldItalic"), url("Oswald-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Demi-BoldItalic"), url("Oswald-Demi-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald DemiBold"), url("Oswald-DemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Extra-LightItalic"), url("Oswald-Extra-LightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald ExtraLight"), url("Oswald-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Heavy"), url("Oswald-Heavy.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald HeavyItalic"), url("Oswald-HeavyItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), url("Oswald-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald LightItalic"), url("Oswald-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Medium"), url("Oswald-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald MediumItalic"), url("Oswald-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), url("Oswald-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald RegularItalic"), url("Oswald-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* line 6, appstylesheets/_font_configuration.sass */
+
+tt,
+fixed,
+pre,
+code {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 9, appstylesheets/_font_configuration.sass */
+
+html,
+body,
+input[type='submit'],
+button {
+    font-family: Montserrat, Helvetica, Arial;
+}
+
+
+/* line 12, appstylesheets/_font_configuration.sass */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald, Helvetica, Arial;
+    font-weight: normal;
+}
+
+
+/* line 16, appstylesheets/_font_configuration.sass */
+
+.advisory,
+.advisory th {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 16, appstylesheets/_font_configuration.sass */
+    .advisory,
+    .advisory th {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+}
+
+
+/* line 4, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard {
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+
+/* line 9, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 6rem;
+    font-size: 1rem;
+}
+
+
+/* line 18, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-areas: "scoreboard";
+}
+
+
+/* line 28, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff table.teams {
+    border-collapse: collapse;
+    grid-area: scoreboard;
+    margin: 1em 0;
+}
+
+
+/* line 32, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff table.teams td,
+body.con-scoreboard .scoreboard-stuff table.teams th {
+    padding: 0.25em;
+}
+
+
+/* line 34, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits {
+    grid-area: orbits;
+    display: none;
+}
+
+
+/* line 37, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits text.timestamp {
+    font-size: 40px;
+    fill: #3faaaf;
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 41, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits .cubesat {
+    stroke: black;
+    stroke-width: 4px;
+}
+
+
+/* line 44, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team {
+    font-size: 60px;
+}
+
+
+/* line 46, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 0.7fr 0.7fr;
+}
+
+
+/* line 50, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid>div {
+    align-self: center;
+}
+
+
+/* line 52, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid .team-name {
+    grid-column: 1 / 2;
+}
+
+
+/* line 54, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid .score {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+    justify-self: end;
+    grid-column: 2 / 3;
+}
+
+
+/* line 58, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    list-style-type: none;
+    margin: 0;
+    font-size: 0.6em;
+    padding-left: 0;
+    color: #3faaaf;
+}
+
+
+/* line 66, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs:before {
+    content: 'Challenges:';
+}
+
+
+/* line 68, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs li {
+    display: inline-block;
+}
+
+
+/* line 70, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs li div {
+    display: inline-block;
+}
+
+
+/* line 72, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs li div.chall_id:after {
+    content: ':';
+}
+
+
+/* line 74, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid ol.challs li div.chall_score {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 76, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard .scoreboard-stuff #orbits foreignObject.team .teamgrid .orbit {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    font-size: 0.6em;
+    color: #3faaaf;
+}
+
+
+/* line 82, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard ol.challs {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+/* line 86, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard ol.challs li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+
+/* line 89, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard ol.challs li div {
+    display: inline-block;
+}
+
+
+/* line 91, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard ol.challs li div.chall_id:after {
+    content: ':';
+}
+
+
+/* line 93, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard ol.challs li div.chall_score {
+    font-family: "Fantasque Sans Mono", Menlo, Consolas, Courier;
+}
+
+
+/* line 96, appstylesheets/_scoreboard.sass */
+
+body.con-scoreboard #space {
+    display: none;
+}
+
+@media screen and (min-width: 80rem) {
+    /* line 100, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard .scoreboard-stuff {
+        grid-template-areas: "orbits .";
+        grid-template-columns: 2fr 1fr;
+    }
+    /* line 103, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard .scoreboard-stuff #orbits {
+        display: block;
+    }
+    /* line 105, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard .scoreboard-stuff table.teams {
+        display: none;
+    }
+    /* line 107, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard .scoreboard-stuff div.timestamp {
+        display: none;
+    }
+    /* line 109, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard #space {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    /* line 118, appstylesheets/_scoreboard.sass */
+    body.con-scoreboard #space #earth {
+        background: #3faaaf;
+        background: linear-gradient(90deg, #3faaaf 0%, #3faaaf 16%, #84bb41 17%, #84bb41 49%, #827ab9 50%, #827ab9 84%, #3faaaf 85%);
+        background-size: 1000% 100%;
+        animation: earth-pan 37s linear infinite;
+        position: fixed;
+        left: 0;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+    }
+    @keyframes earth-pan {
+        from {
+            background-position: 0% 50%;
+        }
+        to {
+            background-position: 100% 50%;
+        }
+    }
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-953tr {
+    border-left: 2px solid #31BE7E;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-953.orbit {
+    fill: #31BE7E;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-953.cubesat {
+    fill: #31BE7E;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-15tr {
+    border-left: 2px solid #FEEC2B;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-15.orbit {
+    fill: #FEEC2B;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-15.cubesat {
+    fill: #FEEC2B;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-248tr {
+    border-left: 2px solid #E92389;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-248.orbit {
+    fill: #E92389;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-248.cubesat {
+    fill: #E92389;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-955tr {
+    border-left: 2px solid #74FFE9;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-955.orbit {
+    fill: #74FFE9;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-955.cubesat {
+    fill: #74FFE9;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-1148tr {
+    border-left: 2px solid #9D91E4;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-1148.orbit {
+    fill: #9D91E4;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-1148.cubesat {
+    fill: #9D91E4;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-959tr {
+    border-left: 2px solid #9f9790;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-959.orbit {
+    fill: #9f9790;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-959.cubesat {
+    fill: #9f9790;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-22tr {
+    border-left: 2px solid #2673E2;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-22.orbit {
+    fill: #2673E2;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-22.cubesat {
+    fill: #2673E2;
+}
+
+
+/* line 6, appstylesheets/_teams.sass */
+
+.team-1625tr {
+    border-left: 2px solid #FF9405;
+}
+
+
+/* line 9, appstylesheets/_teams.sass */
+
+.team-1625.orbit {
+    fill: #FF9405;
+}
+
+
+/* line 12, appstylesheets/_teams.sass */
+
+.team-1625.cubesat {
+    fill: #FF9405;
+}

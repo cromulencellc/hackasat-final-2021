@@ -1,0 +1,107 @@
+"groupadd --gid 1000 adcs",
+"adduser --disabled-password --shell /bin/bash --uid 1000 --gid 1000 --add_extra_groups --gecos 'adcs' adcs",
+"usermod -aG sudo adcs",
+"echo 'adcs:HasDev123' | chpasswd", 
+"touch /home/adcs/.Xauthority",
+"chown adcs:adcs /home/adcs/.Xauthority",
+
+
+        "groupadd --gid 1000 comm",
+        "adduser --disabled-password --shell /bin/bash --uid 1000 --gid 1000 --add_extra_groups --gecos 'COMM' comm",
+        "usermod -aG sudo comm",
+        "echo 'comm:HasDev123' | chpasswd", 
+        "touch /home/comm/.Xauthority",
+        "chown comm:comm /home/comm/.Xauthority",
+
+
+    {
+        "type": "file",
+        "source": "hack-a-sat/adcs/packages/libgpiod-1.6.2-armhf.tar.gz",
+        "destination": "/tmp/packages/libgpiod-1.6.2-armhf.tar.gz"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz",
+      "destination": "/tmp/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz"
+  },
+    {
+      "type": "shell",
+      "inline": [
+        "tar -xf /tmp/packages/libgpiod-1.6.2-armhf.tar.gz -C /",
+        "tar -xf /tmp/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz -C /",
+        "rm -rf /tmp/packages"
+      ]
+  }
+
+
+      {
+      "type": "shell",
+      "inline": [
+        "cd /tmp && mkdir libgpiod && tar -xf /tmp/packages/libgpiod-1.6.2-armhf.tar.gz -C libgpiod && cp -r libgpiod/* /",
+        "cd /tmp && mkdir libiio && tar -xf /tmp/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz -C libiio && cp -r libiio/* /",
+        "rm -rf /tmp/packages /tmp/libgpiod /tmp/libiio"
+      ]
+    }
+
+
+            "cd /tmp && wget https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/snapshot/libgpiod-1.6.2.tar.gz && tar -xzf libgpiod-1.6.2.tar.gz",
+          "cd libgpiod-1.6.2 && ./autogen.sh --prefix=~/libgpiod ac_cv_func_malloc_0_nonnull=yes && make && make install",
+          "rm -rf /tmp/libgpiod-1.6.2",
+          "cd /tmp && git clone -b v0.21 https://github.com/analogdevicesinc/libiio.git && cd libiio && mkdir build && cd build && cmake ../ && make && sudo make install"
+
+
+
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/boot",
+      "destination": "/boot"
+    },
+
+{
+    "type": "file",
+    "source": "hack-a-sat/comm/cloud/cloud.cfg",
+    "destination": "/etc/cloud/cloud.cfg"
+  }
+
+
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/boot",
+      "destination": "/boot"
+    },
+
+./autogen.sh --enable-tools=yes --prefix=/home/adcs/libgpiod ac_cv_func_malloc_0_nonnull=yes && make && make install
+
+"systemctl enable adcs-startup.service",
+"chmod 755 /usr/local/sbin/adcs-startup.sh"
+
+{
+  "type": "file",
+  "source": "hack-a-sat/adcs/systemd/services/adcs-startup.service",
+  "destination": "/etc/systemd/system/adcs-startup.service"
+},
+{
+  "type": "file",
+  "source": "hack-a-sat/adcs/systemd/logging/adcs-logging.conf",
+  "destination": "/etc/rsyslog.d/adcs-logging.conf"
+},
+{
+  "type": "file",
+  "source": "hack-a-sat/adcs/systemd/scripts/adcs-startup.sh",
+  "destination": "/usr/local/sbin/adcs-startup.sh"
+},
+
+
+        "tar xf /opt/packages/libgpiod.tar.gz -C /usr --no-same-owner",
+        "tar xf /opt/packages/libiio.tar.gz -C /usr/ --no-same-owner",
+        "tar xf /opt/packages/rules.d.tar.gz -C /etc/udev/rules.d/ --no-same-owner"
+
+
+        "chmod 644 /etc/cloud/cloud.cfg.d/adcs-networking.cfg",
+        "chmod 644 /etc/cloud/cloud.cfg.d/99-fake_cloud.cfg",
+        "chmod 644 /etc/udev/rules.d/60-gpiod.rules",
+        "chmod 644 /etc/systemd/system/adcs-startup.service",
+        "chmod 644 /etc/rsyslog.d/adcs-logging.conf",
+
+
+                // "systemctl enable adcs-startup.service"

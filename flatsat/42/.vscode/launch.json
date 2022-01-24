@@ -1,0 +1,70 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "(gdb) Launch 42",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/42",
+            "args": [
+                "HAS2"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "TEAM",
+                    "value": "1"
+                },
+                {
+                    "name": "MQTT_IP",
+                    "value": "192.168.101.101"
+                }
+            ],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "setup has2 env",
+        },
+        {
+            "name": "(gdb) Launch FlatSatFsw All",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/FlatSatFswApp",
+            "args": [
+                "0.1",
+                "5.0",
+                "0.1",
+                "100",
+                "10",
+                "30",
+                "1"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "start",
+            "postDebugTask": "close-42"
+        }
+    ]
+}

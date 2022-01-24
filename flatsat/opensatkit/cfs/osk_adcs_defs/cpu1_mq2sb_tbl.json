@@ -1,0 +1,29 @@
+{
+   "name": "MQTT MQTT to SB Packet Table",
+   "description": "Define default messages that subscbibed to by MQTT App",
+   "message-array": [
+
+      "message": {
+         "name": "ADCS_SIM_SENSOR_DATA",
+         "msg-id": "\u19E3",
+         "dec-id": 6627,
+         "msg-type": 1,
+         "data-type": 1,
+         "data-length": 2400,
+         "mqtt-topic": "SIM/42/ADCS/SENSOR",
+         "mqtt-qos": 2,
+      },
+
+      "message": {
+         "name": "EPS_SIM_DATA",
+         "msg-id": "\u0912",
+         "dec-id": 2322,
+         "msg-type": 1,
+         "data-type": 1,
+         "data-length": 2000,
+         "mqtt-topic": "SIM/42/EPS/SENSOR",
+         "mqtt-qos": 2
+      }
+
+   ]
+}

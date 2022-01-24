@@ -1,0 +1,6 @@
+PyYAML==5.4.1
+construct==2.10.67
+paho-mqtt==1.5.1
+pycryptodome==3.10.1
+aioconsole==0.3.3
+psycopg2-binary==2.9.2

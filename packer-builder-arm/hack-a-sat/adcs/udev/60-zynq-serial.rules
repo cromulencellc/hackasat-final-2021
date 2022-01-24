@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", KERNEL=="ttyPS[0-9]", TAG+="systemd"

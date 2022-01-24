@@ -1,0 +1,17 @@
+TITLE 'cFS Command and Telemetry Server'
+
+# Chain interface
+INTERFACE FLATSAT_COMM_INT tcpip_client_interface.rb @FLATSAT_IP@ 2056 2056 10.0 nil PREIDENTIFIED
+  PROTOCOL READ_WRITE GSProtocol3 false
+  PROTOCOL WRITE ChecksumProtocol
+
+TARGET SYSTEM
+  TARGET ADCS
+  TARGET COMM
+  TARGET SLA_TLM
+  TARGET EPS_MGR
+
+INTERFACE COSMOSINT cmd_tlm_server_interface.rb
+  TARGET COSMOS
+  DISABLE_DISCONNECT
+

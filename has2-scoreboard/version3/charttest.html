@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hack-a-Sat CTF Finals 2021</title>
+    <meta name="description" content="Hack-a-Sat CTF Finals 2021" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="../assets/application.css" />
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="canvas2svg.js"></script> -->
+</head>
+
+<body>
+    <header class="header header--transparent nav-down">
+        <div class="container-fluid header-content">
+            <h2>Hack-a-Sat CTF Finals 2021</h2>
+        </div>
+    </header>
+
+    <!-- Bootstrap core CSS -->
+    <div class="container">
+        <div class="col">
+            <!-- Game Data -->
+            <div class="row">
+                <!--  <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
+                <canvas class="my-4 w-100" id="myChart" width="4096" height="2048"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+<script>
+    window.setInterval(function() {
+        /// call your function here
+        getHasScoresJsonOnly();
+    }, 6000); // Change Interval here to test. For eg: 5000 for 5 sec
+</script>
+
+<script id="get-has-scores-json-only">
+    var newjsonOnlyResponseObj;
+    var oldjsonOnlyResponseObj;
+
+    async function getHasScoresJsonOnly() {
+        //TODO change this to the URL for the scoring server
+        //Just get the json, don't do anything else.  We set an observer 
+        //on the json object and kickoff the full parser when it changes.
+        var res = await fetch('./scoreboard.json', {
+            //var res = await fetch('http://127.0.0.1:8000/version3/scoreboard.json', {
+            //var res = await fetch('https://finals.2021.hackasat.com/scoreboard.json', {
+            headers: {
+                Accept: 'application/json',
+                //Pragma: 'no-cache',
+                ContentType: 'application/json',
+            },
+            //cache: "no-store",
+        });
+
+        const newjsonOnlyResponseObj = await res.json();
+
+        let isEqual = JSON.stringify(newjsonOnlyResponseObj) == JSON.stringify(oldjsonOnlyResponseObj);
+        oldjsonOnlyResponseObj = newjsonOnlyResponseObj;
+        if (!isEqual) {
+            getHasScores(newjsonOnlyResponseObj);
+        }
+
+    }
+</script>
+
+<script>
+    window.onload = getHasScoresJsonOnly();
+</script>
+
+<script id="get-has-scores">
+    // Call a function every 4 minutes 
+    //window.setInterval('refresh()', 1000 * 60 * 4);
+
+    // Refresh  page.
+    //function refresh() {
+    //    window.location.reload();
+    //}
+
+    function getHasScores(json) {
+        const chart = myInternalChart;
+
+        Object.entries(json).forEach(([key, value]) => {
+            if (key == 'standings') {
+                //console.log(`${value}.name`);
+                value.forEach(getScore);
+
+                function getScore(value, index, array) {
+                    console.log(value.name + ' ' + value.score);
+
+
+                    console.log(value.name + ' ' + value.rank); //TODO XXX FIXME
+
+                    //Update the histogram
+                    const score_hist_entries = Object.entries(value.scorehistory);
+
+                    const values = Object.values(score_hist_entries);
+
+                    const datavalues = []; //= values[][1];
+                    const labelvalues = []; //= values[][0];
+
+                    var endTime = new Date("Dec 12, 2021 14:00:00 UTC-04:00");
+                    var endTime = (Date.parse(endTime)) / 1000;
+                    var now = new Date();
+                    var now = (Date.parse(now) / 1000);
+                    var timeLeft = endTime - now;
+                    var days = Math.floor(timeLeft / 86400);
+                    var hours = Math.floor((timeLeft - (days * 86400)) / 3600); //hours left
+                    var hours_transpired = 24 - hours;
+                    var half_hours_transpired = hours_transpired * 2;
+
+                    //only show data for actual game time.
+
+                    newScoreList = values.sort((a, b) => b[1] - a[1]);
+                    //console.log(newScoreList.reverse());
+                    newScoreList.reverse();
+
+                    for (var i = 36; i < values.length; i++) {
+                        //for (var i = 0; i < half_hours_transpired; i++) {
+                        datavalues[i - 36] = values[i][1];
+                        labelvalues[i - 36] = values[i][0];
+                    }
+
+
+                    chart.data.labels = labelvalues;
+                    chart.config.options.scales.xAxes[0].scaleLabel.display = true;
+                    chart.config.options.scales.xAxes[0].scaleLabel.labelString = "Game 1/2 Hour"
+
+                    chart.data.datasets.push({
+                        //data: values,
+                        data: datavalues,
+                        labels: labelvalues,
+                        //chart.config.data.labels[i] = values[i][0]; //TODO change to Hour 1
+                        //chart.config.data.datasets[index].data[i] = values[i][1];
+                        lineTension: .5,
+                        label: value.name,
+                        //backgroundColor: 'transparent',
+                        //borderColor: "#007bff",
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        //pointBackgroundColor: '#007bff',
+                        //backgroundColor: "rgba(52, 152, 219, 0.4)",
+                        //pointBackgroundColor: "#fff"
+
+                    });
+
+                    //bummp index by one to account for metadata
+                    index = index + 1;
+                    //colorize the chart line
+                    switch (String(value.name)) {
+                        case "Poland Can Into Space":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#31BE7E";
+                                chart.data.datasets[index].borderColor = "#31BE7E";
+                                chart.data.datasets[index].pointBorderColor = "#31BE7E";
+                            }
+                            break;
+
+                        case "PPP":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#E92389";
+                                chart.data.datasets[index].borderColor = "#E92389";
+                                chart.data.datasets[index].pointBorderColor = "#E92389";
+                            }
+                            break;
+
+
+                        case "FluxRepeatRocket":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#FEEC2B";
+                                chart.data.datasets[index].borderColor = "#FEEC2B";
+                                chart.data.datasets[index].pointBorderColor = "#FEEC2B";
+                            }
+                            break;
+
+
+                        case "DiceGang":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#F72B00";
+                                chart.data.datasets[index].borderColor = "#F72B00";
+                                chart.data.datasets[index].pointBorderColor = "#F72B00";
+                            }
+                            break;
+
+                        case "Solar Wine":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#9D91E4";
+                                chart.data.datasets[index].borderColor = "#9D91E4";
+                                chart.data.datasets[index].pointBorderColor = "#9D91E4";
+                            }
+                            break;
+
+                        case "SingleEventUpset":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#FF9405";
+                                chart.data.datasets[index].borderColor = "#FF9405";
+                                chart.data.datasets[index].pointBorderColor = "#FF9405";
+                            }
+                            break;
+
+                        case "WeltALLES!":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#00EAFF";
+                                chart.data.datasets[index].borderColor = "#00EAFF";
+                                chart.data.datasets[index].pointBorderColor = "#00EAFF";
+                            }
+                            break;
+
+                        case "PFS":
+                            {
+                                chart.data.datasets[index].pointBackgroundColor = "#9F9790";
+                                chart.data.datasets[index].borderColor = "#9F9790";
+                                chart.data.datasets[index].pointBorderColor = "#9F9790";
+                            }
+                            break;
+                    }
+                    chart.update();
+                }
+            }
+        });
+    };
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
+</script>
+
+<script id="set-chart-data">
+    var myInternalChart;
+    (function() {
+        'use strict'
+
+        feather.replace({
+            'aria-hidden': 'true'
+        })
+
+
+        var graphData = {
+                type: 'line',
+                data: {
+                    labels: [
+                        /*'1100 Sat',
+                        '1200 Sat',
+                        '1300 Sat',
+                        '1400 Sat',
+                        '1500 Sat',
+                        '1600 Sat',
+                        '1700 Sat',
+                        '1800 Sat',
+                        '1900 Sat',
+                        '2000 Sat',
+                        '2100 Sat',
+                        '2200 Sat',
+                        '2300 Sat',
+                        '2400 Sat',
+                        '0100 Sun',
+                        '0200 Sun',
+                        '0300 Sun',
+                        '0400 Sun',
+                        '0500 Sun',
+                        '0600 Sun',
+                        '0700 Sun',
+                        '0800 Sun',
+                        '0900 Sun',
+                        '1000 Sun',
+                        '1100 Sun'*/
+                    ],
+                    datasets: [{
+                        /* data: [
+                             153,
+                             213,
+                             184,
+                             240,
+                             234,
+                             240,
+                             120,
+                             241,
+                             153,
+                             213,
+                             184,
+                             240,
+                             234,
+                             240,
+                             120,
+                             241,
+                             153,
+                             213,
+                             184,
+                             240,
+                             234,
+                             240,
+                             120,
+                             241
+                         ],*/
+
+                        lineTension: 0,
+                        //backgroundColor: 'transparent',
+                        borderColor: "#007bff",
+                        borderWidth: 2,
+                        pointRadius: 2,
+                        //pointBackgroundColor: '#007bff',
+                        //backgroundColor: "rgba(52, 152, 219, 0.4)",
+                        //pointBackgroundColor: "#fff"
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: false,
+                                suggestedMax: 2000
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: false
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+            // Graphs
+        var ctx = document.getElementById('myChart')
+        myInternalChart = new Chart(ctx, graphData);
+
+        // deactivate responsiveness and animation
+        //tweakLib();
+
+        // canvas2svg 'mock' context
+        //svgContext = C2S(600, 600);
+
+
+        // new chart on 'mock' context fails:
+        //var mySvg = new Chart(svgContext, graphData);
+        //mySvg.width = 600;
+        //mySvg.height = 600;
+        //console.log(svgContext.getSvg());
+
+        //console.log(myInternalChart.config.data.datasets[0].data)
+        //console.log(myInternalChart.config.data.labels)
+
+    })()
+</script>

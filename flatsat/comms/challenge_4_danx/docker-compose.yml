@@ -1,0 +1,194 @@
+version: "3.6"
+services:
+  payloadchallenge1:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4531:4531/udp
+      - 4581:4580/tcp
+    environment:
+      - FLAG=$FLAG1
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team1net
+  payloadchallenge2:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4532:4531/udp
+      - 4582:4580/tcp
+    environment:
+      - FLAG=$FLAG2
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team2net
+  payloadchallenge3:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4533:4531/udp
+      - 4583:4580/tcp
+    environment:
+      - FLAG=$FLAG3
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team3net
+  payloadchallenge4:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4534:4531/udp
+      - 4584:4580/tcp
+    environment:
+      - FLAG=$FLAG4
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team4net
+  payloadchallenge5:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4535:4531/udp
+      - 4585:4580/tcp
+    environment:
+      - FLAG=$FLAG5
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team5net
+  payloadchallenge6:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4536:4531/udp
+      - 4586:4580/tcp
+    environment:
+      - FLAG=$FLAG6
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team6net
+  payloadchallenge7:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4537:4531/udp
+      - 4587:4580/tcp
+    environment:
+      - FLAG=$FLAG7
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team7net
+  payloadchallenge8:
+    image: has2/finals/comms/comms-challenge-arm64:latest
+    ports:
+      - 4538:4531/udp
+      - 4588:4580/tcp
+    environment:
+      - FLAG=$FLAG8
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team8net
+  telemetry:
+    image: has2/finals/comms/comms-challenge-telemetry-arm64:latest
+    depends_on:
+      - payloadchallenge1
+      - payloadchallenge2
+      - payloadchallenge3
+      - payloadchallenge4
+      - payloadchallenge5
+      - payloadchallenge6
+      - payloadchallenge7
+      - payloadchallenge8
+    environment:
+      - MQTT_IP=$MQTT_IP
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    network_mode: "host"
+networks:
+  team1net:
+    ipam:
+      config:
+       - subnet: "172.21.0.0/16"
+  team2net:
+    ipam:
+      config:
+       - subnet: "172.22.0.0/16"
+  team3net:
+    ipam:
+      config:
+       - subnet: "172.23.0.0/16"
+  team4net:
+    ipam:
+      config:
+       - subnet: "172.24.0.0/16"
+  team5net:
+    ipam:
+      config:
+       - subnet: "172.25.0.0/16"
+  team6net:
+    ipam:
+      config:
+       - subnet: "172.26.0.0/16"
+  team7net:
+    ipam:
+      config:
+       - subnet: "172.27.0.0/16"
+  team8net:
+    ipam:
+      config:
+       - subnet: "172.28.0.0/16"
+

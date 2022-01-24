@@ -1,0 +1,39 @@
+<% 
+  require 'osk_config' 
+
+  @APP_PREFIX_STR = "SLA_TLM"
+  @HK_TLM_MID_STR = "SLA_TLM_TLM_HK_MID"
+
+%>
+
+TELEMETRY SLA_TLM HK_TLM_PKT <%= Osk::Cfg.processor_endian %> "Sla_tlm App"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @HK_TLM_MID_STR) %>
+  APPEND_ITEM CMD_VALID_COUNT 16 UINT "Count of valid commands received since startup or the last reset counter command"
+  APPEND_ITEM CMD_ERROR_COUNT 16 UINT "Count of invalid commands received since startup or the last reset counter command"
+  APPEND_ITEM LAST_TBL_ACTION 8 UINT  "Last table action: 1=Register, 2=Load, 3=Dump"
+  APPEND_ITEM LAST_TBL_STATUS 8 UINT  "Last table action status: 0=Undefined, 1=Invalid, 2=Valid"
+  APPEND_ITEM EXOBJ_EXEC_CNT  16 UINT "Count of example object executions"
+  APPEND_ITEM ATTRIBUTION_KEY 64 UINT "Attribution key from Comm"
+    FORMAT_STRING "0x%X"
+  APPEND_ITEM ROUND            8 UINT "Round Number"
+    FORMAT_STRING "0x%X"  
+  APPEND_ITEM SEQUENCE        16 UINT "Sequence Number"
+    FORMAT_STRING "0x%X"  
+  APPEND_ITEM PING_STATUS     64 UINT "Report ping status value"
+    FORMAT_STRING "0x%X"
+  APPEND_ITEM COMM_TELEM_1    64 UINT "Team 1 Comm Payload Telemetry"
+    FORMAT_STRING "0x%x"
+  APPEND_ITEM COMM_TELEM_2    64 UINT "Team 2 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%X"
+  APPEND_ITEM COMM_TELEM_3    64 UINT "Team 3 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%x"
+  APPEND_ITEM COMM_TELEM_4    64 UINT "Team 4 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%X"
+  APPEND_ITEM COMM_TELEM_5    64 UINT "Team 5 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%x"
+  APPEND_ITEM COMM_TELEM_6    64 UINT "Team 6 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%X"
+  APPEND_ITEM COMM_TELEM_7    64 UINT "Team 7 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%x"
+  APPEND_ITEM COMM_TELEM_8    64 UINT "Team 8 from Comm Payload Telemetry"
+    FORMAT_STRING "0x%X"

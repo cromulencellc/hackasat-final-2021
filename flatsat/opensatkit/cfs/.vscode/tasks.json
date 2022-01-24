@@ -1,0 +1,116 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "rsync to adcs-linux",
+            "type": "shell",
+            "command": "rsync",
+            "args": [
+                "-avzh",
+                "--delete",
+                "--exclude",
+                ".git",
+                "--exclude",
+                "build_osk",
+                "--exclude",
+                "build_osk_cdh",
+                "--exclude",
+                "build_osk_rtems",
+                "--exclude",
+                "build_osk_adcs/cpu1",
+                "--exclude",
+                "build_osk_adcs/inc",
+                "--exclude",
+                "build_osk_adcs/doc",
+                "--exclude",
+                "build_osk_adcs/CMakeFiles",
+                "--exclude",
+                "build_osk_adcs/editor_inc",
+                "--exclude",
+                "build_osk_adcs/tools",
+                "dev:${env:REMOTE_HOME}/cfs/",
+                "/apps/opensatkit/cfs"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "rsync from adcs-linux",
+            "type": "shell",
+            "command": "rsync",
+            "args": [
+                "-avzh",
+                "--exclude",
+                "build_osk_adcs",
+                "/apps/opensatkit/cfs/",
+                "dev:${env:REMOTE_HOME}/cfs"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "remote build",
+            "type": "shell",
+            "command": "ssh",
+            "args": [
+                "-t",
+                "dev",
+                "cd ${env:REMOTE_HOME}/cfs; ./build.sh -m osk_adcs -t ${env:TEAM}"
+            ],
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^/(\\S+):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "remote build incremental",
+            "type": "shell",
+            "command": "ssh",
+            "args": [
+                "-t",
+                "dev",
+                "cd ${env:REMOTE_HOME}/cfs; ./build.sh -m osk_adcs -i -t ${env:TEAM}"
+            ],
+            "problemMatcher": "$gcc",
+            "group": "build"
+        },
+        {
+            "label": "build all",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "rsync from adcs-linux",
+                "remote build",
+                "rsync to adcs-linux"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build all incremental",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "rsync from adcs-linux",
+                "remote build incremental",
+                "rsync to adcs-linux"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

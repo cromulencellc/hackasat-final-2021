@@ -1,0 +1,273 @@
+{
+	"defaultACLAccess":	{
+		"publishClientSend":	false,
+		"publishClientReceive":	true,
+		"subscribe":	false,
+		"unsubscribe":	true
+	},
+	"clients":	[{
+			"username":	"42",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"client"
+				}],
+			"password":	"EYD5vQRCFVLkKEoDBmnBchS5Wsxi18CrdGxjxBKIym5nJnIAw2mURSqX4kb6Vag4mAExdmuVFvxk/E/GHUIu9g==",
+			"salt":	"aASTHWSYsVyJKh0J",
+			"iterations":	101
+		}, {
+			"username":	"42_bridge",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"client"
+				}],
+			"password":	"KUDYa5097VPi20R4H4zhi1iu/RqI6T1F2LgPo/0uR9JH6djBQ9wUBU7H1tIFjLb64orta/N8o0JVTRNx0k76Xw==",
+			"salt":	"H1NDcUvAF8Lb7peV",
+			"iterations":	101
+		}, {
+			"username":	"cedalo",
+			"textname":	"Admin user",
+			"roles":	[{
+					"rolename":	"dynsec-admin"
+				}, {
+					"rolename":	"sys-observe"
+				}, {
+					"rolename":	"topic-observe"
+				}],
+			"password":	"vnCzwko9tYKQOvDbKNzZnHkY0Udh2KIRxgWKpW+HrS0mHDdVvEjpbrItqcDhl3GI9WoVWV7/Y0ubs7akMt50IA==",
+			"salt":	"l+sBXmogLrCRqKD9",
+			"iterations":	101
+		}, {
+			"username":	"cfs_adcs",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"game_with_sim"
+				}],
+			"password":	"AOWVG1Z9Puy/ACOo35rptUN+KsivBN18ACgCBBeg4lr3PcTcjRf6MB+v24DhN7k8/Mzh/KHUReT/2Lfd2QTLkw==",
+			"salt":	"rSwRdXgnASRD2FKX",
+			"iterations":	101
+		}, {
+			"username":	"cfs_cdh",
+			"clientid":	"cdh_recv",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"game"
+				}],
+			"password":	"9qXMHYh/uQmczF6HU7JBOTCGaRz4gxvICnf7C0QZxpICAsxCFrjuYnpolP5qKgRWt/Bhh7dq4aUsu8bML10ovw==",
+			"salt":	"r5yGVjB1b2xWcCW6",
+			"iterations":	101
+		}, {
+			"username":	"comm",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"game_with_sim_read"
+				}],
+			"password":	"2izOpgD09jzspgcJ7Mhv8bO2E+waADZ9G3nEzMkcKCiY4LQen8MjOVvpIzEZpdwP9O7nX/DXL9ZEHpnlv072/A==",
+			"salt":	"Xv2hhhpOJ8sCo2QA",
+			"iterations":	101
+		}, {
+			"username":	"cosmos",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"client"
+				}],
+			"password":	"j04gB19dPOyiWCMhlVwk7q9iiSQt5asIYsVr+NlMwULZ9fek9RQg4XQtqTEmhzOB51G9CIXWGNgg3Obi4FqmdQ==",
+			"salt":	"x9GtT91OZjJO1Tpp",
+			"iterations":	101
+		}, {
+			"username":	"hasadmin",
+			"textname":	"",
+			"textdescription":	"",
+			"roles":	[{
+					"rolename":	"client"
+				}],
+			"password":	"321G4JZNmTtnZxMj38ddoD4jMci+4Ya+fbRwGbFNYiFiKr+RSxdUb4F62l1CjVT0O+4z/xaNdMELmuBf4TOyMQ==",
+			"salt":	"dLtuoqqWLfh1x+zH",
+			"iterations":	101
+		}],
+	"groups":	[],
+	"roles":	[{
+			"rolename":	"client",
+			"textdescription":	"Read/write access to the full application topic hierarchy.",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"dynsec-admin",
+			"textname":	"",
+			"textdescription":	"Grants access to administer clients/groups/roles.",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"game",
+			"textname":	"",
+			"textdescription":	"Role for clients that are part of game. No sim access.",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"game_with_sim",
+			"textname":	"",
+			"textdescription":	"Game but with sim access rw",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientSend",
+					"topic":	"SIM/42/+/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"SIM/42/+/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"game_with_sim_read",
+			"textname":	"",
+			"textdescription":	"Game role with sim read only",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"SIM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"COMM/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"sys-notify",
+			"textname":	"",
+			"textdescription":	"Allow bridges to publish connection state messages.",
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$SYS/broker/connection/+/state",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"sys-observe",
+			"textname":	"",
+			"textdescription":	"Observe the $SYS topic hierarchy.",
+			"acls":	[{
+					"acltype":	"publishClientReceive",
+					"topic":	"$SYS/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$SYS/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"topic-observe",
+			"textdescription":	"Read only access to the full application topic hierarchy.",
+			"acls":	[{
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}]
+}

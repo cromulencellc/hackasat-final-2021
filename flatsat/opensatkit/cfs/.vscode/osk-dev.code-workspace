@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"adcs_io_lib.h": "c",
+			"actypeconverter.h": "c"
+		}
+	}
+}

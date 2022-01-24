@@ -1,0 +1,67 @@
+<% 
+  require 'osk_config' 
+
+  @APP_PREFIX_STR = "COMM"
+  @HK_TLM_MID_STR = "COMM_TLM_HK_MID"
+  @MOD_TLM_MID_STR = "COMM_MOD_TLM_MID"
+  @DEMOD_TLM_MID_STR = "COMM_DEMOD_TLM_MID"
+%>
+
+TELEMETRY COMM HK_TLM_PKT <%= Osk::Cfg.processor_endian %> "Comm App"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @HK_TLM_MID_STR) %>
+  APPEND_ITEM CMD_VALID_COUNT 16 UINT "Count of valid commands received since startup or the last reset counter command"
+  APPEND_ITEM CMD_ERROR_COUNT 16 UINT "Count of invalid commands received since startup or the last reset counter command"
+  APPEND_ITEM LAST_TBL_ACTION 8 UINT  "Last table action: 1=Register, 2=Load, 3=Dump"
+  APPEND_ITEM LAST_TBL_STATUS 8 UINT  "Last table action status: 0=Undefined, 1=Invalid, 2=Valid"
+  APPEND_ITEM EXOBJ_EXEC_CNT  16 UINT "Count of example object executions"
+  APPEND_ITEM COMM_STATUS_STRING 928 STRING "Comm Status Message"
+
+TELEMETRY COMM MOD_TLM_MID BIG_ENDIAN "Modulator Status"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @MOD_TLM_MID_STR) %>
+  APPEND_ITEM HEADER 32 UINT "Header"
+  APPEND_ITEM FREQ 32 FLOAT "Telemetry Modulator Frequency"
+  APPEND_ITEM RF_BW 32 FLOAT "Telemetry Modulator RF BW"
+  APPEND_ITEM SAMP_FREQ 32 FLOAT "Telemetry Modulator Sampling Frequency"
+  APPEND_ITEM GAIN 32 FLOAT "Telemetry Modulator Gain"
+  APPEND_ITEM RSSI 32 FLOAT "Telemetry Modulator RSSI"
+  APPEND_ITEM PACKETS_RECEIVED 32 FLOAT "Telemetry Modulator Packets Received"  
+  APPEND_ITEM LO_POWERDOWN_STATE 32 FLOAT "Telemetry Modulator LO Powerdown State"
+  APPEND_ITEM TEMP 32 FLOAT "Telemetry Modulator Temperature"
+    LIMITS DEFAULT 1 ENABLED 10.0 20.0 45 60
+
+#   float    frequency;
+#   float    rf_bandwidth;
+#   float    sampling_frequency;
+#   float    hardwaregain;
+#   float    rssi;
+#   float    pkts_received;
+#   float    powerdown;
+#   float    temp;
+
+TELEMETRY COMM DEMOD_TLM_MID BIG_ENDIAN "Demodulator Status"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @DEMOD_TLM_MID_STR) %>
+  APPEND_ITEM HEADER 32 UINT "Header"
+  APPEND_ITEM FREQ 32 FLOAT "Command Demodulator Frequency"
+  APPEND_ITEM RF_BW 32 FLOAT "Command Demodulator RF BW"
+  APPEND_ITEM SAMP_FREQ 32 FLOAT "Command Demodulator Sampling Frequency"
+  APPEND_ITEM GAIN_CTRL_MODE 8 UINT "Command Demodulator Gain Control Mode"
+    STATE HYBRID 3
+    STATE FAST_ATTACK 2
+    STATE SLOW_ATTACK 1
+    STATE MANUAL 0
+  APPEND_ITEM PAD 24 UINT "Pad"
+  APPEND_ITEM GAIN 32 FLOAT "Command Demodulator Gain"
+  APPEND_ITEM RSSI 32 FLOAT "Command Demodulator RSSI"
+  APPEND_ITEM SYMBOL_SYNC_ERROR 32 FLOAT "Command Demodulator Symbol Sync Error"
+    LIMITS DEFAULT 1 ENABLED -90.0 -10.0 10.0 90.0
+  APPEND_ITEM COSTAS_LOOP_ERROR 32 FLOAT "Command Demodulator Costas Loop Error"
+    LIMITS DEFAULT 1 ENABLED -90.0 -10.0 10.0 90.0
+  APPEND_ITEM SYNC_STATE 32 FLOAT "Command Demodulator Frame Synch State"
+    STATE LOCKED 1.0
+    STATE UNLOCKED 0.0  
+  APPEND_ITEM FRAMES_RECEIVED 32 FLOAT "Command Demodulator Frames Received"  
+  APPEND_ITEM FRAMES_DECODED 32 FLOAT "Command Demodulator Frames Decoded"  
+  APPEND_ITEM LO_POWERDOWN_STATE 32 FLOAT "Command Demodulator LO Powerdown State"
+  APPEND_ITEM TEMP 32 FLOAT "Command Demodulator Temperature"
+    LIMITS DEFAULT 1 ENABLED 10.0 20.0 45 60
+

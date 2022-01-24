@@ -1,0 +1,53 @@
+{
+   "name": "EPS Configuration Table",
+   "description": "Configuration for EPS MGR",
+   "mode-table": {
+      "startup-mode": 0,
+      "mode-array": [
+
+         "mode": {
+            "name": "SEPERATION",
+            "mode-index": 0,
+            "enabled": 1,
+            "mode-mask": 95
+         },
+
+         "mode": {
+            "name": "SAFE",
+            "mode-index": 1,
+            "enabled": 1,
+            "mode-mask": 95
+         },
+
+         "mode": {
+            "name": "STANDBY",
+            "mode-index": 2,
+            "enabled": 0,
+            "mode-mask": 95
+         },
+
+         "mode": {
+            "name": "NOMINAL_OPS_PAYLOAD_ON",
+            "mode-index": 3,
+            "enabled": 0,
+            "mode-mask": 151
+         },
+
+         "mode": {
+            "name": "ADCS_MOMENTUM_DUMP",
+            "mode-index": 4,
+            "enabled": 0,
+            "mode-mask": 127
+         },
+
+         "mode": {
+            "name": "ADCS_FSS_EXPERIMENTAL",
+            "mode-index": 5,
+            "enabled": 0,
+            "mode-mask": 159
+         }
+   
+      ]
+   }
+
+}

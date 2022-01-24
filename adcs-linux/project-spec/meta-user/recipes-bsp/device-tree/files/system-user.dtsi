@@ -1,0 +1,42 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+&gem0 {
+    local-mac-address = [00 0a 35 00 1e 54];
+    phy-handle = <&phy0>;
+    phy0: phy@3 {
+        reg = <3>;
+        device_type = "ethernet-phy";
+        max-speed=<100>;
+        eee-broken-1000t;
+    };
+};
+
+&xadc_wiz_0 {
+    xlnx,channels {
+        #address-cells = <0x1>;
+        #size-cells = <0x0>;
+        channel@2 {
+            reg = <2>;
+        };
+        channel@3 {
+            reg = <3>;
+        };
+        channel@4 {
+            reg = <4>;
+        };
+        channel@5 {
+            reg = <5>;
+        };
+        channel@8 {
+            reg = <8>;
+        };
+        channel@9 {
+            reg = <9>;
+        };
+        channel@15 {
+            reg = <15>;
+        };
+    };
+};

@@ -1,0 +1,13 @@
+TITLE "Launcher"
+TOOL_FONT tahoma 12
+LABEL_FONT tahoma 16
+# NUM_COLUMNS 5 # This is the default
+
+MULTITOOL_START "Report Tool API Server" HAS2.png
+  TOOL "LAUNCH CmdTlmServer -c cmd_tlm_server.txt --no-gui"
+  # Initialize OpenSatKit modules
+  <% 
+     require 'osk_system'
+     require 'osk_flight' 
+  %>
+MULTITOOL_END

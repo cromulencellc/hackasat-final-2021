@@ -1,0 +1,8 @@
+.git*
+boards
+packer_cache
+scripts
+*.img
+*.img.*
+*.tar
+*.tar.*

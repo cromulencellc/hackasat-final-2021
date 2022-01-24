@@ -1,0 +1,10 @@
+[Unit]
+Description=Set Ethernet Speed to 100BaseTX on Boot
+
+[Service]
+User=comm
+Group=comm
+ExecStart=/usr/local/sbin/comm_payload.sh
+
+[Install]
+WantedBy=multi-user.target

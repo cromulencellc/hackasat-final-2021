@@ -1,0 +1,27 @@
+<% 
+  require 'fsw_config_param'
+  require 'osk_config' 
+  require 'osk_global'
+
+  @APP_PREFIX_STR     = "MQTT"
+  @HK_TLM_MID_STR     = "MQTT_HK_TLM_MID"
+  
+  # Configuration parameter assumptions
+  #   None
+  
+%>
+
+TELEMETRY <%= @APP_PREFIX_STR %> <%= Osk::TLM_STR_HK_PKT %> <%= Osk::Cfg.processor_endian %> "Housekeeping telemetry packet"
+  <%= Osk::Cfg.tlm_hdr(@APP_PREFIX_STR, @HK_TLM_MID_STR) %>
+  APPEND_ITEM <%= Osk::TLM_STR_CMD_VLD %> 16 UINT "Application command counter"
+  APPEND_ITEM <%= Osk::TLM_STR_CMD_ERR %> 16 UINT "Application command error counter"
+  APPEND_ITEM CHILD_CMD_CTR      16 UINT "Child task command counter"
+  APPEND_ITEM CHILD_CMD_ERR_CTR  16 UINT "Child task command error counter"
+  APPEND_ITEM RECV_CONNECTION_STATUS  16 UINT "MQTT Recv Connection Status"
+  APPEND_ITEM RECV_RECONNECT_COUNT  16 UINT "MQTT Recv Reconnect Count"
+  APPEND_ITEM RECV_MSG_COUNT  16 UINT "MQTT Recv Msg Count"
+  APPEND_ITEM RECV_SUBSCRIPTION_COUNT  16 UINT "MQTT Recv Subscription Count"
+  APPEND_ITEM RECV_CONNECTION_STATUS  16 UINT "MQTT Pub Connection Status"
+  APPEND_ITEM PUB_RECONNECT_COUNT  16 UINT "MQTT Pub Reconnect Count"
+  APPEND_ITEM PUB_MSG_COUNT  16 UINT "MQTT Pub Msg Count"
+

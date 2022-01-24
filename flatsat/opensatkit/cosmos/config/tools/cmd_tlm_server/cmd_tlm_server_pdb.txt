@@ -1,0 +1,11 @@
+TITLE 'cFS Command and Telemetry Server'
+
+INTERFACE PDB_INT udp_interface.rb 192.168.101.64 9998 9999 nil nil 128 nil nil
+  PROTOCOL WRITE ChecksumProtocol
+  TARGET PDB
+  
+INTERFACE COSMOSINT cmd_tlm_server_interface.rb
+  TARGET COSMOS
+  DISABLE_DISCONNECT
+
+

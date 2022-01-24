@@ -1,0 +1,31 @@
+version: "3.6"
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2-openssl
+    ports:
+      - 1883:1883
+    networks:
+      - cedalo-platform
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+  management-center:
+    image: cedalo/management-center:2
+    ports:
+      - 8088:8088
+    depends_on:
+      - mosquitto
+    networks:
+      - cedalo-platform
+    environment:
+      CEDALO_MC_BROKER_ID: mosquitto-2.0
+      CEDALO_MC_BROKER_NAME: Mosquitto 2.0
+      CEDALO_MC_BROKER_URL: mqtt://mosquitto:1883
+      CEDALO_MC_BROKER_USERNAME: cedalo
+      CEDALO_MC_BROKER_PASSWORD: S37Lbxcyvo
+      CEDALO_MC_USERNAME: cedalo
+      CEDALO_MC_PASSWORD: mmcisawesome
+networks:
+  cedalo-platform:
+    name: cedalo-platform
+    driver: bridge

@@ -1,0 +1,31 @@
+
+version: 1
+disable_existing_loggers: true
+
+
+formatters:
+  default:
+    format: "%(asctime)s.%(msecs)03d %(levelname)s:\t%(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+handlers:
+  console:
+    class : logging.StreamHandler
+    formatter: default
+    level   : INFO
+    filters: [allow_foo]
+    stream  : ext://sys.stdout
+  file:
+    class : logging.handlers.RotatingFileHandler
+    formatter: default
+    filename: /payload/logs/payload_dispatcher.log
+    maxBytes: 1000000
+    backupCount: 3
+loggers:
+  root:
+    level: INFO
+    handlers: [console, file]
+  gmqtt: 
+    level: INFO
+    handlers: [console, file]
+    propagate: yes
+  

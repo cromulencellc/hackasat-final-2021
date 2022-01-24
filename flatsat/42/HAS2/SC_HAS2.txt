@@ -1,0 +1,326 @@
+<<<<<<<<<<<<<<<<<  42: Spacecraft Description File   >>>>>>>>>>>>>>>>>
+EyasSat                       !  Description
+"EyasSat"                     !  Label
+GenScSpriteAlpha.ppm          !  Sprite File Name
+MQTT_FSW                      !  Flight Software Identifier
+0.2                           !  FSW Sample Time, sec
+************************* Orbit Parameters ****************************
+ENCKE                         !  Orbit Prop FIXED, EULER_HILL, ENCKE, or COWELL
+CM                            !  Pos of CM or ORIGIN, wrt F
+0.00000   0.00000   2.50000   !  Pos wrt Formation (m), expressed in F
+0.00566   0.00283  -0.00000   !  Vel wrt Formation (m/s), expressed in F
+*************************** Initial Attitude ***************************
+LAL                           ! Ang Vel wrt [NL], Att [QA] wrt [NLF]
+0.0    1.0    0.0             ! Ang Vel (deg/sec)
+0.0    0.0    0.0    1.0      ! Quaternion
+0.0    5.0    0.0    213      ! Angles (deg) & Euler Sequence
+***************************  Dynamics Flags  ***************************
+KIN_JOINT                     ! Rotation STEADY, KIN_JOINT, or DYN_JOINT
+FALSE                         ! Passive Joint Forces and Torques Enabled
+FALSE                         ! Compute Constraint Forces and Torques
+REFPT_CM                      ! Mass Props referenced to REFPT_CM or REFPT_JOINT
+FALSE                         ! Flex Active
+FALSE                         ! Include 2nd Order Flex Terms
+2.0                           ! Drag Coefficient
+************************************************************************
+************************* Body Parameters ******************************
+************************************************************************
+1                             ! Number of Bodies
+================================ Body 0 ================================
+9.0                           ! Mass
+0.065  0.085  0.03            ! Moments of Inertia (kg-m^2)
+0.0  0.0  0.0                 ! Products of Inertia (xy,xz,yz)
+0.0  0.0  0.0                 ! Location of mass center, m
+0.0  0.0  0.0                 ! Constant Embedded Momentum (Nms)
+Cubesat_6U.obj                ! Geometry Input File Name
+NONE                          ! Flex File Name
+************************************************************************
+*************************** Joint Parameters ***************************
+************************************************************************
+0         (Number of Joints is Number of Bodies minus one)
+============================== Joint 0 ================================
+0 1                           ! Inner, outer body indices
+1   213   GIMBAL              ! RotDOF, Seq, GIMBAL or SPHERICAL
+0   123                       ! TrnDOF, Seq
+FALSE  FALSE  FALSE           ! RotDOF Locked
+FALSE  FALSE  FALSE           ! TrnDOF Locked
+0.0    0.0    0.0             ! Initial Angles [deg]
+0.0    0.0    0.0             ! Initial Rates, deg/sec
+0.0    0.0    0.0             ! Initial Displacements [m]
+0.0    0.0    0.0             ! Initial Displacement Rates, m/sec
+0.0   0.0  0.0  312           ! Bi to Gi Static Angles [deg] & Seq
+0.0   0.0  0.0  312           ! Go to Bo Static Angles [deg] & Seq
+0.0   0.0  0.0                ! Position wrt inner body origin, m
+0.0   0.0  0.0                ! Position wrt outer body origin, m
+0.0   0.0  0.0                ! Rot Passive Spring Coefficients (Nm/rad)
+0.0   0.0  0.0                ! Rot Passive Damping Coefficients (Nms/rad)
+0.0   0.0  0.0                ! Trn Passive Spring Coefficients (N/m)
+0.0   0.0  0.0                ! Trn Passive Damping Coefficients (Ns/m)
+*************************** Wheel Parameters ***************************
+3                             ! Number of wheels
+=============================  Wheel 0  ================================ 
+0.000                         ! Initial Momentum, N-m-sec
+1.0  0.0  0.0                 ! Wheel Axis Components, [X, Y, Z]
+0.0023   0.0306               ! Max Torque (N-m), Momentum (N-m-sec)
+0.0000477465                  ! Wheel Rotor Inertia, kg-m^2
+0.006                         ! Static Imbalance, g-cm
+0.05                          ! Dynamic Imbalance, g-cm^2
+0                             ! Flex Node Index
+=============================  Wheel 1  ================================ 
+0.000                         ! Initial Momentum, N-m-sec
+0.0  1.0  0.0                 ! Wheel Axis Components, [X, Y, Z]
+0.0023   0.0306               ! Max Torque (N-m), Momentum (N-m-sec)
+0.0000477465                  ! Wheel Rotor Inertia, kg-m^2
+0.006                         ! Static Imbalance, g-cm
+0.05                          ! Dynamic Imbalance, g-cm^2
+0                             ! Flex Node Index
+=============================  Wheel 2  ================================
+0.000                         ! Initial Momentum, N-m-sec
+0.0  0.0  1.0                 ! Wheel Axis Components, [X, Y, Z]
+0.0023   0.0306               ! Max Torque (N-m), Momentum (N-m-sec)
+0.0000477465                  ! Wheel Rotor Inertia, kg-m^2
+0.006                         ! Static Imbalance, g-cm
+0.05                          ! Dynamic Imbalance, g-cm^2
+0                             ! Flex Node Index
+**************************** MTB Parameters ****************************
+3                             ! Number of MTBs
+==============================  MTB 0  =================================
+1.3387293996                  ! Saturation (A-m^2)                              
+1.00   0.0   0.00             ! MTB Axis Components, [X, Y, Z]                  
+0                             ! Flex Node Index                                 
+==============================  MTB 1  =================================
+1.3387293996                  ! Saturation (A-m^2)
+0.0   1.00   0.00             ! MTB Axis Components, [X, Y, Z]
+0                             ! Flex Node Index
+==============================  MTB 3  =================================
+1.3387293996                  ! Saturation (A-m^2)
+0.0   0.00   1.00             ! MTB Axis Components, [X, Y, Z]
+0                             ! Flex Node Index
+************************* Thruster Parameters **************************
+0                             ! Number of Thrusters
+==============================  Thr 0  =================================
+ 1.0                          ! Thrust Force (N)
+0  -1.0  0.0  0.0             ! Body, Thrust Axis 
+ 1.0  1.0  1.0                ! Location in B0, m
+0                             ! Flex Node Index
+******************************* Gyro ************************************       
+3                             ! Number of Gyro Axes
+============================== Axis 0 ===================================
+0.1                           ! Sample Time,sec                                 
+0.0  1.0  0.0                 ! Axis expressed in Body Frame
+2000.0                        ! Max Rate, deg/sec
+100.0                         ! Scale Factor Error, ppm                         
+0.01                          ! Quantization, arcsec                            
+0.007                         ! Angle Random Walk (deg/rt-hr)                   
+0.1  0.00083                  ! Bias Stability (deg/hr) over timespan (hr)      
+0.027                         ! Angle Noise, arcsec RMS                         
+0.0                           ! Initial Bias (deg/hr)
+0                             ! Flex Node Index
+============================== Axis 1 ===================================
+0.1                           ! Sample Time,sec
+1.0  0.0  0.0                 ! Axis expressed in Body Frame
+2000.0                        ! Max Rate, deg/sec
+100.0                         ! Scale Factor Error, ppm
+0.01                          ! Quantization, arcsec 
+0.007                         ! Angle Random Walk (deg/rt-hr)
+0.1  0.00083                  ! Bias Stability (deg/hr) over timespan (hr)
+0.027                         ! Angle Noise, arcsec RMS
+0.0                           ! Initial Bias (deg/hr)
+0                             ! Flex Node Index
+============================== Axis 2 ===================================
+0.1                           ! Sample Time,sec
+0.00  0.0  -1.0               ! Axis expressed in Body Frame
+2000.0                        ! Max Rate, deg/sec
+100.0                         ! Scale Factor Error, ppm
+0.01                          ! Quantization, arcsec 
+0.007                         ! Angle Random Walk (deg/rt-hr)
+0.1  0.00083                  ! Bias Stability (deg/hr) over timespan (hr)
+0.027                         ! Angle Noise, arcsec RMS
+0.0                           ! Initial Bias (deg/hr)
+0                             ! Flex Node Index
+*************************** Magnetometer ********************************       
+3                             ! Number of Magnetometer Axes
+============================== Axis 0 ===================================
+0.1                           ! Sample Time,sec                                 
+0.0  1.0  0.0                 ! Axis expressed in Body Frame
+1.4E-6                        ! Saturation, Tesla
+0.0                           ! Scale Factor Error, ppm                         
+1.0E-8                        ! Quantization, Tesla                             
+1.0E-8                        ! Noise, Tesla RMS                                
+0                             ! Flex Node Index
+============================== Axis 1 ===================================
+0.1                           ! Sample Time,sec
+1.0  0.0  0.0                 ! Axis expressed in Body Frame
+1.4E-6                        ! Saturation, Tesla
+0.0                           ! Scale Factor Error, ppm
+1.0E-8                        ! Quantization, Tesla 
+1.0E-8                        ! Noise, Tesla RMS
+0                             ! Flex Node Index
+============================== Axis 2 ===================================
+0.1                           ! Sample Time,sec
+0.00  0.0  -1.0               ! Axis expressed in Body Frame
+1.4E-6                        ! Saturation, Tesla
+0.0                           ! Scale Factor Error, ppm
+1.0E-8                        ! Quantization, Tesla 
+1.0E-8                        ! Noise, Tesla RMS
+0                             ! Flex Node Index
+*********************** Coarse Sun Sensor *******************************       
+6                             ! Number of Coarse Sun Sensors
+============================== CSS 0 ====================================
+0.1  0                        ! Sample Time,sec                                 
+0  1.0  0.0  0.0              ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor                                    
+0.001                         ! Quantization                                    
+0                             ! Flex Node Index
+============================== CSS 1 ====================================
+0.1  0                        ! Sample Time,sec
+0  0.0  1.0  0.0              ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor
+0.001                         ! Quantization
+0                             ! Flex Node Index
+============================== CSS 2 ====================================
+0.1  0                        ! Sample Time,sec
+0  -1.0  0.0  0.0             ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor
+0.001                         ! Quantization
+0                             ! Flex Node Index
+============================== CSS 3 ====================================
+0.1  0                        ! Sample Time,sec
+0  0.0  -1.0  0.0             ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor
+0.001                         ! Quantization
+0                             ! Flex Node Index
+============================== CSS 4 ====================================
+0.1  0                        ! Sample Time,sec
+0  0.0  0.0  -1.0             ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor
+0.001                         ! Quantization
+0                             ! Flex Node Index
+============================== CSS 5 ====================================
+0.1  0                        ! Sample Time,sec
+0  0.0  0.0  1.0              ! Axis expressed in Body Frame
+90.0                          ! Half-cone Angle, deg
+0.9                           ! Scale Factor
+0.001                         ! Quantization
+0                             ! Flex Node Index
+************************* Fine Sun Sensor *******************************
+1                             ! Number of Fine Sun Sensors  (_ADCS_CHALLENGE)
+=============================== FSS 0 ===================================
+0.2                           ! Sample Time,sec
+270  0.0  0.0  123            ! Mounting Angles (deg), Seq in Body
+114   114                     ! X, Y FOV Size, deg
+0.1                           ! Noise Equivalent Angle, deg RMS
+0.1                           ! Quantization, deg
+0                             ! Flex Node Index
+************************** Star Tracker *********************************
+1                             ! Number of Star Trackers (THIS IS A DUMMY TRACKER)
+=============================== ST 0 ====================================
+0.25                          ! Sample Time,sec
+0.0  180.0  0.0  213          ! Mounting Angles (deg), Seq in Body
+8.0   8.0                     ! X, Y FOV Size, deg
+30.0  10.0  10.0              ! Sun, Earth, Moon Exclusion Angles, deg
+2.0  2.0  20.0                ! Noise Equivalent Angle, arcsec RMS
+0                             ! Flex Node Index
+****************************** GPS **************************************
+0                             ! Number of GPS Receivers
+============================= GPSR 0 ====================================
+1.0                          ! Sample Time,sec
+5.0                           ! Position Noise, m RMS
+0.1                          ! Velocity Noise, m/sec RMS
+50.0E-9                       ! Time Noise, sec RMS
+0                             ! Flex Node Index
+*************************** Accelerometer *******************************       
+3                             ! Number of Accel Axes
+============================== Axis 0 ===================================
+0.1                           ! Sample Time,sec                                 
+-0.044  0.012  -0.1           ! Position in B[0] (m)
+0.0  1.0  0.0                 ! Axis expressed in Body Frame
+78.48                         ! Max Acceleration (m/s^2)
+0.0                           ! Scale Factor Error, ppm                         
+0.05                          ! Quantization, m/s^2                             
+0.0                           ! DV Random Walk (m/s/rt-hr)                      
+0.01 12                       ! Bias Stability (m/s^2) over timespan (hr)       
+0.0                           ! DV Noise, m/s                                   
+0.5                           ! Initial Bias (m/s^2)                            
+0                             ! Flex Node Index
+============================== Axis 1 ===================================
+0.1                           ! Sample Time,sec
+-0.044  0.012  -0.1           ! Position in B[0] (m)
+1.0  0.0  0.0                 ! Axis expressed in Body Frame
+78.48                         ! Max Acceleration (m/s^2)
+0.0                           ! Scale Factor Error, ppm
+0.05                          ! Quantization, m/s^2
+0.0                           ! DV Random Walk (m/s/rt-hr)
+0.01 12                       ! Bias Stability (m/s^2) over timespan (hr)
+0.0                           ! DV Noise, m/s
+0.5                           ! Initial Bias (m/s^2)
+0                             ! Flex Node Index
+============================== Axis 2 ===================================
+0.1                           ! Sample Time,sec
+-0.044  0.012  -0.1           ! Position in B[0] (m)
+0.0  0.0  -1.0                ! Axis expressed in Body Frame
+78.48                         ! Max Acceleration (m/s^2)
+0.0                           ! Scale Factor Error, ppm
+0.05                          ! Quantization, m/s^2
+0.0                           ! DV Random Walk (m/s/rt-hr)
+0.01 12                       ! Bias Stability (m/s^2) over timespan (hr)
+0.0                           ! DV Noise, m/s
+0.5                           ! Initial Bias (m/s^2)
+0                             ! Flex Node Index
+**************************** EPS Parameters ****************************  
+1                             ! Number of Electric Power System
+==============================  EPS 0  =================================
+76.37                         ! Battery Capacity (W-hr)
+0.870                         ! Wheel Current Cubewheel Large @6000rpm (A)  
+0.085                         ! MTR Current @Max Torque (A) 
+0.0075                        ! IMU Current (A) 
+0.580                         ! Star Tracker Current (mA) 
+0.0223                        ! CSS Sun Sensor Current (total) (A)
+0.125                         ! FSS Sun Sensor (total) (A)
+0.500                         ! ADCS Current (A) 
+1.1                           ! COMM TT&C Current (A) 
+0.75                          ! C&DH Current I used (A) 
+1.5                           ! COMM PAYLOAD Current (A) 
+12.2                          ! Battery Voltage (Intial) (V)
+5.0                           ! MTR Voltage (V)
+8.4                           ! Wheel Voltage  (V)
+3.6                           ! IMU Voltage (V)
+9.0                           ! Star Tracker Voltage (V)
+5.0                           ! CSS Sun Sensor Voltage (V)
+5.0                           ! FSS Sun Sensor Voltage (V)
+5.0                           ! ADCS Voltage (V)
+5.0                           ! COM Voltage (V)
+5.0                           ! C&DH Voltage (V)
+5.0                           ! PAYLOAD Voltage (V)
+0.91                          ! Regulation Efficiency (Includes battery discharge and all conversion)
+0.9                           ! Battery Charge Efficiency
+0.001                         ! Voltage Noise Ratio
+0.02                          ! Current Noise Ratio
+0                             ! Wheel (ON/OFF)
+0                             ! MTR (ON/OFF)
+1                             ! IMU (ON/OFF)
+1                             ! Star Tracker (ON/OFF)
+0                             ! CSS Sun Sensor (ON/OFF)
+0                             ! FSS Sun Sensor (ON/OFF)
+1                             ! ADCS (ON/OFF)
+1                             ! COMM TT&C (ON/OFF)
+0                             ! COMM PAYLOAD (ON/OFF)
+**************************** Solar Array Parameters ****************************  
+2                             ! Number of Solar Arrays
+==============================  Solar Array 0  =================================
+0 0.0 -1.0 0.0                ! Body, Axis location
+16.0                          ! Solar Array Regulator Voltage (V)
+0.25                          ! Area of coverage (m^2)
+0.18                          ! System Efficiency Loss (PPT * Conversion * Solar Cell Efficiency)
+90.0                          ! Half-cone Angle (deg)
+==============================  Solar Array 1  =================================
+0 0.0 1.0 0.0                 ! Body, Axis location
+16.0                          ! Solar Array Regulator Voltage (V)
+0.2                           ! Area of coverage (m^2)
+0.18                          ! System Efficiency Loss (PPT * Conversion * Solar Cell Efficiency)
+90.0                          ! Half-cone Angle (deg) 

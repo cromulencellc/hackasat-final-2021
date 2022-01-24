@@ -1,0 +1,91 @@
+TITLE 'cFS Command and Telemetry Server'
+
+# Visiona CFDP Interface
+BACKGROUND_TASK cfdp_engine_task.rb  
+
+# CFS uart/ftdi interface with frame sync pattern
+INTERFACE FLATSAT_CFS_INT udp_interface.rb <%=ENV['FLATSAT_TO_IP'] || "192.168.3.67" %> 1234 1235 nil nil 128 nil nil
+  DONT_CONNECT
+  PROTOCOL READ_WRITE GSProtocol3 false
+  PROTOCOL WRITE ChecksumProtocol
+  PROTOCOL READ interfaces/cfdp_protocol
+  PROTOCOL WRITE interfaces/cfdp_protocol
+
+  TARGET SYSTEM
+  TARGET CFE_ES
+  TARGET CFE_ES2
+  TARGET CFE_EVS
+  TARGET CFE_EVS2
+  TARGET CFE_SB
+  TARGET CFE_TBL
+  TARGET CFE_TIME
+  TARGET CF
+  TARGET CF2
+  TARGET CS
+  TARGET DS
+  TARGET FM
+  TARGET FM2
+  TARGET HK
+  TARGET HS
+  TARGET LC
+  TARGET MD
+  TARGET MM
+  TARGET SC
+  TARGET CFS_KIT
+  TARGET KIT_SCH
+  TARGET KIT_TO
+  TARGET KIT_CI
+  TARGET ADCS
+  TARGET SBN_LITE
+  TARGET SBN_LITE2
+  TARGET MQTT
+  TARGET MQTT2
+
+  # CFDP Engine
+  TARGET PDU
+  TARGET PDU2
+
+  # User Apps
+  #<cfs_kit>Create app tool will add target between the cfs_kit tags
+  TARGET  EPHEM
+  TARGET COMM
+  TARGET SLA_TLM
+  TARGET EPS_MGR
+  #</cfs_kit>
+
+INTERFACE PDB_INT udp_interface.rb <%= ENV["PDB_IP"] || "192.168.3.65" %> 9998 9999 nil nil 128 nil nil <%= ENV["HOST_IP"] || "192.168.3.2" %>
+  PROTOCOL WRITE ChecksumProtocol
+  TARGET PDB
+
+INTERFACE COSMOSINT cmd_tlm_server_interface.rb
+  TARGET COSMOS
+  DISABLE_DISCONNECT
+
+# Visiona CFDP Interface
+#INTERFACE_TARGET CFDP cmd_tlm_server.txt
+INTERFACE CFDP_INT interfaces/visiona_cfdp_interface.rb
+  TARGET CFDP
+  DISABLE_DISCONNECT
+  PROTOCOL READ interfaces/cfdp_protocol
+  PROTOCOL WRITE interfaces/cfdp_protocol
+
+# Telemetry Chain Router and Task to Competitor Cosmos Client
+ROUTER CHALLENGER_COMM_ROUTER tcpip_server_interface.rb 2055 2055 10.0 nil PREIDENTIFIED
+  ROUTE FLATSAT_CFS_INT
+  ROUTE CFDP_INT
+  OPTION LISTEN_ADDRESS 0.0.0.0
+  DISABLE_DISCONNECT
+
+# Telemetry Chain Router and Task to Report Generation API Server
+ROUTER REPORT_API_ROUTER tcpip_server_interface.rb 2056 2056 10.0 nil PREIDENTIFIED
+  ROUTE FLATSAT_CFS_INT
+  DISABLE_DISCONNECT
+  OPTION LISTEN_ADDRESS 0.0.0.0
+
+
+# COSMOS -> Postgres Interface for Game Scoring and Web Visualization
+BACKGROUND_TASK telemetry_db.rb
+
+# MQTT Server Connection to process game state changes
+BACKGROUND_TASK mqtt_job.rb
+

@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  controller:
+    image: ${CONTROL_TAG}
+    volumes:
+      - ./configs:/configs
+      - ./logs:/ping_controller/logs
+    user: "${UID}:${GUID}"
+    network_mode: "host"
+    stdin_open: true # -i flag
+    tty: true        # -t flag
+  server:
+    image: ${SERVER_TAG}
+    user: "${UID}:${GUID}"
+    depends_on:
+      - controller
+    volumes:
+      - ./configs:/configs
+      - ./logs:/server/logs
+    command: --radioaddr localhost -r 0.0.0.0 --dispatch --config /configs -vvvv --livegame ${EXTRA_ARGS}
+    network_mode: "host"

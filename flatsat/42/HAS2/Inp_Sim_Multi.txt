@@ -1,0 +1,72 @@
+<<<<<<<<<<<<<<<<<  42: The Mostly Harmless Simulator  >>>>>>>>>>>>>>>>>
+************************** Simulation Control **************************
+FAST                            !  Time Mode (FAST, REAL, or EXTERNAL)
+3600 0.5                        !  Sim Duration, Step Size [sec]
+10.0                            !  File Output Interval [sec]
+FALSE                           !  Graphics Front End?
+Inp_Cmd.txt                     !  Command Script File Name
+**************************  Reference Orbits  **************************
+8                               !  Number of Reference Orbits
+TRUE   Orb_TEAM_0.txt           !  Input file name for Orb 0
+TRUE   Orb_TEAM_1.txt           !  Input file name for Orb 1
+TRUE   Orb_TEAM_2.txt           !  Input file name for Orb 2
+TRUE   Orb_TEAM_3.txt           !  Input file name for Orb 3
+TRUE   Orb_TEAM_4.txt           !  Input file name for Orb 4
+TRUE   Orb_TEAM_5.txt           !  Input file name for Orb 5
+TRUE   Orb_TEAM_6.txt           !  Input file name for Orb 6
+TRUE   Orb_TEAM_7.txt           !  Input file name for Orb 7
+*****************************  Spacecraft  *****************************
+8                               !  Number of Spacecraft
+TRUE  0 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 0
+TRUE  1 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 1
+TRUE  2 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 2
+TRUE  3 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 3
+TRUE  4 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 4
+TRUE  5 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 5
+TRUE  6 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 6
+TRUE  7 SC_HAS2.txt             !  Existence, RefOrb, Input file for SC 7
+***************************** Environment  *****************************
+12 10 2020                      !  Date (UTC) (Month, Day, Year)
+12 00 00.00                     !  Time (UTC) (Hr,Min,Sec)
+0.0                             !  Leap Seconds (sec)
+USER                            !  F10.7, Ap (USER, NOMINAL or TWOSIGMA)
+230.0                           !  If USER_DEFINED, enter desired F10.7 value
+100.0                           !  If USER_DEFINED, enter desired AP value
+IGRF                            !  Magfield (NONE,DIPOLE,IGRF)
+8   8                           !  IGRF Degree and Order (<=10)
+2   0                           !  Earth Gravity Model N and M (<=18)
+2   0                           !  Mars Gravity Model N and M (<=18)
+2   0                           !  Luna Gravity Model N and M (<=18)
+FALSE   FALSE                   !  Aerodynamic Forces & Torques (Shadows)
+FALSE                           !  Gravity Gradient Torques
+FALSE   FALSE                   !  Solar Pressure Forces & Torques (Shadows)
+FALSE                           !  Gravity Perturbation Forces
+FALSE                           !  Passive Joint Forces & Torques
+FALSE                           !  Thruster Plume Forces & Torques
+FALSE                           !  RWA Imbalance Forces and Torques
+FALSE                           !  Contact Forces and Torques
+FALSE                           !  CFD Slosh Forces and Torques
+FALSE                           !  Output Environmental Torques to Files
+********************* Celestial Bodies of Interest *********************
+MEAN                            !  Ephem Option (MEAN or DE430)
+FALSE                           !  Mercury
+FALSE                           !  Venus
+TRUE                            !  Earth and Luna
+FALSE                           !  Mars and its moons
+FALSE                           !  Jupiter and its moons
+FALSE                           !  Saturn and its moons
+FALSE                           !  Uranus and its moons
+FALSE                           !  Neptune and its moons
+FALSE                           !  Pluto and its moons
+FALSE                           !  Asteroids and Comets
+***************** Lagrange Point Systems of Interest ******************
+TRUE                            !  Earth-Moon
+TRUE                            !  Sun-Earth
+FALSE                           !  Sun-Jupiter
+************************* Ground Stations ***************************
+5                                            ! Number of Ground Stations
+FALSE  EARTH  -77.0  37.0  "GSFC"             ! Exists, World, Lng, Lat, Label
+FALSE  EARTH  -155.6 19.0  "South Point"      ! Exists, World, Lng, Lat, Label
+FALSE  EARTH  115.4 -29.0  "Dongara"          ! Exists, World, Lng, Lat, Label
+FALSE  EARTH  -71.0 -33.0  "Santiago"         ! Exists, World, Lng, Lat, Label
+FALSE  LUNA   45.0  45.0   "Moon Base Alpha"  ! Exists, World, Lng, Lat, Label
