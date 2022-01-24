@@ -1,0 +1,12 @@
+# Python venv
+usersegment
+activate
+
+# Keys & Configs
+configs/team_private_keys/*.pem
+configs/team_public_keys/*.pem
+configs/team_public_keys/BAD
+.env
+
+# Cache
+*__pycache__

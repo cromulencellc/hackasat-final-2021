@@ -1,0 +1,35 @@
+{
+   "name": "MQTT SB to MQTT Packet Table",
+   "description": "Define default packets that are forwarded by MQTT App",
+   "message-array": [
+      
+      "packet": {
+         "name": "ADCS_ACTUATOR_SIM_DATA",
+         "stream-id": "\u09E7",
+         "dec-id": 2535,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "mqtt-topic": "SIM/42/ADCS/ACTUATOR",
+         "mqtt-qos": 2,
+         "mqtt-retained": 0,
+         "mqtt-include-ccsds": 0,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "EPS_STATUS_SIM_DATA",
+         "stream-id": "\u0913",
+         "dec-id": 2323,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "mqtt-topic": "SIM/42/EPS/STATUS",
+         "mqtt-qos": 2,
+         "mqtt-retained": 0,
+         "mqtt-include-ccsds": 0,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      }
+
+   ]
+}

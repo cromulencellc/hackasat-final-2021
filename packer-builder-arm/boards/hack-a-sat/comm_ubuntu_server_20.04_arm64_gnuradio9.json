@@ -1,0 +1,117 @@
+{
+  "variables": {},
+  "builders": [{
+    "type": "arm",
+    "file_urls" : ["http://cdimage.ubuntu.com/releases/20.04.3/release/ubuntu-20.04.3-preinstalled-server-arm64+raspi.img.xz"],
+    "file_checksum": "7e405f473d8a9e3254cd702edaeecd5509a85cde1e9e99e120f6c82156c6958f",
+    "file_checksum_type": "sha256",
+    "file_target_extension": "xz",
+    "file_unarchive_cmd": ["xz", "--decompress", "$ARCHIVE_PATH"],
+    "image_build_method": "resize",
+    "image_partitions": [
+      {
+        "name": "boot",
+        "type": "c",
+        "start_sector": "2048",
+        "filesystem": "fat",
+        "size": "256M",
+        "mountpoint": "/boot/firmware"
+      },
+      {
+        "name": "root",
+        "type": "83",
+        "start_sector": "526336",
+        "filesystem": "ext4",
+        "size": "0",
+        "mountpoint": "/"
+      }
+    ],
+    "image_path": "ubuntu-20.04.img",
+    "image_size": "8G",
+    "image_type": "dos",
+    "image_chroot_env": ["PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"],
+    "qemu_binary_source_path": "/usr/bin/qemu-aarch64-static",
+    "qemu_binary_destination_path": "/usr/bin/qemu-aarch64-static"
+  }],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "rm -f /etc/resolv.conf",
+        "echo 'nameserver 1.1.1.1' > /etc/resolv.conf",
+        "echo 'nameserver 8.8.8.8' >> /etc/resolv.conf",
+        "echo 'DSELECT::Clean \"always\";' >> /etc/apt/apt.conf.d/99AutomaticClean",
+        "export DEBIAN_FRONTEND='noninteractive'",
+        "apt-get update && apt-get install -y apt-utils apt-transport-https ca-certificates curl gnupg lsb-release",
+        "add-apt-repository -y ppa:gnuradio/gnuradio-releases",
+        "mkdir /opt/uhd_images",
+        "echo 'export UHD_IMAGES_DIR=/opt/uhd_images' >> /etc/bash.bashrc",
+        "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg",
+        "echo \"deb [arch=arm64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null",
+        "apt-get update",
+        "apt-get install -y git python3 python3-pip python3-dev net-tools ufw python3-gi gobject-introspection gir1.2-gtk-3.0 gnuradio docker-ce docker-ce-cli containerd.io",
+        "pip3 install docker-compose",
+        "uhd_images_downloader -i /opt/uhd_images",
+        "apt-get autoclean"
+      ]
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/systemd/services/set-ethernet-speed.service",
+      "destination": "/etc/systemd/system/set-ethernet-speed.service"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/systemd/services/comm-payload.service",
+      "destination": "/etc/systemd/system/comm-payload.service"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/systemd/scripts/set-ethernet-speed.sh",
+      "destination": "/usr/local/sbin/set-ethernet-speed.sh"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/systemd/scripts/comm_payload.sh",
+      "destination": "/usr/local/sbin/comm_payload.sh"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/cloud/cloud.cfg",
+      "destination": "/etc/cloud/cloud.cfg"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/i2c-rtc.dtbo",
+      "destination": "/boot/firmware/overlays/i2c-rtc.dtbo"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/hosts",
+      "destination": "/etc/hosts"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/comm/hostname",
+      "destination": "/etc/hostname"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "systemctl enable set-ethernet-speed.service",
+        "systemctl enable comm-payload.service",
+        "chmod +x /usr/local/sbin/set-ethernet-speed.sh",
+        "chmod +x /usr/local/sbin/comm_payload.sh",
+        "chmod 644 /etc/systemd/system/comm-payload.service",
+        "chmod 644 /etc/systemd/system/set-ethernet-speed.service",
+        "chmod 644 /etc/cloud/cloud.cfg",
+        "echo 'dtparam=i2c_vc=on' >> /boot/firmware/usercfg.txt",
+        "echo 'dtoverlay=i2c-rtc,pcf85063a,i2c_csi_dsi' >> /boot/firmware/usercfg.txt",
+        "echo 'dtoverlay=dwc2,dr_mode=host' >> /boot/firmware/usercfg.txt",
+        "echo 'dtoverlay=disable-bt' >> /boot/firmware/usercfg.txt",
+        "echo 'dtoverlay=disable-wifi' >> /boot/firmware/usercfg.txt"
+      ]
+    }
+  ],
+  "post-processors": []
+}

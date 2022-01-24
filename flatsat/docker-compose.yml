@@ -1,0 +1,87 @@
+version: "3.6"
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2-openssl
+    ports:
+      - 1883:1883
+    networks:
+      default:
+        ipv4_address: ${MQTT_IP}
+    user: ${DOCKER_USER_UID}:${DOCKER_USER_GID}
+    volumes:
+      - ./mosquitto/mosquitto/config:/mosquitto/config
+      - ./mosquitto/mosquitto/data:/mosquitto/data
+    logging:
+      options:
+        max-size: "25M"
+  management-center:
+    image: cedalo/management-center:2
+    ports:
+      - 8088:8088
+    depends_on:
+      - mosquitto
+    networks:
+      default:
+        ipv4_address: ${MQTT_GUI_IP}
+    environment:
+      CEDALO_MC_BROKER_ID: mosquitto-2.0
+      CEDALO_MC_BROKER_NAME: Mosquitto 2.0
+      CEDALO_MC_BROKER_URL: mqtt://mosquitto:1883
+      CEDALO_MC_BROKER_USERNAME: cedalo
+      CEDALO_MC_BROKER_PASSWORD: S37Lbxcyvo
+      CEDALO_MC_USERNAME: cedalo
+      CEDALO_MC_PASSWORD: "KCY1yze1tkd4tzb-zcm"
+    logging:
+      options:
+        max-size: "25M"
+  fortytwo:
+    image: has2/finals/42/42:latest
+    environment:
+      - TEAM_NUMBER=${TEAM_NUMBER}
+      - MQTT_IP=${MQTT_IP}
+      - MQTT_REPUBLISH_INTERVAL=5000
+    depends_on:
+      - mosquitto
+    volumes:
+      - ./42/HAS2:/home/has/42/HAS2
+    networks:
+      default:
+        ipv4_address: ${FORTYTWO_IP}
+    logging:
+      options:
+        max-size: "25M"
+  fortytwo-bridge:
+    image: has2/finals/fortytwo-mqtt-bridge/fortytwo-bridge:latest
+    environment:
+      - MQTT_HOST=${MQTT_IP}
+      - GAME_START_STATE=STOPPED
+      - PAYLOAD_FOV=10
+      - LOG_LEVEL=INFO
+    depends_on:
+      - mosquitto
+    networks:
+      - default
+    logging:
+      options:
+        max-size: "25M"
+  cosmos:
+    image: has2/finals/opensatkit-docker/cosmos:latest
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
+      - HOST_IP=${HOST_IP}
+      - PDB_IP=${PDB_IP}
+      - FLATSAT_TO_IP=${CDH_IP}
+      - CHALLENGER_TEAM=${CHALLENGER_TEAM}
+      - REPORTAPI_IP=${REPORTAPI_GATEWAY}
+      - BEELINK_IP=${BEELINK_IP}
+      - TELEMETRY_DB_URL=${TELEMETRY_DB_URL}
+      - MQTT_IP=${MQTT_IP}
+    volumes:
+      - ./opensatkit/cosmos:/cosmos
+    user: "${DOCKER_USER_UID}:${DOCKER_USER_GID}"
+    network_mode: "host"
+networks:
+  default:
+    external: true
+    name: ${DOCKER_NETWORK}

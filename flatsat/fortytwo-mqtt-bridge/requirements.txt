@@ -1,0 +1,5 @@
+asyncio-mqtt==0.10.0
+numpy==1.21.4
+paho-mqtt==1.5.1
+pyquaternion==0.9.9
+python-dotenv==0.19.0

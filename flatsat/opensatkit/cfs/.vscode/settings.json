@@ -1,0 +1,9 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "actypeconverter.h": "c",
+        "adcs_impl.h": "c",
+        "app_cfg.h": "c",
+        "adcs_conf_tbl.h": "c"
+    }
+}

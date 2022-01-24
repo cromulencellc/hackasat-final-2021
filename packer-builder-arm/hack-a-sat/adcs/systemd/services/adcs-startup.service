@@ -1,0 +1,15 @@
+[Unit]
+Description=Startup ADCS CFS FSW on Boot
+
+[Service]
+Type=simple
+User=adcs
+Group=cfs
+ExecStart=/usr/local/sbin/adcs-startup.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=<adcs_cfs>
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

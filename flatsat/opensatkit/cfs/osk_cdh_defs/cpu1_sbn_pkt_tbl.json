@@ -1,0 +1,176 @@
+{
+   "name": "SBN Lite Packet Table",
+   "description": "Define default packets that are forwarded by SBN_LITE",
+   "packet-array": [
+      "packet": {
+         "name": "ADCS_CMD_MID",
+         "stream-id": "\u19DF",
+         "dec-id": 6623,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "ADCS_RW_CMD_MID",
+         "stream-id": "\u19E2",
+         "dec-id": 6626,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "EPS_MGR_CMD_MID",
+         "stream-id": "\u1910",
+         "dec-id": 6416,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "TFTP2_CMD_MID",
+         "stream-id": "\u1902",
+         "dec-id": 6402,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CFE_ES2_CMD_MID",
+         "stream-id": "\u1826",
+         "dec-id": 6182,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CFE_ES2_CMD_MID",
+         "stream-id": "\u1826",
+         "dec-id": 6182,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "SBN_LITE2_CMD_MID",
+         "stream-id": "\u18FB",
+         "dec-id": 6395,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_CMD_MID",
+         "stream-id": "\u18C3",
+         "dec-id": 6339,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_WAKE_UP_REQ_CMD_MID",
+         "stream-id": "\u18C5",
+         "dec-id": 6341,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+      
+      "packet": {
+         "name": "CF2_SPARE1_CMD_MID",
+         "stream-id": "\u18C6",
+         "dec-id": 6342,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_SPARE2_CMD_MID",
+         "stream-id": "\u18C7",
+         "dec-id": 6343,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_SPARE3_CMD_MID",
+         "stream-id": "\u18C8",
+         "dec-id": 6344,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_SPARE4_CMD_MID",
+         "stream-id": "\u18C9",
+         "dec-id": 6345,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_SPARE5_CMD_MID",
+         "stream-id": "\u18CA",
+         "dec-id": 6346,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CF2_INCOMING_PDU_MID",
+         "stream-id": "\u1FFC",
+         "dec-id": 8188,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 8,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "CFE_EVS2_CMD_MID",
+         "stream-id": "\u1812",
+         "dec-id": 6162,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      },
+
+      "packet": {
+         "name": "FM2_CMD_MID",
+         "stream-id": "\u184C",
+         "dec-id": 6220,
+         "priority": 0,
+         "reliability": 0,
+         "buf-limit": 4,
+         "filter": { "type": 2, "X": 1, "N": 1, "O": 0}
+      }
+      
+   ]
+}

@@ -1,0 +1,169 @@
+version: "3.6"
+services:
+  cosmos-digest:
+    image: has2/finals/opensatkit-docker/cosmos:latest
+    user: ${DOCKER_USER_UID}:${DOCKER_USER_GUID}
+    environment: 
+      - FLATSAT_IP=$FLATSAT_IP
+    volumes: 
+      - ~/cosmos:/cosmos
+    network_mode: "host"
+    expose:
+      - 7777
+  raw:
+    image: has2/finals/fax/raw:latest
+    ports:
+      - 1337:1337
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.20.0.1
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - rawnet
+  digest1:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1341:1340
+      - 1361:1361
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.21.0.1
+      - FLAG=$FLAG1
+    deploy:
+      resources:
+        limits:
+          cpus: '0.10'
+          memory: 100M
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team1net
+  digest2:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1342:1340
+      - 1362:1362
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.22.0.1
+      - FLAG=$FLAG2
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team2net
+  digest3:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1343:1340
+      - 1363:1363
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.23.0.1
+      - FLAG=$FLAG3
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team3net
+  digest4:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1344:1340
+      - 1364:1364
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.24.0.1
+      - FLAG=$FLAG4
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team4net
+  digest5:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1345:1340
+      - 1365:1365
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.25.0.1
+      - FLAG=$FLAG5
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team5net
+  digest6:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1346:1340
+      - 1366:1366
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.26.0.1
+      - FLAG=$FLAG6
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team6net
+  digest7:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1347:1340
+      - 1367:1367
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.27.0.1
+      - FLAG=$FLAG7
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team7net
+  digest8:
+    image: has2/finals/fax/digest:latest
+    ports:
+      - 1348:1340
+      - 1368:1368
+    environment:
+      - COSMOS_CTS_HOSTNAME=172.28.0.1
+      - FLAG=$FLAG8
+    logging:
+      options:
+        max-size: "25M"
+    networks:
+      - team8net
+networks:
+  rawnet:
+    ipam:
+      config:
+       - subnet: "172.20.0.0/16"
+  team1net:
+    ipam:
+      config:
+       - subnet: "172.21.0.0/16"
+  team2net:
+    ipam:
+      config:
+       - subnet: "172.22.0.0/16"
+  team3net:
+    ipam:
+      config:
+       - subnet: "172.23.0.0/16"
+  team4net:
+    ipam:
+      config:
+       - subnet: "172.24.0.0/16"
+  team5net:
+    ipam:
+      config:
+       - subnet: "172.25.0.0/16"
+  team6net:
+    ipam:
+      config:
+       - subnet: "172.26.0.0/16"
+  team7net:
+    ipam:
+      config:
+       - subnet: "172.27.0.0/16"
+  team8net:
+    ipam:
+      config:
+       - subnet: "172.28.0.0/16"

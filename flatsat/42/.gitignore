@@ -1,0 +1,16 @@
+*.DS_Store
+a.out
+*.o
+*.so
+*~
+*.webarchive
+*.42
+42
+/build
+
+FlatSatFswApp
+/sim_results*
+.venv-42
+FswResults.txt
+AcParmDump*
+HAS2/Orb_HAS2.txt

@@ -1,0 +1,52 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                  dco_clk |                clk_pll_i |                                                                  leon3_system_1/ua2.uart2/r_reg[rxf][0]/D|
+|                  dco_clk |                clk_pll_i |                                                   leon3_system_1/spi_gen.spimctrl1/r_reg[spii][0][miso]/D|
+|                  dco_clk |                clk_pll_i |                                                                  leon3_system_1/ua1.uart1/r_reg[rxf][0]/D|
+|                  dco_clk |                clk_pll_i |                                                   leon3_system_1/dcomgen.dcom0/dcom_uart0/r_reg[rxf][0]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[5]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[6]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[4]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[4]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][13]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[5]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[0]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][15]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[6]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[3]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][12]/D|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][14]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[6]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][11]/D|
+|                clk_pll_i |                clk_pll_i |                         leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIPADIP[0]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[7]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[2]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[0]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][10]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[1]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][16]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[1]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[0]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[4]|
+|                clk_pll_i |                clk_pll_i |                                                    leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][9]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[3]|
+|                clk_pll_i |                clk_pll_i |                                                   leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][17]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[6]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[3]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[5]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r0/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[2]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[4]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[7]|
+|                clk_pll_i |                clk_pll_i |                         leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIPADIP[0]|
+|                clk_pll_i |                clk_pll_i |                                                    leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][8]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[1]|
+|                clk_pll_i |                clk_pll_i |                                                    leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][7]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[0]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[2]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[3]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[1].r0/DIADI[2]|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[1]|
+|                clk_pll_i |                clk_pll_i |                                                    leon3_system_1/eth0.e1/m100.u0/ethc0/r_reg[ipcrc][6]/D|
+|                clk_pll_i |                clk_pll_i |                           leon3_system_1/eth0.e1/m100.u0/edclramnft.r1/xc2v.x0/a6.x0/a11.x[0].r0/DIADI[5]|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

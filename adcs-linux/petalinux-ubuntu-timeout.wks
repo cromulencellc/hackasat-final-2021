@@ -1,0 +1,2 @@
+part /boot --source bootimg-partition --ondisk mmcblk0 --fstype=vfat --label BOOT --active --align 1024 --fixed-size 10 --fsoptions "defaults,x-systemd.device-timeout=infinity,x-systemd.mount-timeout=infinity,nofail"
+part / --source rootfs --ondisk mmcblk0 --fstype=ext4 --label rootfs --align 1024 --fixed-size 2037 --fsoptions "defaults,x-systemd.device-timeout=infinity,x-systemd.mount-timeout=infinity,nofail"

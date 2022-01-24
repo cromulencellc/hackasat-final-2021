@@ -1,0 +1,10 @@
+grmon.script
+documentation/doc_venv
+docker-compose-team*.yml
+.team*
+*.img
+*.img.gz
+*.wic
+.env
+challenger_cosmos_api.log
+challenger_cosmos.log

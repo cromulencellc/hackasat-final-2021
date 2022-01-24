@@ -1,0 +1,87 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setup has2 env",
+            "type": "shell",
+            "command": "./has2_env.sh",
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make clean",
+            "group": "build"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build clean",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "wait",
+            "type": "shell",
+            "command": "sleep",
+            "args": [
+                "1s"
+            ],
+            "dependsOn": "start"
+        },
+        {
+            "label": "close-42",
+            "type": "shell",
+            "command": "pkill",
+            "args": [
+                "-U",
+                "1000",
+                "42"
+            ]
+        },
+        {
+            "label": "start",
+            "type": "shell",
+            "command": "${workspaceFolder}/42",
+            "args": [
+                "HAS2"
+            ],
+            "isBackground": true,
+            // "dependsOn": [
+            //     "build 42",
+            //     "build fs"
+            // ],
+            "dependsOrder": "sequence",
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": {
+                        "regexp": "^Server is listening on port "
+                    },
+                    "endsPattern": "."
+                }
+            }
+        }
+    ]
+}

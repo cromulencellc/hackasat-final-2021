@@ -1,0 +1,2 @@
+KERNEL=="iio:device[0-1]|trigger[0-1]", SUBSYSTEM=="iio", GROUP="iio"
+DRIVER=="*", SUBSYSTEM=="iio", ACTION=="add", PROGRAM="/bin/sh -c 'chgrp -R iio /sys%p; chmod -R g=u /sys%p'"

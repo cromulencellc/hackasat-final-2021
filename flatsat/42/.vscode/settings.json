@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "actypes.h": "c",
+        "42.h": "c"
+    },
+    "python.pythonPath": ".venv-42/bin/python"
+}

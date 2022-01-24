@@ -1,0 +1,7 @@
+
+[submodule "cfs/apps/adcs_io/adcs-drivers"]
+	path = cfs/apps/adcs_io/adcs-drivers
+	url = ../adcs-drivers.git
+[submodule "cfs/apps/mqtt_c/MQTT-C"]
+	path = cfs/apps/mqtt_c/MQTT-C
+	url = https://github.com/LiamBindle/MQTT-C.git

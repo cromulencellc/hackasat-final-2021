@@ -1,0 +1,11 @@
+/adcs_project/**/*
+!/adcs_project/.gitinclude
+/ip/adcs_bd/*
+!/ip/adcs_bd/hdl
+/ip/adcs_bd/hdl/*
+!/ip/adcs_bd/hdl/adcs_bd_wrapper.v
+NA/
+.Xil
+*.bak
+
+hw/ps7_init*

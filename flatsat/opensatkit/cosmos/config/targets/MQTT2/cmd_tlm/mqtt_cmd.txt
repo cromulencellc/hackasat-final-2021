@@ -1,0 +1,24 @@
+<% 
+  require 'fsw_config_param' 
+  require 'osk_config' 
+  require 'osk_global'
+
+  @APP_PREFIX_STR = "MQTT2"
+  @CMD_MID_STR    = "MQTT2_CMD_MID"
+
+  # Configuration parameter assumptions
+  #   None
+  
+%>
+
+COMMAND <%= @APP_PREFIX_STR %> <%= Osk::CMD_STR_NOOP %> <%= Osk::Cfg.processor_endian_adcs %> "Generate an information event message with the app's version identifier"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 0, 0) %>
+
+COMMAND <%= @APP_PREFIX_STR %> <%= Osk::CMD_STR_RESET %> <%= Osk::Cfg.processor_endian_adcs %> "Reset app and child task counters"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 1, 0) %>
+  
+COMMAND <%= @APP_PREFIX_STR %> SET_RUN_LOOP_DELAY <%= Osk::Cfg.processor_endian_adcs %> "Set the delay used in the main loop"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR,7, 2) %>
+  APPEND_PARAMETER RUN_LOOP_DELAY 16 UINT MIN_UINT16 MAX_UINT16 500 "Task delay(ms) used in main loop"
+
+

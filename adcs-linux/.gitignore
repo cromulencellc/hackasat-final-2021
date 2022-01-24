@@ -1,0 +1,17 @@
+*/*/config.old
+*/*/rootfs_config.old
+build/
+images/linux/
+pre-built/linux/
+.petalinux/*
+!.petalinux/metadata
+*.o
+*.jou
+*.log
+/components/plnx_workspace
+/components/yocto
+.Xil
+rootfs/**.tar
+rootfs/armhf-rootfs*
+adcs_001_hog.tar.gz
+adcs-001.tar.gz

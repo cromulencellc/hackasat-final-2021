@@ -1,0 +1,11 @@
+#file /home/rvb/Desktop/digitaltwin/cdh_sparc_emu/cdh_board_image/core-cpu1.exe
+
+file /home/user/digitaltwin/cdh_sparc_emu/cdh_board_image/core-cpu1.exe
+set architecture sparc
+set endian big
+set radix 16
+display /3i $pc
+
+target remote localhost:1234
+
+

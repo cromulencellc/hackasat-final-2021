@@ -1,0 +1,9 @@
+# Saved Keys
+keys/*.pem
+pub_keys/*.pem
+
+# Saved Key Primes
+team_keys_cracked.yaml
+
+# Cache
+__pycache__

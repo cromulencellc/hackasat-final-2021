@@ -1,0 +1,39 @@
+{
+   "name": "MQTT MQTT to SB message Table",
+   "description": "Define default messages that subscbibed to by MQTT App",
+   "message-array": [
+
+      "message": {
+         "name": "COMM_PAYLOAD_SLA",
+         "msg-id": "\u19E4",
+         "dec-id": 6628,
+         "msg-type": 1,
+         "data-type": 1,
+         "data-length": 200,
+         "mqtt-topic": "COMM/PAYLOAD/SLA",
+         "mqtt-qos": 2
+      }
+
+      "message": {
+         "name": "SLA_PAYLOAD_KEY",
+         "msg-id": "\u19E5",
+         "dec-id": 6629,
+         "msg-type": 1,
+         "data-type": 1,
+         "data-length": 200,
+         "mqtt-topic": "COMM/PING/STATUS",
+         "mqtt-qos": 2
+      }
+
+      "message": {
+         "name": "COMM_PAYLOAD_TELEMETRY",
+         "msg-id": "\u19E6",
+         "dec-id": 6630,
+         "msg-type": 1,
+         "data-type": 1,
+         "data-length": 200,
+         "mqtt-topic": "COMM/PAYLOAD/TELEMETRY",
+         "mqtt-qos": 2
+      }
+   ]
+}

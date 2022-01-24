@@ -1,0 +1,63 @@
+TITLE "Launcher"
+TOOL_FONT tahoma 12
+LABEL_FONT tahoma 16
+# NUM_COLUMNS 5 # This is the default
+
+MULTITOOL_START "HAS2 Competitor" HAS2.png
+  TOOL "LAUNCH CmdTlmServer -x -1 -y -1 -w 1600 -t 600 -c cmd_tlm_server_monitor.txt"
+  DELAY 2 
+    TOOL "LAUNCH TlmViewer -x 2850 -y -1 -w 424 -t 111"
+  TOOL "LAUNCH PacketViewer -x 1802 -y 750 -w 1600 -t 1000 -p 'KIT_TO HK_TLM_PKT'"
+  TOOL "LAUNCH CmdSender -x -1 -y 750 -w 1600 -t 1000"
+  TOOL "LAUNCH TlmGrapher -x -1 -y 1000 -w 3600 -t 1100 -c has2.txt --start"
+  DELAY 2
+    TOOL "LAUNCH ScriptRunner -x -1 -y 1800 -w 2200 -t 800"
+  # Initialize OpenSatKit modules
+  <% 
+     require 'osk_system'
+     require 'osk_flight' 
+  %>
+MULTITOOL_END
+MULTITOOL_START "HAS2 DigitalTwin" HAS2.png
+  TOOL "LAUNCH CmdTlmServer -x -1 -y -1 -w 1600 -t 600 -c cmd_tlm_server_digitaltwin_testbed.txt"
+  DELAY 2 
+    TOOL "LAUNCH TlmViewer -x 2850 -y -1 -w 424 -t 111"
+  TOOL "LAUNCH PacketViewer -x 1802 -y 750 -w 1600 -t 1000 -p 'KIT_TO HK_TLM_PKT'"
+  TOOL "LAUNCH CmdSender -x -1 -y 750 -w 1600 -t 1000"
+  TOOL "LAUNCH TlmGrapher -x -1 -y 1000 -w 3800 -t 1200 -c has2.txt --start"
+  DELAY 2
+    TOOL "LAUNCH ScriptRunner -x -1 -y 1800 -w 2200 -t 800 -r hack-a-sat/enable_tlm_digitaltwin.rb""
+  # Initialize OpenSatKit modules
+  <% 
+     require 'osk_system'
+     require 'osk_flight' 
+  %>
+MULTITOOL_END
+TOOL "Command and Telemetry Server" "LAUNCH CmdTlmServer" "cts.png" --config cmd_tlm_server.txt
+TOOL "Limits Monitor" "LAUNCH LimitsMonitor" "limits_monitor.png"
+AUTO_GEM_TOOLS
+
+DIVIDER
+LABEL "Commanding and Scripting"
+
+TOOL "Command Sender" "LAUNCH CmdSender" "cmd_sender.png"
+TOOL "Script Runner" "LAUNCH ScriptRunner" "script_runner.png"
+TOOL "Test Runner" "LAUNCH TestRunner" "test_runner.png"
+TOOL "Replay" "LAUNCH Replay --routers" "replay.png"
+
+DIVIDER
+LABEL Telemetry
+
+TOOL "Packet Viewer" "LAUNCH PacketViewer" "packet_viewer.png"
+TOOL "Telemetry Viewer" "LAUNCH TlmViewer" "tlm_viewer.png"
+TOOL "Telemetry Grapher" "LAUNCH TlmGrapher -c has2.txt --start" "tlm_grapher.png"
+TOOL "Data Viewer" "LAUNCH DataViewer" "data_viewer.png"
+
+DIVIDER
+LABEL Utilities
+
+TOOL "Config Editor" "LAUNCH ConfigEditor" "config_editor.png"
+TOOL "Telemetry Extractor" "LAUNCH TlmExtractor" "tlm_extractor.png"
+TOOL "Command Extractor" "LAUNCH CmdExtractor" "cmd_extractor.png"
+TOOL "Handbook Creator" "LAUNCH HandbookCreator" "handbook_creator.png"
+TOOL "Table Manager" "LAUNCH TableManager" "table_manager.png"

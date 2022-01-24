@@ -1,0 +1,6 @@
+{
+   "name": "SBN Lite Packet Table",
+   "description": "Define default packets that are forwarded by SBN_LITE",
+   "packet-array": [
+   ]
+}

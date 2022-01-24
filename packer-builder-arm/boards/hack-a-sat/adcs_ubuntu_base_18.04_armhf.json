@@ -1,0 +1,139 @@
+{
+  "variables": {},
+  "builders": [{
+    "type": "arm",
+    "file_urls" : ["http://cdimage.ubuntu.com/ubuntu-base/releases/18.04/release/ubuntu-base-18.04.5-base-armhf.tar.gz"],
+    "file_checksum": "dbcd891a0c48c079ac8c00ddf4b172932e4583cb4c0dc62f6257a467ea6ebb25",
+    "file_checksum_type": "sha256",
+    "file_unarchive_cmd": ["bsdtar", "-xpf", "$ARCHIVE_PATH", "-C", "$MOUNTPOINT"],
+    "file_target_extension": "tar.gz",
+    "image_build_method": "new",
+    "image_path": "adcs-001.tar.gz",
+    "image_size": "4G",
+    "image_type": "dos",
+    "image_partitions": [
+        {
+          "name": "boot",
+          "type": "c",
+          "start_sector": "2048",
+          "filesystem": "vfat",
+          "size": "10M",
+          "mountpoint": ""
+        },
+        {
+          "name": "root",
+          "type": "83",
+          "start_sector": "526336",
+          "filesystem": "ext4",
+          "size": "0",
+          "mountpoint": "/"
+        }
+      ],
+    "image_setup_extra": [],
+    "image_chroot_env": ["PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin"],
+    "qemu_binary_source_path": "/usr/bin/qemu-arm-static",
+    "qemu_binary_destination_path": "/usr/bin/qemu-arm-static"
+  }],
+  "provisioners": [
+    {
+        "type": "shell",
+        "inline": [
+          "rm -f /etc/resolv.conf",
+          "echo 'nameserver 1.1.1.1' > /etc/resolv.conf",
+          "echo 'nameserver 8.8.8.8' >> /etc/resolv.conf",
+          "DEBIAN_FRONTEND=noninteractive apt-get update",
+          "DEBIAN_FRONTEND=noninteractive apt-get install -y apt-utils dialog",
+          "DEBIAN_FRONTEND=noninteractive apt-get install -y cloud-init git python2.7 python3 python3-pip python3-dev cmake build-essential ca-certificates cmake ethtool git gnupg hexedit i2c-tools initramfs-tools bison flex libavahi-client-dev libcdk5-dev libxml2 libserialport-dev libserialport0 locales lsb-release nano vim netplan.io net-tools openssh-server rsync sudo systemd-sysv tcpdump usb-modeswitch usbutils wget inotify-tools gdb libnss-systemd libpam-systemd haveged",
+          "DEBIAN_FRONTEND=noninteractive apt-get install -y gdb gdbserver",
+          "DEBIAN_FRONTEND=noninteractive apt-get autoclean",
+          "DEBIAN_FRONTEND=noninteractive apt-get clean",
+          "mkdir -p /opt/packages",
+          "rm -rf /var/apt/archives/*.deb"
+        ]
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/cloud/99-fake_cloud.cfg",
+      "destination": "/etc/cloud/cloud.cfg.d/99-fake_cloud.cfg"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/cloud/adcs-networking.cfg",
+      "destination": "/etc/cloud/cloud.cfg.d/adcs-networking.cfg"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/cloud/cloud.cfg",
+      "destination": "/etc/cloud/cloud.cfg"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/udev/65-gpiod.rules",
+      "destination": "/etc/udev/rules.d/65-gpiod.rules"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/udev/60-zynq-serial.rules",
+      "destination": "/etc/udev/rules.d/60-zynq-serial.rules"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/udev/65-zynq-xadc.rules",
+      "destination": "/etc/udev/rules.d/65-zynq-xadc.rules"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz",
+      "destination": "/opt/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/packages/libgpiod-1.6.2-armhf.tar.gz",
+      "destination": "/opt/packages/libgpiod-1.6.2-armhf.tar.gz"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/hosts",
+      "destination": "/etc/hosts"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/hostname",
+      "destination": "/etc/hostname"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/systemd/services/adcs-startup.service",
+      "destination": "/etc/systemd/system/adcs-startup.service"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/systemd/logging/adcs-logging.conf",
+      "destination": "/etc/rsyslog.d/adcs-logging.conf"
+    },
+    {
+      "type": "file",
+      "source": "hack-a-sat/adcs/systemd/scripts/adcs-startup.sh",
+      "destination": "/usr/local/sbin/adcs-startup.sh"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "tar xf /opt/packages/libgpiod-1.6.2-armhf.tar.gz -C / --no-same-owner",
+        "tar xf /opt/packages/libiio-0.21.g565bf68-raspbian-9-armhf.tar.gz -C / --no-same-owner",
+        "chmod 644 /etc/cloud/cloud.cfg.d/adcs-networking.cfg",
+        "chmod 644 /etc/cloud/cloud.cfg.d/99-fake_cloud.cfg",
+        "chmod 644 /etc/udev/rules.d/60-zynq-serial.rules",
+        "chmod 644 /etc/udev/rules.d/65-gpiod.rules",
+        "chmod 644 /etc/udev/rules.d/65-zynq-xadc.rules",
+        "chmod 644 /etc/systemd/system/adcs-startup.service",
+        "chmod 644 /etc/rsyslog.d/adcs-logging.conf",
+        "groupadd -g 2000 cfs",
+        "groupadd -g 1000 adcs",
+        "groupadd -g 1001 adcsadm",
+        "mkdir -p /apps/cpu1/",
+        "chown -R 1000:2000 /apps"
+      ]
+    }
+  ]
+}

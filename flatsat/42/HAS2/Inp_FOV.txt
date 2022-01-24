@@ -1,0 +1,14 @@
+/*                 Note: FOV Boresight is +Z Axis                 */
+************************* Fields of View ***************************
+1                                  !  Number of FOVs
+--------------------------------------------------------------------
+"NADIR"                            !  Label
+4   4.0                            !  Number of Sides, Length [m]
+3.0  4.0                           !  X Width, Y Height [deg]
+0.0 1.0 0.0 0.5                    !  Color RGB+Alpha
+SOLID                              !  WIREFRAME, SOLID, VECTOR, or PLANE 
+TRUE  TRUE                         !  Draw Near Field, Draw Far Field
+0  0                               !  SC, Body 
+0.0  0.0  1.0                      !  Position in Body [m]
+0.0  0.0  0.0  321                 !  Euler Angles [deg], Sequence
+

@@ -1,0 +1,27 @@
+### Global Ignores ###
+*.pem
+*.pem
+
+### Client Ignores ###
+# Ignore binaries
+client/build
+client/*.gch
+client/client*
+client/local_another
+client/*.pem
+client/build.tar.gz
+client/include/openssl
+!client/client*.sh
+
+# Don't ignore source files
+!*.cpp
+!*.hpp
+
+### User Segment Ignores ###
+server/tools/key_gen/gen
+server/configs/team_secret_random_nums.yaml
+server/configs/round_pings
+server/configs/team_attr_keys.yml
+
+# Ignore log files #
+server/logs/*.log

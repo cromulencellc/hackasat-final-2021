@@ -1,0 +1,57 @@
+<% 
+  require 'osk_config' 
+
+  @APP_PREFIX_STR = "EPS_MGR"
+  @CMD_MID_STR    = "EPS_MGR_CMD_MID"  # Replace with your app's MID defined in message_ids.rb
+  
+%>  
+
+COMMAND EPS_MGR NOOP <%= Osk::Cfg.processor_endian_adcs %> "Generate an info event message with app version"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 0, 0) %>
+
+COMMAND EPS_MGR RESET_CTRS <%= Osk::Cfg.processor_endian_adcs %> "Reset command counters"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 1, 0) %>
+
+COMMAND EPS_MGR LOAD_TBL <%= Osk::Cfg.processor_endian_adcs %> "Load EPS MGR Configuration Table"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 2, 66) %>
+  APPEND_PARAMETER ID    8  UINT 0 2 0 "Table ID. 0 is first table registered"
+  APPEND_PARAMETER TYPE  8  UINT 0 0 0 "0=Replace Table"
+  APPEND_PARAMETER FILENAME 512 STRING "/cf/eps_mgr_cfg_tbl.json" "Full path and file name of table to be loaded"
+
+COMMAND EPS_MGR DUMP_TBL <%= Osk::Cfg.processor_endian_adcs %> "EPS MGR Configuration Table"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 3, 66) %>
+  APPEND_PARAMETER ID   8 UINT 0 1 0 "Table ID. 0 is first table registered"
+  APPEND_PARAMETER TYPE 8 UINT 0 1 0 "Unused"
+  APPEND_PARAMETER FILENAME 512 STRING "/cf/eps_cfg_d.json" "Config table dump path"
+
+COMMAND EPS_MGR SET_MODE <%= Osk::Cfg.processor_endian_adcs %> "EPS MGR Set EPS Mode Command"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 4, 1) %>
+  APPEND_PARAMETER MODE   8 UINT 0 5 0 "EPS Mode Command"
+    STATE SEPERATION 0
+    STATE SAFE 1
+    STATE STANDBY 2
+    STATE NOMINAL_OPS_PAYLOAD_ON 3
+    STATE ADCS_MOMENTUM_DUMP 4
+    STATE ADCS_FSS_EXPERIMENTAL 5
+
+COMMAND EPS_MGR SET_SWITCH_STATE <%= Osk::Cfg.processor_endian_adcs %> "EPS MGR Set EPS Set Switch State Command"
+  <%= Osk::Cfg.cmd_hdr(@APP_PREFIX_STR, @CMD_MID_STR, 5, 2) %>
+  APPEND_PARAMETER COMPONENT_IDX   8 UINT 0 8 0 "EPS Component Index"
+    STATE TT&C_COMM 0
+    STATE ADCS 1
+    STATE ADCS_REACTION_WHEEL 2
+    STATE ADCS_IMU 3
+    STATE ADCS_STAR_TRACKER 4
+    STATE ADCS_MTR 5
+    STATE ADCS_CSS 6
+    STATE ADCS_FSS 7
+    STATE PAYLOAD_COMM 8
+  APPEND_PARAMETER COMPONENT_STAT 8 UINT 0 1 1 "EPS Component State"
+    STATE OFF 0
+    STATE ON 1
+  
+
+
+
+
+
