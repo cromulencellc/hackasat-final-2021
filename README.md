@@ -1,4 +1,6 @@
+Distribution Statement A: Approved for Public Release AFRL-2022-0566 
 # Hack-a-Sat 2 -  2021 Final #
+---
 
 This repository contains the open source release for the Hack-a-Sat 2 2021
 final event.
