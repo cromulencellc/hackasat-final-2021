@@ -34,6 +34,7 @@ Released artifacts *do not* include:
   * `mosquitto` MQTT server configuration
   * `opensatkit` Contains CFS source code and Cosmos ground station project. Includes source for challenge 5 and challenge 7.
 * `challenges` - Solutions for challenges 1-7.
+* `tech papers` - [link](./HAS2%20Finalist%20Technical%20Papers%20Distro%20A.pdf)
 
 
 ## License ##
